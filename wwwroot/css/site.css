@@ -19,8 +19,10 @@ html {
 
 body {
   margin-bottom: 60px;
+  display: flex; 
+  flex-direction: column;
 }
 
 #map {
-  width: 500px; height: 500px; background: #ddd;
+  width: 400px; height: 400px; background: #ddd;
 }
