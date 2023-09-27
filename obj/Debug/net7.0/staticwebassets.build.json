@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "aKXQK46d//ZszOh2ITKhjhQqAh5/E+Hj/yQ2sZnJcu0=",
+  "Hash": "aq3Up8GzrM5G3YFRIV5RjfBuV3dR4sX8+5n870ASEWc=",
   "Source": "TCC",
   "BasePath": "_content/TCC",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\kevin\\Documents\\GitHub\\TCC\\wwwroot\\js\\map.js",
+      "SourceId": "TCC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kevin\\Documents\\GitHub\\TCC\\wwwroot\\",
+      "BasePath": "_content/TCC",
+      "RelativePath": "js/map.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\map.js"
     },
     {
       "Identity": "C:\\Users\\kevin\\Documents\\GitHub\\TCC\\wwwroot\\js\\site.js",
