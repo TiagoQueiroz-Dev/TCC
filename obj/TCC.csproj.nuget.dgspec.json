@@ -1,33 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\021.854295\\Desktop\\TCC\\TCC\\TCC.csproj": {}
+    "C:\\Users\\kevin\\Documents\\GitHub\\TCC\\TCC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\021.854295\\Desktop\\TCC\\TCC\\TCC.csproj": {
+    "C:\\Users\\kevin\\Documents\\GitHub\\TCC\\TCC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\021.854295\\Desktop\\TCC\\TCC\\TCC.csproj",
+        "projectUniqueName": "C:\\Users\\kevin\\Documents\\GitHub\\TCC\\TCC.csproj",
         "projectName": "TCC",
-        "projectPath": "C:\\Users\\021.854295\\Desktop\\TCC\\TCC\\TCC.csproj",
-        "packagesPath": "C:\\Users\\021.854295\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\021.854295\\Desktop\\TCC\\TCC\\obj\\",
+        "projectPath": "C:\\Users\\kevin\\Documents\\GitHub\\TCC\\TCC.csproj",
+        "packagesPath": "C:\\Users\\kevin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kevin\\Documents\\GitHub\\TCC\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\021.854295\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\kevin\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -64,7 +56,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
