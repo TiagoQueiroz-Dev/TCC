@@ -1,6 +1,50 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Início";
+    MetodosInicio metodos = new MetodosInicio();
 }
-<div class="text-center">
-
+<div class="container-fluid text-center d-flex align-items-center justify-content-center">
+    <div class="row">
+            <div class="col recolher d-flex justify-content-center flex-column w-100">
+            <p class="h2 mb-5">A recolher</p>
+            <div class="row grid">
+                <div class="col card w-50">
+                        <div class="g-col-6 g-col-md-4 card-body">
+                        <h5 class="card-title">Pedido n°: 99999999999999</h5>
+                        <p class="card-text">Data: 01/01/9999</p>
+                        <p class="card-text">Data limite: 09/09/9999</p>
+                        <div class="status d-flex align-items-center justify-content-center">
+                            <p class="card-text align-items-center">Status de pagamento: Pago</p>
+                            <section id='@metodos.status("Pago")'></section>
+                        </div>
+                        <a href="#" class="btn btn-primary">Ver detalhes</a>
+                    </div>
+                </div>
+                <div class="col g-col-6 g-col-md-4 card w-50">
+                        <div class="card-body">
+                        <h5 class="card-title">Pedido n°: 99999999999999</h5>
+                        <p class="card-text">Data: 01/01/9999</p>
+                        <p class="card-text">Data limite: 09/09/9999</p>
+                        <div class="status d-flex align-items-center justify-content-center">
+                            <p class="card-text align-items-center">Status de pagamento: Pago</p>
+                            <section id='@metodos.status("Pago")'></section>
+                        </div>
+                        <a href="#" class="btn btn-primary">Ver detalhes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col"><div class="vr h-100"></div></div>
+        <div class="col pagPendente d-flex justify-content-center flex-column w-100">
+            <p class="h2 mb-5">Pagamentos Pendentes</p>
+            <div class="row">
+                <div class="card w-50">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Button</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

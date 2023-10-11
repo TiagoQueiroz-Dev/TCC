@@ -1,0 +1,25 @@
+@model IEnumerable<Estoque>
+@{
+    ViewData["Title"] = "Estoque";
+}
+
+<div class="text-center">
+    <div class="col flex-column pb-5"></div>
+     <table class='ListaItens'>
+        <th>    
+            <td>Nome</td>
+            <td>Quantidade</td>
+            <td>Alugados</td>
+        </th>
+        
+    @foreach(var item in Model){
+                <tr>
+                <td>@item.Nome</td>
+                <td>@item.Quantidade</td>
+                <td>@item.Alugados</td>
+                </tr>
+                }
+            
+            </table>
+        </div>
+</div>
