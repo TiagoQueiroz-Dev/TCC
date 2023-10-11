@@ -1,90 +1,30 @@
-C:\Users\Suricato Furtivo\Documents\TCC\bin\Debug\net7.0\appsettings.Development.json
-C:\Users\Suricato Furtivo\Documents\TCC\bin\Debug\net7.0\appsettings.json
-C:\Users\Suricato Furtivo\Documents\TCC\bin\Debug\net7.0\TCC.staticwebassets.runtime.json
-C:\Users\Suricato Furtivo\Documents\TCC\bin\Debug\net7.0\TCC.exe
-C:\Users\Suricato Furtivo\Documents\TCC\bin\Debug\net7.0\TCC.deps.json
-C:\Users\Suricato Furtivo\Documents\TCC\bin\Debug\net7.0\TCC.runtimeconfig.json
-C:\Users\Suricato Furtivo\Documents\TCC\bin\Debug\net7.0\TCC.dll
-C:\Users\Suricato Furtivo\Documents\TCC\bin\Debug\net7.0\TCC.pdb
-C:\Users\Suricato Furtivo\Documents\TCC\obj\Debug\net7.0\TCC.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Suricato Furtivo\Documents\TCC\obj\Debug\net7.0\TCC.AssemblyInfoInputs.cache
-C:\Users\Suricato Furtivo\Documents\TCC\obj\Debug\net7.0\TCC.AssemblyInfo.cs
-C:\Users\Suricato Furtivo\Documents\TCC\obj\Debug\net7.0\TCC.csproj.CoreCompileInputs.cache
-C:\Users\Suricato Furtivo\Documents\TCC\obj\Debug\net7.0\TCC.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Suricato Furtivo\Documents\TCC\obj\Debug\net7.0\TCC.RazorAssemblyInfo.cache
-C:\Users\Suricato Furtivo\Documents\TCC\obj\Debug\net7.0\TCC.RazorAssemblyInfo.cs
-C:\Users\Suricato Furtivo\Documents\TCC\obj\Debug\net7.0\staticwebassets\msbuild.TCC.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\Suricato Furtivo\Documents\TCC\obj\Debug\net7.0\staticwebassets\msbuild.build.TCC.props
-C:\Users\Suricato Furtivo\Documents\TCC\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.TCC.props
-C:\Users\Suricato Furtivo\Documents\TCC\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.TCC.props
-C:\Users\Suricato Furtivo\Documents\TCC\obj\Debug\net7.0\staticwebassets.pack.json
-C:\Users\Suricato Furtivo\Documents\TCC\obj\Debug\net7.0\staticwebassets.build.json
-C:\Users\Suricato Furtivo\Documents\TCC\obj\Debug\net7.0\staticwebassets.development.json
-C:\Users\Suricato Furtivo\Documents\TCC\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
-C:\Users\Suricato Furtivo\Documents\TCC\obj\Debug\net7.0\scopedcss\bundle\TCC.styles.css
-C:\Users\Suricato Furtivo\Documents\TCC\obj\Debug\net7.0\scopedcss\projectbundle\TCC.bundle.scp.css
-C:\Users\Suricato Furtivo\Documents\TCC\obj\Debug\net7.0\TCC.dll
-C:\Users\Suricato Furtivo\Documents\TCC\obj\Debug\net7.0\refint\TCC.dll
-C:\Users\Suricato Furtivo\Documents\TCC\obj\Debug\net7.0\TCC.pdb
-C:\Users\Suricato Furtivo\Documents\TCC\obj\Debug\net7.0\TCC.genruntimeconfig.cache
-C:\Users\Suricato Furtivo\Documents\TCC\obj\Debug\net7.0\ref\TCC.dll
-C:\Users\kevin\Documents\GitHub\TCC\bin\Debug\net7.0\appsettings.Development.json
-C:\Users\kevin\Documents\GitHub\TCC\bin\Debug\net7.0\appsettings.json
-C:\Users\kevin\Documents\GitHub\TCC\bin\Debug\net7.0\TCC.staticwebassets.runtime.json
-C:\Users\kevin\Documents\GitHub\TCC\bin\Debug\net7.0\TCC.exe
-C:\Users\kevin\Documents\GitHub\TCC\bin\Debug\net7.0\TCC.deps.json
-C:\Users\kevin\Documents\GitHub\TCC\bin\Debug\net7.0\TCC.runtimeconfig.json
-C:\Users\kevin\Documents\GitHub\TCC\bin\Debug\net7.0\TCC.dll
-C:\Users\kevin\Documents\GitHub\TCC\bin\Debug\net7.0\TCC.pdb
-C:\Users\kevin\Documents\GitHub\TCC\obj\Debug\net7.0\TCC.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\kevin\Documents\GitHub\TCC\obj\Debug\net7.0\TCC.AssemblyInfoInputs.cache
-C:\Users\kevin\Documents\GitHub\TCC\obj\Debug\net7.0\TCC.AssemblyInfo.cs
-C:\Users\kevin\Documents\GitHub\TCC\obj\Debug\net7.0\TCC.csproj.CoreCompileInputs.cache
-C:\Users\kevin\Documents\GitHub\TCC\obj\Debug\net7.0\TCC.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\kevin\Documents\GitHub\TCC\obj\Debug\net7.0\TCC.RazorAssemblyInfo.cache
-C:\Users\kevin\Documents\GitHub\TCC\obj\Debug\net7.0\TCC.RazorAssemblyInfo.cs
-C:\Users\kevin\Documents\GitHub\TCC\obj\Debug\net7.0\staticwebassets\msbuild.TCC.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\kevin\Documents\GitHub\TCC\obj\Debug\net7.0\staticwebassets\msbuild.build.TCC.props
-C:\Users\kevin\Documents\GitHub\TCC\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.TCC.props
-C:\Users\kevin\Documents\GitHub\TCC\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.TCC.props
-C:\Users\kevin\Documents\GitHub\TCC\obj\Debug\net7.0\staticwebassets.pack.json
-C:\Users\kevin\Documents\GitHub\TCC\obj\Debug\net7.0\staticwebassets.build.json
-C:\Users\kevin\Documents\GitHub\TCC\obj\Debug\net7.0\staticwebassets.development.json
-C:\Users\kevin\Documents\GitHub\TCC\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
-C:\Users\kevin\Documents\GitHub\TCC\obj\Debug\net7.0\scopedcss\bundle\TCC.styles.css
-C:\Users\kevin\Documents\GitHub\TCC\obj\Debug\net7.0\scopedcss\projectbundle\TCC.bundle.scp.css
-C:\Users\kevin\Documents\GitHub\TCC\obj\Debug\net7.0\TCC.dll
-C:\Users\kevin\Documents\GitHub\TCC\obj\Debug\net7.0\refint\TCC.dll
-C:\Users\kevin\Documents\GitHub\TCC\obj\Debug\net7.0\TCC.pdb
-C:\Users\kevin\Documents\GitHub\TCC\obj\Debug\net7.0\TCC.genruntimeconfig.cache
-C:\Users\kevin\Documents\GitHub\TCC\obj\Debug\net7.0\ref\TCC.dll
-C:\Users\021.854295\Desktop\TCC\TCC\bin\Debug\net7.0\appsettings.Development.json
-C:\Users\021.854295\Desktop\TCC\TCC\bin\Debug\net7.0\appsettings.json
-C:\Users\021.854295\Desktop\TCC\TCC\bin\Debug\net7.0\TCC.staticwebassets.runtime.json
-C:\Users\021.854295\Desktop\TCC\TCC\bin\Debug\net7.0\TCC.exe
-C:\Users\021.854295\Desktop\TCC\TCC\bin\Debug\net7.0\TCC.deps.json
-C:\Users\021.854295\Desktop\TCC\TCC\bin\Debug\net7.0\TCC.runtimeconfig.json
-C:\Users\021.854295\Desktop\TCC\TCC\bin\Debug\net7.0\TCC.dll
-C:\Users\021.854295\Desktop\TCC\TCC\bin\Debug\net7.0\TCC.pdb
-C:\Users\021.854295\Desktop\TCC\TCC\obj\Debug\net7.0\TCC.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\021.854295\Desktop\TCC\TCC\obj\Debug\net7.0\TCC.AssemblyInfoInputs.cache
-C:\Users\021.854295\Desktop\TCC\TCC\obj\Debug\net7.0\TCC.AssemblyInfo.cs
-C:\Users\021.854295\Desktop\TCC\TCC\obj\Debug\net7.0\TCC.csproj.CoreCompileInputs.cache
-C:\Users\021.854295\Desktop\TCC\TCC\obj\Debug\net7.0\TCC.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\021.854295\Desktop\TCC\TCC\obj\Debug\net7.0\TCC.RazorAssemblyInfo.cache
-C:\Users\021.854295\Desktop\TCC\TCC\obj\Debug\net7.0\TCC.RazorAssemblyInfo.cs
-C:\Users\021.854295\Desktop\TCC\TCC\obj\Debug\net7.0\staticwebassets\msbuild.TCC.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\021.854295\Desktop\TCC\TCC\obj\Debug\net7.0\staticwebassets\msbuild.build.TCC.props
-C:\Users\021.854295\Desktop\TCC\TCC\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.TCC.props
-C:\Users\021.854295\Desktop\TCC\TCC\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.TCC.props
-C:\Users\021.854295\Desktop\TCC\TCC\obj\Debug\net7.0\staticwebassets.pack.json
-C:\Users\021.854295\Desktop\TCC\TCC\obj\Debug\net7.0\staticwebassets.build.json
-C:\Users\021.854295\Desktop\TCC\TCC\obj\Debug\net7.0\staticwebassets.development.json
-C:\Users\021.854295\Desktop\TCC\TCC\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
-C:\Users\021.854295\Desktop\TCC\TCC\obj\Debug\net7.0\scopedcss\bundle\TCC.styles.css
-C:\Users\021.854295\Desktop\TCC\TCC\obj\Debug\net7.0\scopedcss\projectbundle\TCC.bundle.scp.css
-C:\Users\021.854295\Desktop\TCC\TCC\obj\Debug\net7.0\TCC.dll
-C:\Users\021.854295\Desktop\TCC\TCC\obj\Debug\net7.0\refint\TCC.dll
-C:\Users\021.854295\Desktop\TCC\TCC\obj\Debug\net7.0\TCC.pdb
-C:\Users\021.854295\Desktop\TCC\TCC\obj\Debug\net7.0\TCC.genruntimeconfig.cache
-C:\Users\021.854295\Desktop\TCC\TCC\obj\Debug\net7.0\ref\TCC.dll
+C:\Users\Condoriano\Desktop\TCC\TCC\bin\Debug\net7.0\appsettings.Development.json
+C:\Users\Condoriano\Desktop\TCC\TCC\bin\Debug\net7.0\appsettings.json
+C:\Users\Condoriano\Desktop\TCC\TCC\bin\Debug\net7.0\TCC.staticwebassets.runtime.json
+C:\Users\Condoriano\Desktop\TCC\TCC\bin\Debug\net7.0\TCC.exe
+C:\Users\Condoriano\Desktop\TCC\TCC\bin\Debug\net7.0\TCC.deps.json
+C:\Users\Condoriano\Desktop\TCC\TCC\bin\Debug\net7.0\TCC.runtimeconfig.json
+C:\Users\Condoriano\Desktop\TCC\TCC\bin\Debug\net7.0\TCC.dll
+C:\Users\Condoriano\Desktop\TCC\TCC\bin\Debug\net7.0\TCC.pdb
+C:\Users\Condoriano\Desktop\TCC\TCC\obj\Debug\net7.0\TCC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Condoriano\Desktop\TCC\TCC\obj\Debug\net7.0\TCC.AssemblyInfoInputs.cache
+C:\Users\Condoriano\Desktop\TCC\TCC\obj\Debug\net7.0\TCC.AssemblyInfo.cs
+C:\Users\Condoriano\Desktop\TCC\TCC\obj\Debug\net7.0\TCC.csproj.CoreCompileInputs.cache
+C:\Users\Condoriano\Desktop\TCC\TCC\obj\Debug\net7.0\TCC.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Condoriano\Desktop\TCC\TCC\obj\Debug\net7.0\TCC.RazorAssemblyInfo.cache
+C:\Users\Condoriano\Desktop\TCC\TCC\obj\Debug\net7.0\TCC.RazorAssemblyInfo.cs
+C:\Users\Condoriano\Desktop\TCC\TCC\obj\Debug\net7.0\staticwebassets\msbuild.TCC.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Condoriano\Desktop\TCC\TCC\obj\Debug\net7.0\staticwebassets\msbuild.build.TCC.props
+C:\Users\Condoriano\Desktop\TCC\TCC\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.TCC.props
+C:\Users\Condoriano\Desktop\TCC\TCC\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.TCC.props
+C:\Users\Condoriano\Desktop\TCC\TCC\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Users\Condoriano\Desktop\TCC\TCC\obj\Debug\net7.0\staticwebassets.build.json
+C:\Users\Condoriano\Desktop\TCC\TCC\obj\Debug\net7.0\staticwebassets.development.json
+C:\Users\Condoriano\Desktop\TCC\TCC\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Condoriano\Desktop\TCC\TCC\obj\Debug\net7.0\scopedcss\bundle\TCC.styles.css
+C:\Users\Condoriano\Desktop\TCC\TCC\obj\Debug\net7.0\scopedcss\projectbundle\TCC.bundle.scp.css
+C:\Users\Condoriano\Desktop\TCC\TCC\obj\Debug\net7.0\TCC.dll
+C:\Users\Condoriano\Desktop\TCC\TCC\obj\Debug\net7.0\refint\TCC.dll
+C:\Users\Condoriano\Desktop\TCC\TCC\obj\Debug\net7.0\TCC.pdb
+C:\Users\Condoriano\Desktop\TCC\TCC\obj\Debug\net7.0\TCC.genruntimeconfig.cache
+C:\Users\Condoriano\Desktop\TCC\TCC\obj\Debug\net7.0\ref\TCC.dll
