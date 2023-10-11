@@ -15,18 +15,6 @@
     {
       "Id": "C:\\Users\\Condoriano\\Desktop\\TCC\\TCC\\wwwroot\\img\\andaime.svg",
       "PackagePath": "staticwebassets\\img\\andaime.svg"
-<<<<<<< HEAD
-    },
-    {
-      "Id": "C:\\Users\\Condoriano\\Desktop\\TCC\\TCC\\wwwroot\\img\\novoPedido.svg",
-      "PackagePath": "staticwebassets\\img\\novoPedido.svg"
-    },
-    {
-      "Id": "C:\\Users\\Condoriano\\Desktop\\TCC\\TCC\\wwwroot\\js\\map.js",
-      "PackagePath": "staticwebassets\\js\\map.js"
-    },
-    {
-=======
     },
     {
       "Id": "C:\\Users\\Condoriano\\Desktop\\TCC\\TCC\\wwwroot\\img\\consultaPedido.svg",
@@ -41,7 +29,6 @@
       "PackagePath": "staticwebassets\\img\\novoPedido.svg"
     },
     {
->>>>>>> Raphael
       "Id": "C:\\Users\\Condoriano\\Desktop\\TCC\\TCC\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

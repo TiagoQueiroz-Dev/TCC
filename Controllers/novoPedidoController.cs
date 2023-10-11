@@ -13,11 +13,7 @@ public class novoPedidoController : Controller
         _logger = logger;
     }
 
-<<<<<<< HEAD
     public IActionResult novoPedido()
-=======
-    public IActionResult Index()
->>>>>>> Raphael
     {
         return View();
     }

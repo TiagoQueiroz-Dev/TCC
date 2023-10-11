@@ -1,10 +1,6 @@
 {
   "Version": 1,
-<<<<<<< HEAD
-  "Hash": "mJSbUvcwaNx5QAV4eU0gIR/uaV8IGMlmQ76TL/FeYB0=",
-=======
   "Hash": "Rz10GNHe9GVa/FXEf0uO1IvV85hO+3vcoPWly70YW58=",
->>>>>>> Raphael
   "Source": "TCC",
   "BasePath": "_content/TCC",
   "Mode": "Default",
@@ -93,7 +89,6 @@
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\TCC\\TCC\\wwwroot\\",
-<<<<<<< HEAD
       "BasePath": "_content/TCC",
       "RelativePath": "img/andaime.svg",
       "AssetKind": "All",
@@ -107,48 +102,6 @@
       "OriginalItemSpec": "wwwroot\\img\\andaime.svg"
     },
     {
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\TCC\\TCC\\wwwroot\\img\\novoPedido.svg",
-      "SourceId": "TCC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\TCC\\TCC\\wwwroot\\",
-      "BasePath": "_content/TCC",
-      "RelativePath": "img/novoPedido.svg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\novoPedido.svg"
-    },
-    {
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\TCC\\TCC\\wwwroot\\js\\map.js",
-      "SourceId": "TCC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\TCC\\TCC\\wwwroot\\",
-=======
->>>>>>> Raphael
-      "BasePath": "_content/TCC",
-      "RelativePath": "img/andaime.svg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\andaime.svg"
-    },
-    {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\TCC\\TCC\\wwwroot\\js\\site.js",
-      "SourceId": "TCC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\TCC\\TCC\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\Condoriano\\Desktop\\TCC\\TCC\\wwwroot\\img\\consultaPedido.svg",
       "SourceId": "TCC",
       "SourceType": "Discovered",
@@ -204,7 +157,6 @@
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\TCC\\TCC\\wwwroot\\",
->>>>>>> Raphael
       "BasePath": "_content/TCC",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
