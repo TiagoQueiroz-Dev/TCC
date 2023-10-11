@@ -1,6 +1,10 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "Hash": "mJSbUvcwaNx5QAV4eU0gIR/uaV8IGMlmQ76TL/FeYB0=",
+=======
+  "Hash": "Rz10GNHe9GVa/FXEf0uO1IvV85hO+3vcoPWly70YW58=",
+>>>>>>> Raphael
   "Source": "TCC",
   "BasePath": "_content/TCC",
   "Mode": "Default",
@@ -89,6 +93,7 @@
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\TCC\\TCC\\wwwroot\\",
+<<<<<<< HEAD
       "BasePath": "_content/TCC",
       "RelativePath": "img/andaime.svg",
       "AssetKind": "All",
@@ -123,8 +128,10 @@
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\TCC\\TCC\\wwwroot\\",
+=======
+>>>>>>> Raphael
       "BasePath": "_content/TCC",
-      "RelativePath": "js/map.js",
+      "RelativePath": "img/andaime.svg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -133,13 +140,71 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\map.js"
+      "OriginalItemSpec": "wwwroot\\img\\andaime.svg"
+    },
+    {
+<<<<<<< HEAD
+      "Identity": "C:\\Users\\Condoriano\\Desktop\\TCC\\TCC\\wwwroot\\js\\site.js",
+      "SourceId": "TCC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\TCC\\TCC\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\Condoriano\\Desktop\\TCC\\TCC\\wwwroot\\img\\consultaPedido.svg",
+      "SourceId": "TCC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\TCC\\TCC\\wwwroot\\",
+      "BasePath": "_content/TCC",
+      "RelativePath": "img/consultaPedido.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\consultaPedido.svg"
+    },
+    {
+      "Identity": "C:\\Users\\Condoriano\\Desktop\\TCC\\TCC\\wwwroot\\img\\estoque.svg",
+      "SourceId": "TCC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\TCC\\TCC\\wwwroot\\",
+      "BasePath": "_content/TCC",
+      "RelativePath": "img/estoque.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\estoque.svg"
+    },
+    {
+      "Identity": "C:\\Users\\Condoriano\\Desktop\\TCC\\TCC\\wwwroot\\img\\novoPedido.svg",
+      "SourceId": "TCC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\TCC\\TCC\\wwwroot\\",
+      "BasePath": "_content/TCC",
+      "RelativePath": "img/novoPedido.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\novoPedido.svg"
     },
     {
       "Identity": "C:\\Users\\Condoriano\\Desktop\\TCC\\TCC\\wwwroot\\js\\site.js",
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\TCC\\TCC\\wwwroot\\",
+>>>>>>> Raphael
       "BasePath": "_content/TCC",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -1120,6 +1185,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\Condoriano\\Desktop\\TCC\\TCC\\wwwroot\\miniatura.ico",
+      "SourceId": "TCC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\TCC\\TCC\\wwwroot\\",
+      "BasePath": "_content/TCC",
+      "RelativePath": "miniatura.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\miniatura.ico"
     }
   ]
 }

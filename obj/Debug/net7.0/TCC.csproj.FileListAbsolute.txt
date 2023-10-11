@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Users\Suricato Furtivo\Documents\TCC\bin\Debug\net7.0\appsettings.Development.json
 C:\Users\Suricato Furtivo\Documents\TCC\bin\Debug\net7.0\appsettings.json
 C:\Users\Suricato Furtivo\Documents\TCC\bin\Debug\net7.0\TCC.staticwebassets.runtime.json
@@ -58,6 +59,8 @@ C:\Users\kevin\Documents\GitHub\TCC\obj\Debug\net7.0\refint\TCC.dll
 C:\Users\kevin\Documents\GitHub\TCC\obj\Debug\net7.0\TCC.pdb
 C:\Users\kevin\Documents\GitHub\TCC\obj\Debug\net7.0\TCC.genruntimeconfig.cache
 C:\Users\kevin\Documents\GitHub\TCC\obj\Debug\net7.0\ref\TCC.dll
+=======
+>>>>>>> Raphael
 C:\Users\Condoriano\Desktop\TCC\TCC\bin\Debug\net7.0\appsettings.Development.json
 C:\Users\Condoriano\Desktop\TCC\TCC\bin\Debug\net7.0\appsettings.json
 C:\Users\Condoriano\Desktop\TCC\TCC\bin\Debug\net7.0\TCC.staticwebassets.runtime.json

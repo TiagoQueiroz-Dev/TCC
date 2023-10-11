@@ -4,24 +4,20 @@ using TCC.Models;
 
 namespace TCC.Controllers;
 
-public class novoPedidoController : Controller
+public class consultarPedidoController : Controller
 {
-    private readonly ILogger<novoPedidoController> _logger;
+    private readonly ILogger<consultarPedidoController> _logger;
 
-    public novoPedidoController(ILogger<novoPedidoController> logger)
+    public consultarPedidoController(ILogger<consultarPedidoController> logger)
     {
         _logger = logger;
     }
 
-<<<<<<< HEAD
-    public IActionResult novoPedido()
-=======
     public IActionResult Index()
->>>>>>> Raphael
     {
         return View();
     }
-
+    
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {

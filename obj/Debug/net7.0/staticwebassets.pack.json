@@ -15,6 +15,7 @@
     {
       "Id": "C:\\Users\\Condoriano\\Desktop\\TCC\\TCC\\wwwroot\\img\\andaime.svg",
       "PackagePath": "staticwebassets\\img\\andaime.svg"
+<<<<<<< HEAD
     },
     {
       "Id": "C:\\Users\\Condoriano\\Desktop\\TCC\\TCC\\wwwroot\\img\\novoPedido.svg",
@@ -25,6 +26,22 @@
       "PackagePath": "staticwebassets\\js\\map.js"
     },
     {
+=======
+    },
+    {
+      "Id": "C:\\Users\\Condoriano\\Desktop\\TCC\\TCC\\wwwroot\\img\\consultaPedido.svg",
+      "PackagePath": "staticwebassets\\img\\consultaPedido.svg"
+    },
+    {
+      "Id": "C:\\Users\\Condoriano\\Desktop\\TCC\\TCC\\wwwroot\\img\\estoque.svg",
+      "PackagePath": "staticwebassets\\img\\estoque.svg"
+    },
+    {
+      "Id": "C:\\Users\\Condoriano\\Desktop\\TCC\\TCC\\wwwroot\\img\\novoPedido.svg",
+      "PackagePath": "staticwebassets\\img\\novoPedido.svg"
+    },
+    {
+>>>>>>> Raphael
       "Id": "C:\\Users\\Condoriano\\Desktop\\TCC\\TCC\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
@@ -255,6 +272,10 @@
     {
       "Id": "C:\\Users\\Condoriano\\Desktop\\TCC\\TCC\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\Condoriano\\Desktop\\TCC\\TCC\\wwwroot\\miniatura.ico",
+      "PackagePath": "staticwebassets\\miniatura.ico"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.TCC.Microsoft.AspNetCore.StaticWebAssets.props",

@@ -1,34 +1,71 @@
-﻿<!DOCTYPE html>
+﻿@{
+    var titulo = "Império dos Andaimes";
+    var imgAndaime = @"img/" + "andaime.svg";
+    var imgNovoPedido = @"img/" + "novoPedido.svg";
+    var imgConsulta = @"img/" + "consultaPedido.svg";
+    var imgEstoque = @"img/" + "estoque.svg";
+}
+<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="KOÍOS LTDA">
+<<<<<<< HEAD
     <title>Império dos Andaimes - @ViewData["Title"]</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/TCC.styles.css" asp-append-version="true" />
     <script src="~/js/map.js"></script>
     <link rel="shortcut icon" href="img/andaime.svg" type="image/x-icon">
+=======
+    <title>@titulo - @ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/TCC.styles.css" asp-append-version="true" />
+    <script src="~/js/site.js"></script>
+    <link rel="icon" href="img/andaime.svg">
+>>>>>>> Raphael
 </head>
-
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom shadow p-3 mb-5 bg-white rounded">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
+                    <ul class="navbar-nav flex-grow-1 d-flex align-items-center justify-content-around">
                         <li class="nav-item">
+<<<<<<< HEAD
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index"><img src="img/andaime.svg" alt=""></a>
+=======
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">
+                                <img class="img-thumbnail logo" src="@imgAndaime" alt="Início">
+                            </a>
+>>>>>>> Raphael
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home"
-                                asp-action="Privacy">Privacy</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="novoPedido"
+                                asp-action="Index"><div class="novoPedido d-flex flex-column align-items-center">
+                                    <img src="@imgNovoPedido" alt="Criar novo pedido" width="48"> Novo Pedido
+                                </div></a>
+                        </li>
+                        <section id="vertical_line"></section>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="consultarPedido"
+                                asp-action="Index"><div class="consulta d-flex flex-column align-items-center">
+                                    <img src="@imgConsulta" alt="Criar novo pedido" width="48"> Consultar pedido
+                                </div></a>
+                        </li>
+                        <section id="vertical_line"></section>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="estoque"
+                                asp-action="Index"><div class="estoque d-flex flex-column align-items-center">
+                                    <img src="@imgEstoque" alt="Criar novo pedido" width="48"> Estoque
+                                </div></a>
                         </li>
                     </ul>
                 </div>
