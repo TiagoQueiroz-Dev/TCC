@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\TCC.csproj": {}
+    "C:\\Users\\Condoriano\\Desktop\\TCC\\TCC\\TCC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\TCC.csproj": {
+    "C:\\Users\\Condoriano\\Desktop\\TCC\\TCC\\TCC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\TCC.csproj",
+        "projectUniqueName": "C:\\Users\\Condoriano\\Desktop\\TCC\\TCC\\TCC.csproj",
         "projectName": "TCC",
-        "projectPath": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\TCC.csproj",
-        "packagesPath": "C:\\Users\\Suricato Furtivo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\obj\\",
+        "projectPath": "C:\\Users\\Condoriano\\Desktop\\TCC\\TCC\\TCC.csproj",
+        "packagesPath": "C:\\Users\\Condoriano\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Condoriano\\Desktop\\TCC\\TCC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Suricato Furtivo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Condoriano\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
