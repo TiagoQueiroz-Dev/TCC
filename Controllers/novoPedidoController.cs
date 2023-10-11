@@ -13,7 +13,7 @@ public class novoPedidoController : Controller
         _logger = logger;
     }
 
-    public IActionResult novoPedido()
+    public IActionResult Index()
     {
         return View();
     }
