@@ -253,10 +253,7 @@ C:\Users\Suricato Furtivo\Documents\TCC\obj\Debug\net7.0\staticwebassets.pack.js
 C:\Users\Suricato Furtivo\Documents\TCC\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\Suricato Furtivo\Documents\TCC\obj\Debug\net7.0\scopedcss\bundle\TCC.styles.css
 C:\Users\Suricato Furtivo\Documents\TCC\obj\Debug\net7.0\scopedcss\projectbundle\TCC.bundle.scp.css
-<<<<<<< HEAD
 C:\Users\Suricato Furtivo\Documents\TCC\obj\Debug\net7.0\TCC.csproj.CopyComplete
-=======
->>>>>>> 4bb064ce05cfcdb37c5e7d7cc9e912ddf5d087be
 C:\Users\Suricato Furtivo\Documents\TCC\obj\Debug\net7.0\TCC.dll
 C:\Users\Suricato Furtivo\Documents\TCC\obj\Debug\net7.0\refint\TCC.dll
 C:\Users\Suricato Furtivo\Documents\TCC\obj\Debug\net7.0\TCC.pdb

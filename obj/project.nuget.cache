@@ -1,6 +1,5 @@
 {
   "version": 2,
-<<<<<<< HEAD
   "dgSpecHash": "MRUi2ZzCH/K/igqkfvJHv10iEC3fWKdVOLceMyFGsb5AMTmj2bzxT0qRF7cP3rNyIEGVdzTrsWJp5Xbz+MDGpw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\TCC.csproj",
@@ -233,11 +232,12 @@
     "C:\\Users\\Suricato Furtivo\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\Suricato Furtivo\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
   ],
-=======
-  "dgSpecHash": "xpPl4AXaZQMB21GTjTD464MGFT5N6t+Mlj0b+GSnugLtRaIpOk/0QwlmrDhaW+YFoe4I14e2eche4AFFKhNHlg==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\TCC.csproj",
-  "expectedPackageFiles": [],
->>>>>>> 4bb064ce05cfcdb37c5e7d7cc9e912ddf5d087be
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema ao ler o arquivo de cache C:\\Users\\Suricato Furtivo\\Documents\\TCC\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
