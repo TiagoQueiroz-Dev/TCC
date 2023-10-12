@@ -2,13 +2,14 @@
     ViewData["Title"] = "Início";
     MetodosInicio metodos = new MetodosInicio();
 }
-<div class="container-fluid text-center d-flex align-items-center justify-content-center">
-    <div class="row">
-            <div class="col recolher d-flex justify-content-center flex-column w-100">
+<div class="container-fluid text-center d-flex align-items-center justify-content-center w-100 px-0">
+    <div class="grid w-100 d-flex" style="--bs-columns: 4;">
+            <div class="g-col-6 recolher d-flex justify-content-center flex-column h-100 w-100 d-flex align-items-center">
             <p class="h2 mb-5">A recolher</p>
-            <div class="row grid">
-                <div class="col card w-50">
-                        <div class="g-col-6 g-col-md-4 card-body">
+            <div class="row d-flex w-100">
+                <div class="col w-100" style="padding-top: 10px;">
+                    <div class="card w-100">
+                        <div class="col g-col-6 g-col-md-4 card-body">
                         <h5 class="card-title">Pedido n°: 99999999999999</h5>
                         <p class="card-text">Data: 01/01/9999</p>
                         <p class="card-text">Data limite: 09/09/9999</p>
@@ -19,29 +20,51 @@
                         <a href="#" class="btn btn-primary">Ver detalhes</a>
                     </div>
                 </div>
-                <div class="col g-col-6 g-col-md-4 card w-50">
-                        <div class="card-body">
-                        <h5 class="card-title">Pedido n°: 99999999999999</h5>
-                        <p class="card-text">Data: 01/01/9999</p>
-                        <p class="card-text">Data limite: 09/09/9999</p>
-                        <div class="status d-flex align-items-center justify-content-center">
-                            <p class="card-text align-items-center">Status de pagamento: Pago</p>
-                            <section id='@metodos.status("Pago")'></section>
+                <div class="col w-100" style="padding-top: 10px;">
+                        <div class="card w-100">
+                            <div class="card-body">
+                            <h5 class="card-title">Pedido n°: 99999999999999</h5>
+                            <p class="card-text">Data: 01/01/9999</p>
+                            <p class="card-text">Data limite: 09/09/9999</p>
+                            <div class="status d-flex align-items-center justify-content-center">
+                                <p class="card-text align-items-center">Status de pagamento: Pago</p>
+                                <section id='@metodos.status("Pago")'></section>
+                            </div>
+                            <a href="#" class="btn btn-primary">Ver detalhes</a>
                         </div>
-                        <a href="#" class="btn btn-primary">Ver detalhes</a>
                     </div>
+                </div>
                 </div>
             </div>
         </div>
-        <div class="col"><div class="vr h-100"></div></div>
-        <div class="col pagPendente d-flex justify-content-center flex-column w-100">
+        <div class="g-col-2 w-100"><div class="vr h-100"></div></div>
+        <div class="g-col-6 pagPendente d-flex justify-content-center flex-column h-100 w-100 d-flex align-items-center">
             <p class="h2 mb-5">Pagamentos Pendentes</p>
-            <div class="row">
-                <div class="card w-50">
+            <div class="row d-flex w-100">
+                <div class="col w-100" style="padding-top: 10px;">
+                    <div class="card w-100">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Button</a>
+                        <h5 class="card-title">Pedido n°: 99999999999999</h5>
+                        <p class="card-text">Data: 01/01/9999</p>
+                        <p class="card-text">Data limite: 09/09/9999</p>
+                        <div class="status d-flex align-items-center justify-content-center">
+                                <p class="card-text align-items-center">Status de pagamento: Atrasado</p>
+                                <section id='@metodos.status("Atrasado")'></section>
+                            </div>
+                        <a href="#" class="btn btn-primary">Ver detalhes</a>
+                    </div>
+                </div>
+                <div class="col w-100" style="padding-top: 10px;">
+                    <div class="card w-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Pedido n°: 99999999999999</h5>
+                        <p class="card-text">Data: 01/01/9999</p>
+                        <p class="card-text">Data limite: 09/09/9999</p>
+                        <div class="status d-flex align-items-center justify-content-center">
+                                <p class="card-text align-items-center">Status de pagamento: Pendente</p>
+                                <section id='@metodos.status("Pendente")'></section>
+                            </div>
+                        <a href="#" class="btn btn-primary">Ver detalhes</a>
                     </div>
                 </div>
             </div>
