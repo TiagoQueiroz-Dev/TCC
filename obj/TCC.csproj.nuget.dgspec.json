@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Suricato Furtivo\\Documents\\+ROTAS\\TCC\\TCC.csproj": {}
+    "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\TCC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Suricato Furtivo\\Documents\\+ROTAS\\TCC\\TCC.csproj": {
+    "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\TCC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Suricato Furtivo\\Documents\\+ROTAS\\TCC\\TCC.csproj",
+        "projectUniqueName": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\TCC.csproj",
         "projectName": "TCC",
-        "projectPath": "C:\\Users\\Suricato Furtivo\\Documents\\+ROTAS\\TCC\\TCC.csproj",
+        "projectPath": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\TCC.csproj",
         "packagesPath": "C:\\Users\\Suricato Furtivo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Suricato Furtivo\\Documents\\+ROTAS\\TCC\\obj\\",
+        "outputPath": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -43,6 +43,34 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGenerators.Mvc": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql.Design": {
+              "target": "Package",
+              "version": "[1.1.2, )"
+            },
+            "Pomelo.EntityFrameworkCore.Mysql": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -62,7 +90,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-rc.1.23463.5\\RuntimeIdentifierGraph.json"
         }
       }
     }
