@@ -5,16 +5,28 @@
       "PackagePath": "staticwebassets\\TCC.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\kevin\\Documents\\GitHub\\TCC\\wwwroot\\andaime.svg",
-      "PackagePath": "staticwebassets\\andaime.svg"
-    },
-    {
       "Id": "C:\\Users\\kevin\\Documents\\GitHub\\TCC\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
       "Id": "C:\\Users\\kevin\\Documents\\GitHub\\TCC\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\kevin\\Documents\\GitHub\\TCC\\wwwroot\\img\\andaime.svg",
+      "PackagePath": "staticwebassets\\img\\andaime.svg"
+    },
+    {
+      "Id": "C:\\Users\\kevin\\Documents\\GitHub\\TCC\\wwwroot\\img\\consultaPedido.svg",
+      "PackagePath": "staticwebassets\\img\\consultaPedido.svg"
+    },
+    {
+      "Id": "C:\\Users\\kevin\\Documents\\GitHub\\TCC\\wwwroot\\img\\estoque.svg",
+      "PackagePath": "staticwebassets\\img\\estoque.svg"
+    },
+    {
+      "Id": "C:\\Users\\kevin\\Documents\\GitHub\\TCC\\wwwroot\\img\\novoPedido.svg",
+      "PackagePath": "staticwebassets\\img\\novoPedido.svg"
     },
     {
       "Id": "C:\\Users\\kevin\\Documents\\GitHub\\TCC\\wwwroot\\js\\site.js",
