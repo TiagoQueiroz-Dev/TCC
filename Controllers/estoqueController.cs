@@ -15,9 +15,13 @@ public class estoqueController : Controller
 
     public IActionResult Index()
     {
+        //fake banco de dados
+        var Produtos = new NovoPedidoModel();
+        ViewBag.Produtos = Produtos.ListaItens;
+        
         return View();
     }
-    
+
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {

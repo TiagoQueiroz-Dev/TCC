@@ -1,4 +1,5 @@
 using System.Diagnostics;
+using System.Security.Cryptography.X509Certificates;
 using Microsoft.AspNetCore.Mvc;
 using TCC.Models;
 
@@ -15,8 +16,18 @@ public class novoPedidoController : Controller
 
     public IActionResult Index()
     {
+        //fake banco de dados
+        var Produtos = new NovoPedidoModel();
+        ViewBag.Produtos = Produtos.ListaItens;
+
         return View();
     }
+
+    public IActionResult NovaNota()
+    {
+        return View();
+    }
+
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
