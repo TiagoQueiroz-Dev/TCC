@@ -14,7 +14,11 @@ public class Estoque
     [NotNull]
     public string Nome { get; set; }
     [NotNull]
-    public int Quantidade { get; set; }
+    public int QuantidadeTotal  { get; set; }
     [NotNull]
     public int Alugados { get; set; }
+    [NotNull]
+    public int Disponiveis { get; set; }
+    [NotNull]
+    public double ValorUnid { get; set; }
 }

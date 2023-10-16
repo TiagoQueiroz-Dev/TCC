@@ -18,7 +18,7 @@ public class estoqueController : Controller
         var banco = _db.EstoqueGeral.ToList();
         return View(banco);
     }
-    
+
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {
