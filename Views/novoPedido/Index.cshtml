@@ -1,5 +1,9 @@
-﻿@{
-    ViewData["Title"] = "Criar pedido";
+﻿@model List<Estoque>
+
+@{
+  ViewData["Title"] = "Criar pedido";
+  double subTotal = 0;
+  string nome = "";
 }
 
 <div class="text-center">
