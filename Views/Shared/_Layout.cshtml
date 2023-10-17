@@ -1,9 +1,9 @@
 ﻿@{
     var titulo = "Império dos Andaimes";
-    var imgAndaime = @"img/" + "andaime.svg";
-    var imgNovoPedido = @"img/" + "novoPedido.svg";
-    var imgConsulta = @"img/" + "consultaPedido.svg";
-    var imgEstoque = @"img/" + "estoque.svg";
+    var imgAndaime = "img/" + "andaime.svg";
+    var imgNovoPedido = "img/" + "novoPedido.svg";
+    var imgConsulta = "img/" + "consultaPedido.svg";
+    var imgEstoque = "img/" + "estoque.svg";
 }
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -12,12 +12,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="KOÍOS LTDA">
-    <title>Império dos Andaimes - @ViewData["Title"]</title>
+    <title>@titulo - @ViewData["Title"]</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/TCC.styles.css" asp-append-version="true" />
     <script src="~/js/map.js"></script>
-    <link rel="shortcut icon" href="img/andaime.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="@imgAndaime" type="image/x-icon">
 </head>
 <body>
     <header>
@@ -30,7 +30,7 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1 d-flex align-items-center justify-content-around">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index"><img src="img/andaime.svg" width="96" alt=""></a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index"><img src="@imgAndaime" width="96" alt="Início"></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="novoPedido"
