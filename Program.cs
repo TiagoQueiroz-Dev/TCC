@@ -1,7 +1,14 @@
+using Microsoft.EntityFrameworkCore;
+using TCC.Database;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+string mySqlConnection = builder.Configuration.GetConnectionString("Conexao");
+builder.Services.AddDbContext<Contexto>(opt => {
+opt.UseMySql(mySqlConnection, ServerVersion.AutoDetect(mySqlConnection));
+});
+
 
 var app = builder.Build();
 
