@@ -26,6 +26,8 @@ public class novoPedidoController : Controller
          _db.Pedidos.Add(pedido);
          _db.SaveChanges();
 
+
+
         return RedirectToAction("NovaNota");
     }
     public IActionResult NovaNota()
