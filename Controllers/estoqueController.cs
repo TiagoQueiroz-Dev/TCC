@@ -1,25 +1,22 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using TCC.Database;
 using TCC.Models;
 
 namespace TCC.Controllers;
 
 public class estoqueController : Controller
 {
-    private readonly ILogger<estoqueController> _logger;
-
-    public estoqueController(ILogger<estoqueController> logger)
+    Contexto _db;
+    public estoqueController(Contexto db)
     {
-        _logger = logger;
+        _db = db;
     }
 
     public IActionResult Index()
     {
-        //fake banco de dados
-        var Produtos = new NovoPedidoModel();
-        ViewBag.Produtos = Produtos.ListaItens;
-        
-        return View();
+        var banco = _db.EstoqueGeral.ToList();
+        return View(banco);
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
