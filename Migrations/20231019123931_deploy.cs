@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace TCC.Migrations
 {
     /// <inheritdoc />
-    public partial class teste : Migration
+    public partial class deploy : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
