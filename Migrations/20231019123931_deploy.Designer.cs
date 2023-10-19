@@ -10,7 +10,7 @@ using TCC.Database;
 namespace TCC.Migrations
 {
     [DbContext(typeof(Contexto))]
-    [Migration("20231017133552_deploy")]
+    [Migration("20231019123931_deploy")]
     partial class deploy
     {
         /// <inheritdoc />

@@ -1,16 +1,17 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using TCC.Database;
 using TCC.Models;
 
 namespace TCC.Controllers;
 
 public class consultarPedidoController : Controller
 {
-    private readonly ILogger<consultarPedidoController> _logger;
+    Contexto cont;
 
-    public consultarPedidoController(ILogger<consultarPedidoController> logger)
+    public consultarPedidoController(Contexto a)
     {
-        _logger = logger;
+        cont = a;
     }
 
     public IActionResult Index()
