@@ -1,7 +1,22 @@
+@model IEnumerable<Estoque>
 @{
     ViewData["Title"] = "Consulta";
 }
+<head><style>
+    input, textarea, select {
+    outline: 0;
+}</style>
+</head>
+<div class="text-center row">
+    <h1>Consultar Nota</h1>
 
-<div class="text-center">
-    <h1>Kevin</h1>
+    <div class="d-flex justify-content-center align-items-center">
+        <div class="text-end rounded-pill bg-warning w-100 d-flex align-items-center justify-content-between me-3">
+            <h2 class="mt-1 flex-fill"><input type="search" name="pesquisa" id="pesquisa" class="ms-3 bg-transparent border-0 outline-0 w-100" placeholder="Pesquisar"></h2>
+            <a href="#"><img class="ms-3 me-3" src="@Url.Content("~/img/lupa.svg")" alt="Lupa" width="20"</a>
+        </div>
+
+        <div><input class="rounded-pill" type="text" placeholder=" Filtro"></div>
+    
+    </div>
 </div>
