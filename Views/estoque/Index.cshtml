@@ -4,22 +4,39 @@
 }
 
 <div class="text-center">
-    <div class="col flex-column pb-5"></div>
-     <table class="table table-bordered">
-        <tr>    
-            <th  class ="col">Nome</th>
-            <th  class ="col">Quantidade</th>
-            <th   class ="col">Alugados</th>
-        </tr>
-        
-    @foreach(var item in Model){
+    <h2 class="mb-3">Lista de Estoque</h2>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Quantidade Total</th>
+                <th>Alugados</th>
+                <th>Disponíveis</th>
+                <th>Valor Unidade</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
                 <tr>
-                <td>@item.Nome</td>
-                <td>@item.Quantidade</td>
-                <td>@item.Alugados</td>
+                    <td>
+                        @item.Nome
+                    </td>
+                    <td>
+                        @item.QuantidadeTotal
+                    </td>
+                    <td>
+                        @item.Alugados
+                    </td>
+                    <td>
+                        @item.Disponiveis
+                    </td>
+                    <td>
+                        R$ @item.ValorUnid
+                    </td>
                 </tr>
-                }
-            
-            </table>
-        </div>
+            }
+        </tbody>
+
+    </table>
 </div>

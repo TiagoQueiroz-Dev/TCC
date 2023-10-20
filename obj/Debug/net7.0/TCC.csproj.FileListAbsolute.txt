@@ -1,3 +1,12 @@
+C:\Users\Suricato Furtivo\Documents\TCC\obj\Debug\net7.0\TCC.csproj.AssemblyReference.cache
+C:\Users\Suricato Furtivo\Documents\TCC\obj\Debug\net7.0\TCC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Suricato Furtivo\Documents\TCC\obj\Debug\net7.0\TCC.AssemblyInfoInputs.cache
+C:\Users\Suricato Furtivo\Documents\TCC\obj\Debug\net7.0\TCC.AssemblyInfo.cs
+C:\Users\Suricato Furtivo\Documents\TCC\obj\Debug\net7.0\TCC.csproj.CoreCompileInputs.cache
+C:\Users\Suricato Furtivo\Documents\TCC\obj\Debug\net7.0\TCC.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Suricato Furtivo\Documents\TCC\obj\Debug\net7.0\TCC.RazorAssemblyInfo.cache
+C:\Users\Suricato Furtivo\Documents\TCC\obj\Debug\net7.0\TCC.RazorAssemblyInfo.cs
+C:\Users\Suricato Furtivo\Documents\TCC\obj\Debug\net7.0\TCC.sourcelink.json
 C:\Users\Suricato Furtivo\Documents\TCC\bin\Debug\net7.0\appsettings.Development.json
 C:\Users\Suricato Furtivo\Documents\TCC\bin\Debug\net7.0\appsettings.json
 C:\Users\Suricato Furtivo\Documents\TCC\bin\Debug\net7.0\TCC.staticwebassets.runtime.json
@@ -6,7 +15,6 @@ C:\Users\Suricato Furtivo\Documents\TCC\bin\Debug\net7.0\TCC.deps.json
 C:\Users\Suricato Furtivo\Documents\TCC\bin\Debug\net7.0\TCC.runtimeconfig.json
 C:\Users\Suricato Furtivo\Documents\TCC\bin\Debug\net7.0\TCC.dll
 C:\Users\Suricato Furtivo\Documents\TCC\bin\Debug\net7.0\TCC.pdb
-<<<<<<< HEAD
 C:\Users\Suricato Furtivo\Documents\TCC\bin\Debug\net7.0\Azure.Core.dll
 C:\Users\Suricato Furtivo\Documents\TCC\bin\Debug\net7.0\Azure.Identity.dll
 C:\Users\Suricato Furtivo\Documents\TCC\bin\Debug\net7.0\Humanizer.dll
@@ -232,17 +240,6 @@ C:\Users\Suricato Furtivo\Documents\TCC\bin\Debug\net7.0\runtimes\win\lib\net6.0
 C:\Users\Suricato Furtivo\Documents\TCC\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 C:\Users\Suricato Furtivo\Documents\TCC\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Suricato Furtivo\Documents\TCC\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
-C:\Users\Suricato Furtivo\Documents\TCC\obj\Debug\net7.0\TCC.csproj.AssemblyReference.cache
-=======
->>>>>>> 4bb064ce05cfcdb37c5e7d7cc9e912ddf5d087be
-C:\Users\Suricato Furtivo\Documents\TCC\obj\Debug\net7.0\TCC.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Suricato Furtivo\Documents\TCC\obj\Debug\net7.0\TCC.AssemblyInfoInputs.cache
-C:\Users\Suricato Furtivo\Documents\TCC\obj\Debug\net7.0\TCC.AssemblyInfo.cs
-C:\Users\Suricato Furtivo\Documents\TCC\obj\Debug\net7.0\TCC.csproj.CoreCompileInputs.cache
-C:\Users\Suricato Furtivo\Documents\TCC\obj\Debug\net7.0\TCC.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Suricato Furtivo\Documents\TCC\obj\Debug\net7.0\TCC.RazorAssemblyInfo.cache
-C:\Users\Suricato Furtivo\Documents\TCC\obj\Debug\net7.0\TCC.RazorAssemblyInfo.cs
-C:\Users\Suricato Furtivo\Documents\TCC\obj\Debug\net7.0\TCC.sourcelink.json
 C:\Users\Suricato Furtivo\Documents\TCC\obj\Debug\net7.0\staticwebassets.build.json
 C:\Users\Suricato Furtivo\Documents\TCC\obj\Debug\net7.0\staticwebassets.development.json
 C:\Users\Suricato Furtivo\Documents\TCC\obj\Debug\net7.0\staticwebassets\msbuild.TCC.Microsoft.AspNetCore.StaticWebAssets.props
