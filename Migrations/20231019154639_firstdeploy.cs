@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace TCC.Migrations
 {
     /// <inheritdoc />
-    public partial class deploy : Migration
+    public partial class firstdeploy : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -30,6 +30,34 @@ namespace TCC.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_EstoqueGeral", x => x.Id);
+                })
+                .Annotation("MySql:CharSet", "utf8mb4");
+
+            migrationBuilder.CreateTable(
+                name: "Notas",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
+                    Nome = table.Column<string>(type: "longtext", nullable: false)
+                        .Annotation("MySql:CharSet", "utf8mb4"),
+                    CNPJ = table.Column<int>(type: "int", nullable: false),
+                    Telefone = table.Column<int>(type: "int", nullable: false),
+                    DataEmissao = table.Column<int>(type: "int", nullable: false),
+                    DataRecolhimento = table.Column<int>(type: "int", nullable: false),
+                    ValorTotal = table.Column<int>(type: "int", nullable: false),
+                    Cidade = table.Column<string>(type: "longtext", nullable: false)
+                        .Annotation("MySql:CharSet", "utf8mb4"),
+                    Bairro = table.Column<string>(type: "longtext", nullable: false)
+                        .Annotation("MySql:CharSet", "utf8mb4"),
+                    Complemento = table.Column<string>(type: "longtext", nullable: false)
+                        .Annotation("MySql:CharSet", "utf8mb4"),
+                    Cep = table.Column<int>(type: "int", nullable: false),
+                    Numero = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Notas", x => x.Id);
                 })
                 .Annotation("MySql:CharSet", "utf8mb4");
 
@@ -66,6 +94,9 @@ namespace TCC.Migrations
         {
             migrationBuilder.DropTable(
                 name: "EstoqueGeral");
+
+            migrationBuilder.DropTable(
+                name: "Notas");
 
             migrationBuilder.DropTable(
                 name: "Pedidos");

@@ -45,6 +45,54 @@ namespace TCC.Migrations
                     b.ToTable("EstoqueGeral");
                 });
 
+            modelBuilder.Entity("TCC.Models.Nota", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<string>("Bairro")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<int>("CNPJ")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Cep")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Cidade")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Complemento")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<int>("DataEmissao")
+                        .HasColumnType("int");
+
+                    b.Property<int>("DataRecolhimento")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Nome")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<int>("Numero")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Telefone")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ValorTotal")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Notas");
+                });
+
             modelBuilder.Entity("TCC.Models.Pedido", b =>
                 {
                     b.Property<int>("Id")
