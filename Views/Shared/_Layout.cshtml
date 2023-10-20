@@ -1,9 +1,5 @@
 ﻿@{
     var titulo = "Império dos Andaimes";
-    var imgAndaime = @"img/" + "andaime.svg";
-    var imgNovoPedido = @"img/" + "novoPedido.svg";
-    var imgConsulta = @"img/" + "consultaPedido.svg";
-    var imgEstoque = @"img/" + "estoque.svg";
 }
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -17,7 +13,7 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/TCC.styles.css" asp-append-version="true" />
     <script src="~/js/site.js"></script>
-    <link rel="icon" href="@imgAndaime">
+    <link rel="icon" href="@Url.Content("~/img/andaime.svg")">
 </head>
 <body>
     <header>
@@ -30,26 +26,26 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1 d-flex align-items-center justify-content-around">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index"><img src="@imgAndaime" width="96" alt=""></a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index"><img src="@Url.Content("~/img/andaime.svg")" width="96" alt="Home"></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="novoPedido"
                                 asp-action="Index"><div class="novoPedido d-flex flex-column align-items-center">
-                                    <img src="@imgNovoPedido" alt="Criar novo pedido" width="48"> Novo Pedido
+                                    <img src="@Url.Content("~/img/novoPedido.svg")" alt="Criar Pedido" width="48"> Novo Pedido
                                 </div></a>
                         </li>
                         <section id="vertical_line"></section>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="consultarPedido"
                                 asp-action="Index"><div class="consulta d-flex flex-column align-items-center">
-                                    <img src="@imgConsulta" alt="Criar novo pedido" width="48"> Consultar pedido
+                                    <img src="@Url.Content("~/img/consultaPedido.svg")" alt="Consultar Pedido" width="48"> Consultar pedido
                                 </div></a>
                         </li>
                         <section id="vertical_line"></section>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="estoque"
                                 asp-action="Index"><div class="estoque d-flex flex-column align-items-center">
-                                    <img src="@imgEstoque" alt="Criar novo pedido" width="48"> Estoque
+                                    <img src="@Url.Content("~/img/estoque.svg")" alt="Estoque" width="48"> Estoque
                                 </div></a>
                         </li>
                     </ul>

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "XnnxeHuVpkwdV7wEbGWPGv+rRzpd0Rq5llo7LonnTnA=",
+  "Hash": "BUjalYIRL+8uOJlCw5LdeGMVJShxZ+LLeWVk6pnK/BA=",
   "Source": "TCC",
   "BasePath": "_content/TCC",
   "Mode": "Default",
@@ -148,6 +148,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\estoque.svg"
+    },
+    {
+      "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\img\\lupa.svg",
+      "SourceId": "TCC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
+      "BasePath": "_content/TCC",
+      "RelativePath": "img/lupa.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\lupa.svg"
     },
     {
       "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\img\\novoPedido.svg",

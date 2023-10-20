@@ -25,6 +25,10 @@
       "PackagePath": "staticwebassets\\img\\estoque.svg"
     },
     {
+      "Id": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\img\\lupa.svg",
+      "PackagePath": "staticwebassets\\img\\lupa.svg"
+    },
+    {
       "Id": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\img\\novoPedido.svg",
       "PackagePath": "staticwebassets\\img\\novoPedido.svg"
     },

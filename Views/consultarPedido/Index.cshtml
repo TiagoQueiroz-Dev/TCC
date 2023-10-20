@@ -3,6 +3,40 @@
     ViewData["Title"] = "Consulta";
 }
 
-<div class="text-center">
-    <h1>Kevin</h1>
+<head>
+    <style>
+        input,
+        textarea,
+        select {
+            outline: 0;
+        }
+    </style>
+</head>
+
+<div class="text-center row">
+    <h1>Consultar Nota</h1>
+
+    <div class="d-flex justify-content-center align-items-center">
+        <div class="text-end rounded-pill bg-warning w-100 d-flex align-items-center justify-content-between me-3">
+            <h2 class="mt-1 flex-fill"><input type="search" name="pesquisa" id="pesquisa"
+                    class="ms-3 bg-transparent border-0 outline-0 w-100" placeholder="Pesquisar"></h2>
+            <a href="#">
+                @* -To querendo botar um circulo em volta da Lupa !! *@
+                <img class="ms-3 me-3" src="@Url.Content("~/img/lupa.svg")" alt="Lupa" width="30" </a>
+        </div>
+
+
+        <h2>
+            <select name="filtros" id="filtros" class="rounded-pill ps-1">
+                <option value="" disabled selected>Selecione Filtro</option>
+                <option value="CPF/CNPJ">CPF/CNPJ</option>
+                <option value="NNota">Nº Nota</option>
+                <option value="Tel">Telefone</option>
+                <option value="DATA-NOTA">DATA INICIO</option>
+                <option value="DATA-RECOLHIMENTO">DATA RECOLHIMENTO</option>
+                <option value="CEP">CEP</option>
+            </select>
+        </h2>
+
+    </div>
 </div>
