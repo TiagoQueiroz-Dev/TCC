@@ -1,4 +1,4 @@
-@model IEnumerable<Pedido>
+
 @{
     ViewData["Title"] = "Nova Nota";
 }
@@ -27,13 +27,6 @@
   </div>
     <div class="mb-3">
         <label for="produto" class="form-label">Produtos solicitados:</label>
-        @foreach(var item in Model){
-          if(item.Andaimes_10 != 0){
-            <h1>@item.Andaimes_10</h1>
-          }else{
-            <h1>TESTE</h1>
-          }
-        }
     </div>
     <div class="mb-3">
     <label for="valor_total" class="form-label">Valor total:</label>

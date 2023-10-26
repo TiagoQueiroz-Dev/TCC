@@ -85,9 +85,6 @@ namespace TCC.Migrations
                     b.Property<int>("Telefone")
                         .HasColumnType("int");
 
-                    b.Property<int>("ValorTotal")
-                        .HasColumnType("int");
-
                     b.HasKey("Id");
 
                     b.ToTable("Notas");
@@ -99,46 +96,13 @@ namespace TCC.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<int>("Andaimes_10")
+                    b.Property<int>("IdCliente")
                         .HasColumnType("int");
 
-                    b.Property<int>("Andaimes_13")
+                    b.Property<int>("IdProduto")
                         .HasColumnType("int");
 
-                    b.Property<int>("Andaimes_15")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Andaimes_20")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Bitoneira")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Escora_35")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Escora_50")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Lastro_10")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Lastro_15")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Lastro_20")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Pe_Regulador")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Pranchao")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Rodanas")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Travas")
+                    b.Property<int>("Quantidade")
                         .HasColumnType("int");
 
                     b.HasKey("Id");

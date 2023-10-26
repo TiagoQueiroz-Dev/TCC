@@ -10,6 +10,8 @@ namespace TCC.Database;
 public class Contexto : DbContext
 {
     public Contexto(DbContextOptions<Contexto> options) : base(options){}
+    public Contexto(){}
+
     public DbSet<Estoque> EstoqueGeral { get; set; }
     public DbSet<Pedido> Pedidos { get; set; }
     public DbSet<Nota> Notas { get; set; }

@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -13,7 +14,6 @@ namespace TCC.Models
         public int Telefone { get; set; }
         public int DataEmissao { get; set; }
         public int DataRecolhimento { get; set; }
-        public int ValorTotal { get; set; }
         public string Cidade { get; set; }
         public string Bairro { get; set; }
         public string Complemento { get; set; }

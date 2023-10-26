@@ -22,18 +22,14 @@ public class novoPedidoController : Controller
 
         return View(banco);
     }
-    [HttpPost]
-    public IActionResult Cadasto(Pedido pedido)
-    {
-         _db.Pedidos.Add(pedido);
-         _db.SaveChanges();
-
-        return RedirectToAction("NovaNota");
-    }
+   
     public IActionResult NovaNota()
     {
         var teste = _db.Pedidos.ToList();
         return View(teste);
+         //var banco = _db.EstoqueGeral.ToList();
+
+        //return View(banco);
     }
     [HttpPost]
     public IActionResult CadastroNota(Nota nota)
@@ -41,6 +37,14 @@ public class novoPedidoController : Controller
         _db.Notas.Add(nota);
         _db.SaveChanges();
         return RedirectToAction("Index");
+    }
+    [HttpPost]
+    public IActionResult Cadasto(Pedido pedido)
+    {
+         _db.Pedidos.Add(pedido);
+         _db.SaveChanges();
+
+        return RedirectToAction("NovaNota");
     }
 
 
