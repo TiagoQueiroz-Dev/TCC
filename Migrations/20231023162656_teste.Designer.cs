@@ -10,8 +10,8 @@ using TCC.Database;
 namespace TCC.Migrations
 {
     [DbContext(typeof(Contexto))]
-    [Migration("20231019123931_deploy")]
-    partial class deploy
+    [Migration("20231023162656_teste")]
+    partial class teste
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -48,52 +48,64 @@ namespace TCC.Migrations
                     b.ToTable("EstoqueGeral");
                 });
 
+            modelBuilder.Entity("TCC.Models.Nota", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<string>("Bairro")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<int>("CNPJ")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Cep")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Cidade")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Complemento")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<int>("DataEmissao")
+                        .HasColumnType("int");
+
+                    b.Property<int>("DataRecolhimento")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Nome")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<int>("Numero")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Telefone")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Notas");
+                });
+
             modelBuilder.Entity("TCC.Models.Pedido", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<int>("Andaimes_10")
+                    b.Property<int>("IdCliente")
                         .HasColumnType("int");
 
-                    b.Property<int>("Andaimes_13")
+                    b.Property<int>("IdProduto")
                         .HasColumnType("int");
 
-                    b.Property<int>("Andaimes_15")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Andaimes_20")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Bitoneira")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Escora_35")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Escora_50")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Lastro_10")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Lastro_15")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Lastro_20")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Pe_Regulador")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Pranchao")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Rodanas")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Travas")
+                    b.Property<int>("Quantidade")
                         .HasColumnType("int");
 
                     b.HasKey("Id");

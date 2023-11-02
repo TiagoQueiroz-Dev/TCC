@@ -3,66 +3,23 @@
 @{
   ViewData["Title"] = "Criar pedido";
   double subTotal = 0;
-  string nome = "";
+  string nome = "Quantidade";
 }
 
 <h2 class="text-center mb-3">Novo Pedido</h2>
 <form asp-action="Cadasto" asp-controller="novoPedido" method="post">
   @foreach (var item in Model)
   {
-    switch(item.Nome){
-      case "Andaime 1 Metro":
-        nome = "Andaimes_10";
-      break;
-      case "Andaime 1.3 Metros":
-        nome = "Andaimes_13";
-      break;
-      case "Andaime 1.5 Metros":
-        nome = "Andaimes_15";
-      break;
-      case "Andaime 2 Metros":
-        nome = "Andaimes_20";
-      break;
-      case "Bitoneira":
-        nome = "Bitoneira";
-      break;
-      case "Escora 3.5 Metros":
-        nome = "Escora_35";
-      break;
-      case "Escora 5 Metros":
-        nome = "Escora_50";
-      break;
-      case "Pé Regulador":
-        nome = "Pe_Regulador";
-      break;
-      case "Lastro 1 Metro":
-        nome = "Lastro_10";
-      break;
-      case "Lastro 1.5 Metros":
-        nome = "Lastro_15";
-      break;
-      case "Lastro 2 Metros":
-        nome = "Lastro_20";
-      break;
-      case "Pranchão":
-        nome = "Pranchao";
-      break;
-      case "Rodanas":
-        nome = "Rodanas";
-      break;
-      case "Travas":
-        nome = "Travas";
-      break;
-    }
     <div class="mb-3 d-flex align-items-end">
       <label for="@item.Id" class="form-label text-nowrap w-50">@item.Nome</label>
+      <input class="escondido" type="number" value="@item.Id" name="IdProduto">
       <input type="number" class="form-control" name="@nome" id="@item.Id flex-shrink-1" placeholder="0" min="0" max="@item.Disponiveis">
       <div class="w-50 text-end" id="subTotal">R$ @item.ValorUnid @* Aqui entra o valor de input para calcular o valor parcial por produto *@</div>
       @*Temos que ver uma forma de atribuir os valores parciais gerados para incluir na variavel de subtotal*@
     </div>
   }
-  <h3 class="text-end">Total = R$ @subTotal</h3>
   <div class="col-12">
     <button class="btn btn-success" type="submit">Gerar Nota</button>
   </div>
 </form>
+  <h3 class="text-end">Total = R$ @subTotal</h3>

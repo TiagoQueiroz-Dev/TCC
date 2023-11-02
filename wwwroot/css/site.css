@@ -24,6 +24,9 @@ html {
   background-color: green;
   margin: 0 0 16px 10px;
 }
+.escondido{
+  display: none;
+}
 #bolinhaAmarela{
   width: 10px;
   height: 10px;

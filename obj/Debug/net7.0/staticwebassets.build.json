@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ev5kBvLxLbJyhHlQs3Cl6jQ1GB3+xpadyCV3ETh3zIo=",
+  "Hash": "5Gg9c5DfLCKZ2lP2nnpb/l1YMxqYFwLV4aa3tCh5v04=",
   "Source": "TCC",
   "BasePath": "_content/TCC",
   "Mode": "Default",
@@ -134,6 +134,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\estoque.svg"
+    },
+    {
+      "Identity": "C:\\Users\\kevin\\Documents\\GitHub\\TCC\\wwwroot\\img\\lupa.svg",
+      "SourceId": "TCC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kevin\\Documents\\GitHub\\TCC\\wwwroot\\",
+      "BasePath": "_content/TCC",
+      "RelativePath": "img/lupa.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\lupa.svg"
     },
     {
       "Identity": "C:\\Users\\kevin\\Documents\\GitHub\\TCC\\wwwroot\\img\\novoPedido.svg",

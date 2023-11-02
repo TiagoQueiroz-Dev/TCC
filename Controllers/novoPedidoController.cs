@@ -9,6 +9,8 @@ namespace TCC.Controllers;
 public class novoPedidoController : Controller
 {
     Contexto _db;
+    
+   
     public novoPedidoController(Contexto db)
     {
         _db = db;
@@ -20,6 +22,22 @@ public class novoPedidoController : Controller
 
         return View(banco);
     }
+   
+    public IActionResult NovaNota()
+    {
+        var teste = _db.Pedidos.ToList();
+        return View(teste);
+         //var banco = _db.EstoqueGeral.ToList();
+
+        //return View(banco);
+    }
+    [HttpPost]
+    public IActionResult CadastroNota(Nota nota)
+    {
+        _db.Notas.Add(nota);
+        _db.SaveChanges();
+        return RedirectToAction("Index");
+    }
     [HttpPost]
     public IActionResult Cadasto(Pedido pedido)
     {
@@ -28,10 +46,7 @@ public class novoPedidoController : Controller
 
         return RedirectToAction("NovaNota");
     }
-    public IActionResult NovaNota()
-    {
-        return View();
-    }
+
 
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
