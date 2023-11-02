@@ -39,12 +39,15 @@ public class novoPedidoController : Controller
         return RedirectToAction("Index");
     }
     [HttpPost]
-    public IActionResult Cadasto(Pedido pedido)
+    public IActionResult Cadasto(List<Pedido> pedidos)
     {
-         _db.Pedidos.Add(pedido);
-         _db.SaveChanges();
+        //List<Pedido> teste = pedidos.Where(b => b.Quantidade != 0);
+        
+          _db.Pedidos.AddRange(pedidos);
+          _db.SaveChanges();
 
         return RedirectToAction("NovaNota");
+        //return View(pedidos);
     }
 
 
