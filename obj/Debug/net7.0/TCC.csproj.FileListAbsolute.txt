@@ -513,3 +513,4 @@ C:\Users\kevin\Documents\GitHub\TCC\obj\Debug\net7.0\refint\TCC.dll
 C:\Users\kevin\Documents\GitHub\TCC\obj\Debug\net7.0\TCC.pdb
 C:\Users\kevin\Documents\GitHub\TCC\obj\Debug\net7.0\TCC.genruntimeconfig.cache
 C:\Users\kevin\Documents\GitHub\TCC\obj\Debug\net7.0\ref\TCC.dll
+C:\Users\kevin\Documents\GitHub\TCC\obj\Debug\net7.0\TCC.sourcelink.json
