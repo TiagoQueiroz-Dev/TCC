@@ -18,10 +18,11 @@
   
   @foreach (var item in Model)
   {
+    
     <div class="mb-3 d-flex align-items-end">
       <label for="@item.Id" class="form-label text-nowrap w-50">@item.Nome</label>
       <input class="escondido" type="number" value="@item.Id" name="@a">
-      <input type="number" class="form-control" name="@nome" id="@item.Id flex-shrink-1" placeholder="0" min="0" max="@item.Disponiveis" oninput="atualizarQuantidade(@item.Id,'produtosQtd')">
+      <input type="number" class="form-control" name="@nome" id="@item.Id" placeholder="0" min="0" max="@item.Disponiveis" oninput="atualizarQuantidade(@item.Id,'produtosQtd')">
       
       <div class="w-50 text-end" id="subTotal">R$ @item.ValorUnid @* Aqui entra o valor de input para calcular o valor parcial por produto *@</div>
       @*Temos que ver uma forma de atribuir os valores parciais gerados para incluir na variavel de subtotal*@
