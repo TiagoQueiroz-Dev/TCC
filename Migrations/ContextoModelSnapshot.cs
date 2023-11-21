@@ -8,8 +8,8 @@ using TCC.Database;
 
 namespace TCC.Migrations
 {
-    [DbContext(typeof(Contexto))]
-    partial class ContextoModelSnapshot : ModelSnapshot
+    [DbContext(typeof(BancoContext))]
+    partial class DataContextoModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
         {

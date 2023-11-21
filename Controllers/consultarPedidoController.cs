@@ -2,16 +2,17 @@ using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using TCC.Database;
 using TCC.Models;
+using TCC.Repository.Pedido;
 
 namespace TCC.Controllers;
 
 public class consultarPedidoController : Controller
 {
-    Contexto cont;
+    public readonly IPedidoRepository _pedidoRepository;
 
-    public consultarPedidoController(Contexto a)
+    public consultarPedidoController(IPedidoRepository pedidoRepository)
     {
-        cont = a;
+        _pedidoRepository = pedidoRepository;
     }
 
     public IActionResult Index()

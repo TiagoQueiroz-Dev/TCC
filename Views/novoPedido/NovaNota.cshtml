@@ -1,10 +1,10 @@
-
+@model NotaModel
 @{
     ViewData["Title"] = "Nova Nota";
 }
 
 <div class="text-center">
-    <form method="post" asp-action="CadastroNota" asp-controller="novoPedido">
+    <form method="post" asp-action="CadastrarNota" asp-controller="novoPedido">
         <div class="mb-3">
     <label for="nome" class="form-label">Nome:</label>
     <input type="text" name="Nome" class="form-control" id="nome" aria-describedby="txtHelp">

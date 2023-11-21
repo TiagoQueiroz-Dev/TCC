@@ -18,12 +18,12 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = c:\Users\kevin\Documents\GitHub\TCC
 build_property._RazorSourceGeneratorDebug = 
 
-[c:/Users/kevin/Documents/GitHub/TCC/Views/consultarPedido/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcY29uc3VsdGFyUGVkaWRvXEluZGV4LmNzaHRtbA==
+[c:/Users/kevin/Documents/GitHub/TCC/Views/ConsultarPedido/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29uc3VsdGFyUGVkaWRvXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/kevin/Documents/GitHub/TCC/Views/estoque/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcZXN0b3F1ZVxJbmRleC5jc2h0bWw=
+[c:/Users/kevin/Documents/GitHub/TCC/Views/Estoque/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0b3F1ZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [c:/Users/kevin/Documents/GitHub/TCC/Views/Home/Index.cshtml]
@@ -34,16 +34,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/kevin/Documents/GitHub/TCC/Views/novoPedido/Cadasto.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3Ncbm92b1BlZGlkb1xDYWRhc3RvLmNzaHRtbA==
+[c:/Users/kevin/Documents/GitHub/TCC/Views/NovoPedido/Cadasto.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm92b1BlZGlkb1xDYWRhc3RvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/kevin/Documents/GitHub/TCC/Views/novoPedido/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3Ncbm92b1BlZGlkb1xJbmRleC5jc2h0bWw=
+[c:/Users/kevin/Documents/GitHub/TCC/Views/NovoPedido/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm92b1BlZGlkb1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/kevin/Documents/GitHub/TCC/Views/novoPedido/NovaNota.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3Ncbm92b1BlZGlkb1xOb3ZhTm90YS5jc2h0bWw=
+[c:/Users/kevin/Documents/GitHub/TCC/Views/NovoPedido/NovaNota.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm92b1BlZGlkb1xOb3ZhTm90YS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [c:/Users/kevin/Documents/GitHub/TCC/Views/Shared/Error.cshtml]

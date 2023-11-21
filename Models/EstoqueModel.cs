@@ -7,7 +7,7 @@ using System.Diagnostics.CodeAnalysis;
 
 namespace TCC.Models;
 
-public class Estoque
+public class EstoqueModel
 {
     
     public int Id { get; set; }

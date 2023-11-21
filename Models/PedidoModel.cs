@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TCC.Models
 {
-    public class Pedido
+    public class PedidoModel
     {
         public int Id { get; set; }
         public int IdProduto { get; set; }

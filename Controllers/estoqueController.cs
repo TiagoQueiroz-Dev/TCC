@@ -2,21 +2,21 @@ using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using TCC.Database;
 using TCC.Models;
+using TCC.Repository;
 
 namespace TCC.Controllers;
 
 public class estoqueController : Controller
 {
-    Contexto _db;
-    public estoqueController(Contexto db)
-    {
-        _db = db;
+    public readonly IEstoqueRepository _estoqueRepository;
+
+    public estoqueController(IEstoqueRepository estoqueRepository){
+        _estoqueRepository = estoqueRepository;
     }
 
     public IActionResult Index()
     {
-        var banco = _db.EstoqueGeral.ToList();
-        return View(banco);
+        return View(_estoqueRepository.ListarEstoque());
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

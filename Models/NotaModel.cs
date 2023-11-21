@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TCC.Models
 {
-    public class Nota
+    public class NotaModel
     {
         public int Id { get; set; }
         public string Nome { get; set; }

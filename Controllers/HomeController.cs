@@ -7,19 +7,10 @@ namespace TCC.Controllers;
 
 public class HomeController : Controller
 {
-    //private readonly ILogger<HomeController> _logger;
-    Contexto _db;
-
-    public HomeController(Contexto db)
-    {
-        _db = db;
-    }
-
     public IActionResult Index()
     {
         return View();
     }
-
 
     public IActionResult Privacy()
     {

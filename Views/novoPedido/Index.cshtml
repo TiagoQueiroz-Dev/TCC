@@ -1,9 +1,9 @@
-﻿@model List<Estoque>
+﻿@model List<EstoqueModel>
 
 @{
   ViewData["Title"] = "Criar pedido";
   
-  List<Pedido> novoPedidos = new List<Pedido>();
+  List<PedidoModel> novoPedidos = new List<PedidoModel>();
   
 
   double subTotal = 0;
@@ -12,7 +12,7 @@
 }
 
 <h2 class="text-center mb-3">Novo Pedido</h2>
-<form asp-action="Cadasto" asp-controller="novoPedido" method="post">
+<form asp-action="novoPedido" asp-controller="novoPedido" method="post">
 
     <h1 class="ms-3" id="produtosQtd">O valor deveria ser alterado aqui!</h1>
   

@@ -3,54 +3,48 @@ using System.Security.Cryptography.X509Certificates;
 using Microsoft.AspNetCore.Mvc;
 using TCC.Database;
 using TCC.Models;
+using TCC.Repository;
+using TCC.Repository.Nota;
+using TCC.Repository.Pedido;
 
 namespace TCC.Controllers;
 
 public class novoPedidoController : Controller
 {
-    Contexto _db;
-    
-   
-    public novoPedidoController(Contexto db)
+    public readonly IPedidoRepository _pedidoRepository;
+    public readonly INotaRepository _notaRepository;
+    public readonly IEstoqueRepository _estoqueRepository;
+
+    public novoPedidoController(IPedidoRepository pedidoRepository, INotaRepository notaRepository, IEstoqueRepository estoqueRepository)
     {
-        _db = db;
+        _pedidoRepository = pedidoRepository;
+        _notaRepository = notaRepository;
+        _estoqueRepository = estoqueRepository;
     }
 
+    
     public IActionResult Index()
     {
-        var banco = _db.EstoqueGeral.ToList();
-
-        return View(banco);
+        return View(_estoqueRepository.ListarEstoque());
     }
-   
-    public IActionResult NovaNota()
-    {
-        var teste = _db.Pedidos.ToList();
-        return View(teste);
-         //var banco = _db.EstoqueGeral.ToList();
 
-        //return View(banco);
-    }
     [HttpPost]
-    public IActionResult CadastroNota(Nota nota)
-    {
-        _db.Notas.Add(nota);
-        _db.SaveChanges();
-        return RedirectToAction("Index");
-    }
-    [HttpPost]
-    public IActionResult Cadasto(List<Pedido> pedidos)
-    {
-        //List<Pedido> teste = pedidos.Where(b => b.Quantidade != 0);
-        
-          _db.Pedidos.AddRange(pedidos);
-          _db.SaveChanges();
-
+    public IActionResult NovoPedido(PedidoModel novoPedido){
+        _pedidoRepository.AdicionarPedido(novoPedido);
         return RedirectToAction("NovaNota");
-        //return View(pedidos);
+        //representa ação do form da View "Index" para fezer um pedido
     }
 
+    public IActionResult NovaNota(){
+        return View();
+    }
 
+    [HttpPost]
+    public IActionResult CadastrarNota(NotaModel novaNota){
+        _notaRepository.AdicionarNota(novaNota);
+        return RedirectToAction("Index","Home");
+        //representa ação do form da View "NovaNota" para gerar uma nota
+    }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
