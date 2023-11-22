@@ -3,34 +3,30 @@
 @{
   ViewData["Title"] = "Criar pedido";
   
-  List<PedidoModel> novoPedidos = new List<PedidoModel>();
-  
 
-  double subTotal = 0;
-  string nome = "Quantidade";
-  string a = "IdProduto";
 }
 
 <h2 class="text-center mb-3">Novo Pedido</h2>
 <form asp-action="novoPedido" asp-controller="novoPedido" method="post">
 
-    <h1 class="ms-3" id="produtosQtd">O valor deveria ser alterado aqui!</h1>
-  
-  @foreach (var item in Model)
+  @if (Model != null && Model.Any())
   {
-    
-    <div class="mb-3 d-flex align-items-end">
-      <label for="@item.Id" class="form-label text-nowrap w-50">@item.Nome</label>
-      <input class="escondido" type="number" value="@item.Id" name="@a">
-      <input type="number" class="form-control" name="@nome" id="@item.Id" placeholder="0" min="0" max="@item.Disponiveis" oninput="atualizarQuantidade(@item.Id,'produtosQtd')">
-      
-      <div class="w-50 text-end" id="subTotal">R$ @item.ValorUnid @* Aqui entra o valor de input para calcular o valor parcial por produto *@</div>
-      @*Temos que ver uma forma de atribuir os valores parciais gerados para incluir na variavel de subtotal*@
-    </div>
+    @foreach (var item in Model)
+    {
+
+            <div class="mb-3 d-flex align-items-end">
+              <label for="@item.Id" class="form-label text-nowrap w-50">@item.Nome</label>
+              <input type="number" class="form-control" id="@item.Id" placeholder="0" min="0" max="@item.Disponiveis" oninput="calcularValorProdutos(@item.ValorUnid)">
+              
+              <div class="w-50 text-end">R$<p id="valorUnidade">@item.ValorUnid</p></div>
+              @*<input type="hidden" name="valorQtdProduto" value="0" id="QtdProduto">*@        
+            </div>        
+    }
   }
-  
+
   <div class="col-12">
     <button class="btn btn-success" type="submit">Gerar Nota</button>
   </div>
 </form>
-  <h3 class="text-end">Total = R$ @subTotal</h3>
+
+  <h3 class="text-end" id="valorTotal"></h3>
