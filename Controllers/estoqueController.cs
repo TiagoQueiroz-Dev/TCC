@@ -16,7 +16,8 @@ public class estoqueController : Controller
 
     public IActionResult Index()
     {
-        return View(_estoqueRepository.ListarEstoque());
+        var estoque = _estoqueRepository.ListarEstoque();
+        return View(estoque);
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
