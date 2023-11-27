@@ -7,7 +7,7 @@
 }
 
 <h2 class="text-center mb-3">Novo Pedido</h2>
-<form asp-action="novoPedido" asp-controller="novoPedido" method="post">
+<form asp-action="NovoPedido" asp-controller="NovoPedido" method="post">
 
   @if (Model != null && Model.Any())
   {
@@ -16,8 +16,8 @@
 
             <div class="mb-3 d-flex align-items-end">
               <label for="@item.Id" class="form-label text-nowrap w-50">@item.Nome</label>
-              <input type="number" class="form-control" id="@item.Id" placeholder="0" min="0" max="@item.Disponiveis"  oninput="calcularValorTotal('valorUnidade',@item.Id,'@cont-lista','valorTotal',@Model.Count)">
-              <div class="w-50 text-end d-flex justify-content-center">R$<p id="valorUnidade">@item.ValorUnid</p></div>        
+              <input type="number" class="form-control" id="@item.Id" placeholder="0" min="0" max="@item.Disponiveis"  oninput="calcularValorTotal('@cont-valorUnidade',@item.Id,'@cont-lista','valorTotal',@Model.Count)">
+              <div class="w-50 text-end d-flex justify-content-center">R$<p id="@cont-valorUnidade">@item.ValorUnid</p></div>        
               <input type="hidden" id="@cont-lista">
             </div>
             @*Varivel cont para referencia do id que quarda os valores relativos de custo de cada elemento*@         
