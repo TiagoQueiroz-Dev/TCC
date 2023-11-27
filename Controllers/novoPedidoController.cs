@@ -29,10 +29,10 @@ public class novoPedidoController : Controller
     }
 
     [HttpPost]
-    public IActionResult NovoPedido(PedidoModel novoPedido){
-        _pedidoRepository.AdicionarPedido(novoPedido);
+    public IActionResult NovoPedido(){
+        _pedidoRepository.AdicionarPedido();
         return RedirectToAction("NovaNota");
-        //representa ação do form da View "Index" para fezer um pedido
+;        //representa ação do form da View "Index" para fezer um pedido
     }
 
     public IActionResult NovaNota(){

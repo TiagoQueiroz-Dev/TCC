@@ -10,8 +10,8 @@ using TCC.Database;
 namespace TCC.Migrations
 {
     [DbContext(typeof(BancoContext))]
-    [Migration("20231121141209_KevinPc")]
-    partial class KevinPc
+    [Migration("20231122173008_teste")]
+    partial class teste
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -21,7 +21,7 @@ namespace TCC.Migrations
                 .HasAnnotation("ProductVersion", "7.0.11")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
-            modelBuilder.Entity("TCC.Models.Estoque", b =>
+            modelBuilder.Entity("TCC.Models.EstoqueModel", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -48,7 +48,7 @@ namespace TCC.Migrations
                     b.ToTable("EstoqueGeral");
                 });
 
-            modelBuilder.Entity("TCC.Models.Nota", b =>
+            modelBuilder.Entity("TCC.Models.NotaModel", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -93,7 +93,7 @@ namespace TCC.Migrations
                     b.ToTable("Notas");
                 });
 
-            modelBuilder.Entity("TCC.Models.Pedido", b =>
+            modelBuilder.Entity("TCC.Models.PedidoModel", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()

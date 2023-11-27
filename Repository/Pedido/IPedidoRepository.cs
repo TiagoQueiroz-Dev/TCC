@@ -8,6 +8,6 @@ namespace TCC.Repository.Pedido
 {
     public interface IPedidoRepository
     {
-        PedidoModel AdicionarPedido(PedidoModel novoPedido);
+        PedidoModel AdicionarPedido();
     }
 }

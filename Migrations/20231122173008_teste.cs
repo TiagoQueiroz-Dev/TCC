@@ -20,12 +20,12 @@ namespace TCC.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
-                    Nome = table.Column<string>(type: "longtext", nullable: true)
+                    Nome = table.Column<string>(type: "longtext", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
-                    QuantidadeTotal = table.Column<int>(type: "int", nullable: true),
-                    Alugados = table.Column<int>(type: "int", nullable: true),
-                    Disponiveis = table.Column<int>(type: "int", nullable: true),
-                    ValorUnid = table.Column<double>(type: "double", nullable: true)
+                    QuantidadeTotal = table.Column<int>(type: "int", nullable: false),
+                    Alugados = table.Column<int>(type: "int", nullable: false),
+                    Disponiveis = table.Column<int>(type: "int", nullable: false),
+                    ValorUnid = table.Column<double>(type: "double", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -39,20 +39,20 @@ namespace TCC.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
-                    Nome = table.Column<string>(type: "longtext", nullable: true)
+                    Nome = table.Column<string>(type: "longtext", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
-                    CNPJ = table.Column<int>(type: "int", nullable: true),
-                    Telefone = table.Column<int>(type: "int", nullable: true),
-                    DataEmissao = table.Column<int>(type: "int", nullable: true),
-                    DataRecolhimento = table.Column<int>(type: "int", nullable: true),
-                    Cidade = table.Column<string>(type: "longtext", nullable: true)
+                    CNPJ = table.Column<int>(type: "int", nullable: false),
+                    Telefone = table.Column<int>(type: "int", nullable: false),
+                    DataEmissao = table.Column<int>(type: "int", nullable: false),
+                    DataRecolhimento = table.Column<int>(type: "int", nullable: false),
+                    Cidade = table.Column<string>(type: "longtext", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
-                    Bairro = table.Column<string>(type: "longtext", nullable: true)
+                    Bairro = table.Column<string>(type: "longtext", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
-                    Complemento = table.Column<string>(type: "longtext", nullable: true)
+                    Complemento = table.Column<string>(type: "longtext", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
-                    Cep = table.Column<int>(type: "int", nullable: true),
-                    Numero = table.Column<int>(type: "int", nullable: true)
+                    Cep = table.Column<int>(type: "int", nullable: false),
+                    Numero = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -66,9 +66,9 @@ namespace TCC.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
-                    IdProduto = table.Column<int>(type: "int", nullable: true),
-                    IdCliente = table.Column<int>(type: "int", nullable: true),
-                    Quantidade = table.Column<int>(type: "int", nullable: true)
+                    IdProduto = table.Column<int>(type: "int", nullable: false),
+                    IdCliente = table.Column<int>(type: "int", nullable: false),
+                    Quantidade = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {

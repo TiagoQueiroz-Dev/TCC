@@ -1,14 +1,21 @@
-﻿@model List<EstoqueModel>
+﻿
+@model List<EstoqueModel>
 
 @{
-  ViewData["Title"] = "Criar pedido";
-  
-  List<PedidoModel> novoPedidos = new List<PedidoModel>();
-  
+    ViewData["Title"] = "Criar pedido";
+    double subTotal = 0;
+    string nome = "Quantidade";
+    string a = "IdProduto";
+    List<PedidoModel> novoPedidos = new List<PedidoModel>();
 
-  double subTotal = 0;
-  string nome = "Quantidade";
-  string a = "IdProduto";
+    @* PedidoModel pedido = new PedidoModel();
+    pedido.Quantidade = 12;
+    pedido.IdProduto = 5;
+
+    novoPedidos.Add(pedido); *@
+    ArmazenarPedidos.Armazenar.Inserir(novoPedidos);
+
+    
 }
 
 <h2 class="text-center mb-3">Novo Pedido</h2>
@@ -33,4 +40,7 @@
     <button class="btn btn-success" type="submit">Gerar Nota</button>
   </div>
 </form>
+@{
+  
+}
   <h3 class="text-end">Total = R$ @subTotal</h3>
