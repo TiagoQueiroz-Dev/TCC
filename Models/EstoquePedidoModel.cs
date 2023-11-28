@@ -10,20 +10,19 @@ namespace TCC.Models
         public List<EstoqueModel> Estoque {get; set;}
 
         public List<PedidoModel> Pedidos { get; set; }
-        public PedidoModel NovoPedido { get; set; }
+
 
         public EstoquePedidoModel(List<EstoqueModel> estoque)
         {
             this.Estoque = estoque;
         }
+        
         public EstoquePedidoModel()
         {
             
         }
 
-        public void AdicionarPedido(PedidoModel novoPedido){
-            Pedidos.Add(novoPedido);
-        }
+
         
     }
 }
