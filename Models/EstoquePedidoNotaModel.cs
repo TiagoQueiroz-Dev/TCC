@@ -5,19 +5,21 @@ using System.Threading.Tasks;
 
 namespace TCC.Models
 {
-    public class EstoquePedidoModel
+    public class EstoquePedidoNotaModel
     {
         public List<EstoqueModel> Estoque {get; set;}
 
         public List<PedidoModel> Pedidos { get; set; }
 
+        public NotaModel NovaNota {get; set;}
 
-        public EstoquePedidoModel(List<EstoqueModel> estoque)
+
+        public EstoquePedidoNotaModel(List<EstoqueModel> estoque)
         {
             this.Estoque = estoque;
         }
         
-        public EstoquePedidoModel()
+        public EstoquePedidoNotaModel()
         {
             
         }

@@ -25,27 +25,27 @@ public class novoPedidoController : Controller
     
     public IActionResult Index()
     {
-        
-        EstoquePedidoModel estoquePedido = new EstoquePedidoModel(_estoqueRepository.ListarEstoque());
-        return View(estoquePedido);
+        EstoquePedidoNotaModel estoquePedidoNota = new EstoquePedidoNotaModel(_estoqueRepository.ListarEstoque());
+        //Incluindo a lista que temos no Estoque
+        return View(estoquePedidoNota);
     }
 
     [HttpPost]
-    public IActionResult NovoPedido(EstoquePedidoModel novoPedidoProduto){
+    public IActionResult NovoPedido(EstoquePedidoNotaModel estoquePedidoNota){
         
-        return RedirectToAction("NovaNota",novoPedidoProduto.Pedidos);
+        return RedirectToAction("NovaNota",estoquePedidoNota);
         //representa ação do form da View "Index" para fezer um pedido
     }
-    
-    public IActionResult NovaNota(List<PedidoModel> listaNovosPedidos){
-        PedidosNotaModel pedidoNota = new PedidosNotaModel(listaNovosPedidos);
-        return View(pedidoNota);
+
+    public IActionResult NovaNota(EstoquePedidoNotaModel estoquePedidoNota){
+        
+        return View(estoquePedidoNota);
     }
 
     [HttpPost]
-    public IActionResult CadastrarNota(PedidosNotaModel pedidoNota){
-
-         foreach(var item in pedidoNota.ListaNovosPedidos){
+    public IActionResult CadastrarNota(EstoquePedidoNotaModel estoquePedidoNota){
+        if(estoquePedidoNota.Pedidos != null){
+         foreach(var item in estoquePedidoNota.Pedidos){
 
             if (item.Quantidade >0)
             {
@@ -53,8 +53,14 @@ public class novoPedidoController : Controller
             }
         
         }
-        _notaRepository.AdicionarNota(pedidoNota.NovaNota);
+        _notaRepository.AdicionarNota(estoquePedidoNota.NovaNota);
         return RedirectToAction("Index","Home");
+        }else
+        {
+            return RedirectToAction("Index");
+          //Necessário que seja informado um erro caso ele entre  
+        }
+        
         //representa ação do form da View "NovaNota" para gerar uma nota
     }
 

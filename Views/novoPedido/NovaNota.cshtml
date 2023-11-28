@@ -1,4 +1,4 @@
-@model PedidosNotaModel
+@model EstoquePedidoNotaModel
 @{
     ViewData["Title"] = "Nova Nota";
 }
@@ -27,11 +27,11 @@
   </div>
     <div class="mb-3">
         <label for="produto" class="form-label">Produtos solicitados:</label>
-        @Model.ListaNovosPedidos.Count;
-        @for(int i=0;i<@Model.ListaNovosPedidos.Count;i++)
+
+        @for(int i=0;i<Model.Pedidos.Count;i++)
         {
-          <label asp-for="@Model.ListaNovosPedidos[i].IdProduto"></label>
-          <input asp-for="@Model.ListaNovosPedidos[i].IdProduto" readonly>
+          <label asp-for="@Model.Pedidos[i].IdProduto"></label>
+          <input asp-for="@Model.Pedidos[i].IdProduto" readonly>
         }
     </div>
     <div class="mb-3">
