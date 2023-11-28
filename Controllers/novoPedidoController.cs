@@ -31,26 +31,29 @@ public class novoPedidoController : Controller
     }
 
     [HttpPost]
-    public IActionResult NovoPedido(EstoquePedidoModel newPedido){
+    public IActionResult NovoPedido(EstoquePedidoModel novoPedidoProduto){
         
-        foreach(var item in newPedido.Pedidos){
+        return RedirectToAction("NovaNota",novoPedidoProduto.Pedidos);
+        //representa ação do form da View "Index" para fezer um pedido
+    }
+    
+    public IActionResult NovaNota(List<PedidoModel> listaNovosPedidos){
+        PedidosNotaModel pedidoNota = new PedidosNotaModel(listaNovosPedidos);
+        return View(pedidoNota);
+    }
+
+    [HttpPost]
+    public IActionResult CadastrarNota(PedidosNotaModel pedidoNota){
+
+         foreach(var item in pedidoNota.ListaNovosPedidos){
+
             if (item.Quantidade >0)
             {
                 _pedidoRepository.AdicionarPedido(item);
             }
         
         }
-        return RedirectToAction("NovaNota");
-        //representa ação do form da View "Index" para fezer um pedido
-    }
-
-    public IActionResult NovaNota(){
-        return View();
-    }
-
-    [HttpPost]
-    public IActionResult CadastrarNota(NotaModel novaNota){
-        _notaRepository.AdicionarNota(novaNota);
+        _notaRepository.AdicionarNota(pedidoNota.NovaNota);
         return RedirectToAction("Index","Home");
         //representa ação do form da View "NovaNota" para gerar uma nota
     }
