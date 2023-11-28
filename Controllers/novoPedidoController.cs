@@ -25,13 +25,16 @@ public class novoPedidoController : Controller
     
     public IActionResult Index()
     {
-        return View(_estoqueRepository.ListarEstoque());
+        EstoquePedidoModel estoquePedido = new EstoquePedidoModel(_estoqueRepository.ListarEstoque());
+        return View(estoquePedido);
     }
 
     [HttpPost]
-    public IActionResult NovoPedido(PedidoModel novoPedido){
-
-        _pedidoRepository.AdicionarPedido(novoPedido);
+    public IActionResult NovoPedido(EstoquePedidoModel newPedido){
+        
+        foreach(var item in newPedido.Pedidos){
+        _pedidoRepository.AdicionarPedido(item);
+        }
         return RedirectToAction("NovaNota");
         //representa ação do form da View "Index" para fezer um pedido
     }

@@ -10,8 +10,8 @@ using TCC.Database;
 namespace TCC.Migrations
 {
     [DbContext(typeof(BancoContext))]
-    [Migration("20231023162656_teste")]
-    partial class teste
+    [Migration("20231127232910_idnota")]
+    partial class idnota
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -21,7 +21,7 @@ namespace TCC.Migrations
                 .HasAnnotation("ProductVersion", "7.0.11")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
-            modelBuilder.Entity("TCC.Models.Estoque", b =>
+            modelBuilder.Entity("TCC.Models.EstoqueModel", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -40,15 +40,15 @@ namespace TCC.Migrations
                     b.Property<int>("QuantidadeTotal")
                         .HasColumnType("int");
 
-                    b.Property<double>("ValorUnid")
-                        .HasColumnType("double");
+                    b.Property<decimal>("ValorUnid")
+                        .HasColumnType("decimal(10,2)");
 
                     b.HasKey("Id");
 
                     b.ToTable("EstoqueGeral");
                 });
 
-            modelBuilder.Entity("TCC.Models.Nota", b =>
+            modelBuilder.Entity("TCC.Models.NotaModel", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -93,13 +93,13 @@ namespace TCC.Migrations
                     b.ToTable("Notas");
                 });
 
-            modelBuilder.Entity("TCC.Models.Pedido", b =>
+            modelBuilder.Entity("TCC.Models.PedidoModel", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<int>("IdCliente")
+                    b.Property<int>("IdNota")
                         .HasColumnType("int");
 
                     b.Property<int>("IdProduto")
