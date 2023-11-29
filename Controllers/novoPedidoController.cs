@@ -49,6 +49,7 @@ public class novoPedidoController : Controller
             }
         
         }
+        
         return RedirectToAction("NovaNota");
         //representa ação do form da View "Index" para fezer um pedido
     }
