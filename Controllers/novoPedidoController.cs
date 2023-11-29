@@ -1,6 +1,8 @@
 using System.Diagnostics;
 using System.Security.Cryptography.X509Certificates;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using MySqlConnector;
 using TCC.Database;
 using TCC.Models;
 using TCC.Repository;
@@ -36,7 +38,14 @@ public class novoPedidoController : Controller
         foreach(var item in newPedido.Pedidos){
             if (item.Quantidade >0)
             {
-                _pedidoRepository.AdicionarPedido(item);
+                try
+                {
+                    _pedidoRepository.AdicionarPedido(item);
+                }
+                catch (DbUpdateException)
+                {
+                    return RedirectToAction("Error");
+                }
             }
         
         }
