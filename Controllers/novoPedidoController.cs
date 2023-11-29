@@ -32,28 +32,37 @@ public class novoPedidoController : Controller
 
     [HttpPost]
     public IActionResult NovoPedido(EstoquePedidoNotaModel estoquePedidoNota){
+
+        estoquePedidoNota.Estoque = _estoqueRepository.ListarEstoque();
+
+        estoquePedidoNota.Pedidos.RemoveAll(Pedidos => Pedidos.Quantidade == 0);
         
-        return RedirectToAction("NovaNota",estoquePedidoNota);
+        estoquePedidoNota.SomarTotal();
+
+        return View("NovaNota",estoquePedidoNota);
         //representa ação do form da View "Index" para fezer um pedido
     }
 
     public IActionResult NovaNota(EstoquePedidoNotaModel estoquePedidoNota){
         
-        return View(estoquePedidoNota);
+        return View();
     }
 
     [HttpPost]
     public IActionResult CadastrarNota(EstoquePedidoNotaModel estoquePedidoNota){
-        if(estoquePedidoNota.Pedidos != null){
-         foreach(var item in estoquePedidoNota.Pedidos){
 
-            if (item.Quantidade >0)
-            {
+        if(estoquePedidoNota.Pedidos != null){
+            Random random = new Random();
+            var numNota = random.Next(1,101);
+
+            foreach(var item in estoquePedidoNota.Pedidos){
+
+                item.IdNota = numNota;
                 _pedidoRepository.AdicionarPedido(item);
-            }
         
-        }
-        _notaRepository.AdicionarNota(estoquePedidoNota.NovaNota);
+            }
+
+            _notaRepository.AdicionarNota(estoquePedidoNota.NovaNota);
         return RedirectToAction("Index","Home");
         }else
         {
