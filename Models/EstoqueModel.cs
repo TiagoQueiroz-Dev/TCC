@@ -21,6 +21,6 @@ public class EstoqueModel
     [NotNull]
     public int Disponiveis { get; set; }
     [NotNull]
-    [Column(TypeName = "decimal(10,2)")]
+    [Column(TypeName = "decimal(10,2)")] 
     public decimal ValorUnid { get; set; }
 }

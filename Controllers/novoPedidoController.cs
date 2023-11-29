@@ -25,33 +25,51 @@ public class novoPedidoController : Controller
     
     public IActionResult Index()
     {
-        
-        EstoquePedidoModel estoquePedido = new EstoquePedidoModel(_estoqueRepository.ListarEstoque());
-        return View(estoquePedido);
+        EstoquePedidoNotaModel estoquePedidoNota = new EstoquePedidoNotaModel(_estoqueRepository.ListarEstoque());
+        //Incluindo a lista que temos no Estoque
+        return View(estoquePedidoNota);
     }
 
     [HttpPost]
-    public IActionResult NovoPedido(EstoquePedidoModel newPedido){
+    public IActionResult NovoPedido(EstoquePedidoNotaModel estoquePedidoNota){
+
+        estoquePedidoNota.Estoque = _estoqueRepository.ListarEstoque();
+
+        estoquePedidoNota.Pedidos.RemoveAll(Pedidos => Pedidos.Quantidade == 0);
         
-        foreach(var item in newPedido.Pedidos){
-            if (item.Quantidade >0)
-            {
-                _pedidoRepository.AdicionarPedido(item);
-            }
-        
-        }
-        return RedirectToAction("NovaNota");
+        estoquePedidoNota.SomarTotal();
+
+        return View("NovaNota",estoquePedidoNota);
         //representa ação do form da View "Index" para fezer um pedido
     }
 
-    public IActionResult NovaNota(){
+    public IActionResult NovaNota(EstoquePedidoNotaModel estoquePedidoNota){
+        
         return View();
     }
 
     [HttpPost]
-    public IActionResult CadastrarNota(NotaModel novaNota){
-        _notaRepository.AdicionarNota(novaNota);
+    public IActionResult CadastrarNota(EstoquePedidoNotaModel estoquePedidoNota){
+
+        if(estoquePedidoNota.Pedidos != null){
+            Random random = new Random();
+            var numNota = random.Next(1,101);
+
+            foreach(var item in estoquePedidoNota.Pedidos){
+
+                item.IdNota = numNota;
+                _pedidoRepository.AdicionarPedido(item);
+        
+            }
+
+            _notaRepository.AdicionarNota(estoquePedidoNota.NovaNota);
         return RedirectToAction("Index","Home");
+        }else
+        {
+            return RedirectToAction("Index");
+          //Necessário que seja informado um erro caso ele entre  
+        }
+        
         //representa ação do form da View "NovaNota" para gerar uma nota
     }
 
