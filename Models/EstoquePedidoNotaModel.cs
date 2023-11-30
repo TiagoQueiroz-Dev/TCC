@@ -13,9 +13,11 @@ namespace TCC.Models
 
         public NotaModel NovaNota {get; set;}
 
+        public ListaConsultaNotasModel ListaNotas { get; set; }
+
         public decimal ValorTotalPedido { get; set; }
 
-
+        //atribuir a lista de estoque dentro da bag
         public EstoquePedidoNotaModel(List<EstoqueModel> estoque)
         {
             this.Estoque = estoque;
@@ -25,7 +27,8 @@ namespace TCC.Models
         {
             
         }
-
+        
+        //somar o valor dos pedidos em relação aos valores de estoque 
         public void SomarTotal(){
             decimal somaParcial = 0;
             for(int i=0;i<Pedidos.Count;i++){

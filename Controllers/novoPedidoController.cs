@@ -22,7 +22,7 @@ public class novoPedidoController : Controller
         _estoqueRepository = estoqueRepository;
     }
 
-    
+
     public IActionResult Index()
     {
         EstoquePedidoNotaModel estoquePedidoNota = new EstoquePedidoNotaModel(_estoqueRepository.ListarEstoque());
@@ -31,45 +31,51 @@ public class novoPedidoController : Controller
     }
 
     [HttpPost]
-    public IActionResult NovoPedido(EstoquePedidoNotaModel estoquePedidoNota){
+    public IActionResult NovoPedido(EstoquePedidoNotaModel estoquePedidoNota)
+    {
 
         estoquePedidoNota.Estoque = _estoqueRepository.ListarEstoque();
 
         estoquePedidoNota.Pedidos.RemoveAll(Pedidos => Pedidos.Quantidade == 0);
-        
+
         estoquePedidoNota.SomarTotal();
 
-        return View("NovaNota",estoquePedidoNota);
+        return View("NovaNota", estoquePedidoNota);
         //representa ação do form da View "Index" para fezer um pedido
     }
 
-    public IActionResult NovaNota(EstoquePedidoNotaModel estoquePedidoNota){
-        
+    public IActionResult NovaNota(EstoquePedidoNotaModel estoquePedidoNota)
+    {
+
         return View();
     }
 
     [HttpPost]
-    public IActionResult CadastrarNota(EstoquePedidoNotaModel estoquePedidoNota){
+    public IActionResult CadastrarNota(EstoquePedidoNotaModel estoquePedidoNota)
+    {
 
-        if(estoquePedidoNota.Pedidos != null){
-            Random random = new Random();
-            var numNota = random.Next(1,101);
-
-            foreach(var item in estoquePedidoNota.Pedidos){
-
-                item.IdNota = numNota;
-                _pedidoRepository.AdicionarPedido(item);
-        
-            }
+        if (estoquePedidoNota.Pedidos != null)
+        {
 
             _notaRepository.AdicionarNota(estoquePedidoNota.NovaNota);
-        return RedirectToAction("Index","Home");
-        }else
+
+            
+            foreach (var item in estoquePedidoNota.Pedidos)
+            {
+                //para pegar o id da nota gerada e incuir no pedido, foi criado este metodo de consulta de Id
+                item.IdNota = _notaRepository.BuscarIdNota(estoquePedidoNota.NovaNota);
+                //cada item do pedido irá receber o mesmo idNota antes de ser adicionado ao banco
+                _pedidoRepository.AdicionarPedido(item);
+
+            }
+            return RedirectToAction("Index", "Home");
+        }
+        else
         {
             return RedirectToAction("Index");
-          //Necessário que seja informado um erro caso ele entre  
+            //Necessário que seja informado um erro caso ele entre  
         }
-        
+
         //representa ação do form da View "NovaNota" para gerar uma nota
     }
 
