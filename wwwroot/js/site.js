@@ -17,7 +17,7 @@ function calcularValorParcial(p, q, r) {
 
     var valorParcial = parseFloat(document.getElementById(r).innerText) || 0;
 
-    valorParcial = (valorUnidade*inputQtd).toFixed(2);
+    valorParcial = (valorUnidade * inputQtd).toFixed(2);
 
     document.getElementById(r).innerText = valorParcial.toString();
 };
@@ -38,3 +38,18 @@ function atribuirTotal(s, size) {
 
     document.getElementById(s).innerText = valorTotal.toString().replace('.', ',');
 }
+
+// document.addEventListener("DOMContentLoaded", function (){
+
+//         var data = new Date();
+
+//         var ano = data.getFullYear();
+//         var mes = (data.getMonth() + 1).toString().padStart(2, '0');
+//         var dia = data.getDate().toString().padStart(2, '0');
+
+//         var dataHoje = `${ano}-${mes}-${dia}`;
+        
+//         document.getElementById("Data_aluguel").value = dataHoje;
+        
+// });
+

@@ -19,11 +19,12 @@
     </div>
     <div class="mb-3">
       <label for="Data_aluguel" class="form-label">Data da nota:</label>
-      <input type="date" asp-for="@Model.NovaNota.DataEmissao" class="form-control" id="Data_aluguel">
+      <input type="date" asp-for="@Model.NovaNota.DataEmissao" class="form-control" id="Data_aluguel" value="@DateTime.Now.ToString("yyyy-MM-dd")">
     </div>
     <div class="mb-3">
       <label for="Data_recolhimento" class="form-label">Data de recolhimento:</label>
-      <input type="date" asp-for="@Model.NovaNota.DataRecolhimento" class="form-control" id="Data_recolhimento">
+      <input type="date" asp-for="@Model.NovaNota.DataRecolhimento" class="form-control" id="Data_recolhimento" min="@DateTime.Now.ToString("yyyy-MM-dd")">
+      
     </div>
     <div class="mb-3">
       <label for="produto" class="form-label">Produtos solicitados:</label>

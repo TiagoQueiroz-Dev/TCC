@@ -34,7 +34,7 @@ namespace TCC.Repository.Nota
 
         public List<NotaModel> BuscarNotas(string pesquisa, string opcBusca)
         {
-            
+
             List<NotaModel> listaDeBusca = new List<NotaModel>();
 
             switch (opcBusca)
@@ -47,18 +47,22 @@ namespace TCC.Repository.Nota
                     var notasId = _bancoContex.Notas.Where(u => u.Id == int.Parse(pesquisa));
                     listaDeBusca = notasId.ToList();
                     break;
+                case "Cliente":
+                    var notasCliente = _bancoContex.Notas.Where(u => u.Nome == pesquisa);
+                    listaDeBusca = notasCliente.ToList();
+                    break;
                 case "Tel":
                     var notasTel = _bancoContex.Notas.Where(u => u.Telefone == int.Parse(pesquisa));
                     listaDeBusca = notasTel.ToList();
                     break;
                 case "DATA-NOTA":
                     //a variavel de data deverá se alterada para tipo string
-                    var notasDataInicial = _bancoContex.Notas.Where(u => u.DataEmissao == int.Parse(pesquisa));
+                    var notasDataInicial = _bancoContex.Notas.Where(u => u.DataEmissao == DateTime.Parse(pesquisa));
                     listaDeBusca = notasDataInicial.ToList();
                     break;
                 case "DATA-RECOLHIMENTO":
                     //a variavel de data deverá se alterada para tipo string
-                    var notasDataRecolhimento = _bancoContex.Notas.Where(u => u.DataRecolhimento == int.Parse(pesquisa));
+                    var notasDataRecolhimento = _bancoContex.Notas.Where(u => u.DataRecolhimento == DateTime.Parse(pesquisa));
                     listaDeBusca = notasDataRecolhimento.ToList();
                     break;
                 case "CEP":
@@ -67,7 +71,7 @@ namespace TCC.Repository.Nota
                     break;
             }
             return listaDeBusca;
-            
+
         }
     }
 }
