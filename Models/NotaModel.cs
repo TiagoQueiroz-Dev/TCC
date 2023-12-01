@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace TCC.Models
 {
@@ -12,8 +13,10 @@ namespace TCC.Models
         public string Nome { get; set; }
         public int CNPJ { get; set; }
         public int Telefone { get; set; }
-        public int DataEmissao { get; set; }
-        public int DataRecolhimento { get; set; }
+        [Column(TypeName ="DATE")]
+        public DateTime DataEmissao { get; set; }
+        [Column(TypeName ="DATE")]
+        public DateTime DataRecolhimento { get; set; }
         public string Cidade { get; set; }
         public string Bairro { get; set; }
         public string Complemento { get; set; }
