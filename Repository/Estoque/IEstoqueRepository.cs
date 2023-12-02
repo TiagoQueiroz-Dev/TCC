@@ -9,7 +9,7 @@ namespace TCC.Repository
     public interface IEstoqueRepository 
     {
         List<EstoqueModel> ListarEstoque();
-        EstoqueModel BaixaEstoque(EstoqueModel estoque,PedidoModel pedido);
+        EstoqueModel BaixaEstoque(PedidoModel pedido);
         
     }
 

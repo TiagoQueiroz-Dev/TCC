@@ -20,20 +20,20 @@ namespace TCC.Repository
             _pedidoRepository = pedidoRepository;
         }
 
-        public EstoqueModel BaixaEstoque(EstoqueModel estoque,PedidoModel pedido)
+        public EstoqueModel BaixaEstoque(PedidoModel pedido)
         {
-            var produtoEstoque = _dataContexto.EstoqueGeral.Find(estoque.Id);
+            var produtoEstoque = _dataContexto.EstoqueGeral.Find(pedido.IdProduto);
 
-            if(produtoEstoque.Id == pedido.IdProduto){
+            if(produtoEstoque != null){
                 if(produtoEstoque.Disponiveis >= pedido.Quantidade){
-                    estoque.Disponiveis -= pedido.Quantidade;
-                    estoque.Alugados += pedido.Quantidade; 
-                    _dataContexto.EstoqueGeral.Update(estoque);
+                    produtoEstoque.Disponiveis -= pedido.Quantidade;
+                    produtoEstoque.Alugados += pedido.Quantidade; 
+                    _dataContexto.EstoqueGeral.Update(produtoEstoque);
                     _pedidoRepository.AdicionarPedido(pedido);
                     _dataContexto.SaveChanges();
                 }
             }
-            return estoque;
+            return produtoEstoque;
         }
 
         public List<EstoqueModel> ListarEstoque()
