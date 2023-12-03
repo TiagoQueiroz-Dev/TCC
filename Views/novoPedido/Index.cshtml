@@ -16,7 +16,7 @@
             <div class="mb-3 d-flex align-items-end">
               <label for="@item.Id" class="form-label text-nowrap w-50">@item.Nome</label>
               <input class="escondido" type="number" value="@item.Id" asp-for="@Model.Pedidos[cont-1].IdProduto">
-              <input type="number" class="form-control" asp-for="@Model.Pedidos[cont-1].Quantidade" id="@item.Id" placeholder="0" min="0" max="@item.Disponiveis"  oninput="calcularValorTotal('@cont-valorUnidade',@item.Id,'@cont-lista','valorTotal',@Model.Estoque.Count)">
+              <input type="number" class="form-control" asp-for="@Model.Pedidos[cont-1].Quantidade" id="@item.Id" placeholder="0" min="0" oninput="calcularValorTotal('@cont-valorUnidade',@item.Id,'@cont-lista','valorTotal',@Model.Estoque.Count)">
               <div class="w-50 text-end d-flex justify-content-center">R$<p id="@cont-valorUnidade">@item.ValorUnid</p></div>        
               <input type="hidden" id="@cont-lista">
             </div>

@@ -19,6 +19,7 @@ namespace TCC.Repository.Pedido
         public PedidoModel AdicionarPedido(PedidoModel novoPedido)
         {
             _bancoContext.Pedidos.Add(novoPedido);
+            
             _bancoContext.SaveChanges();
             return novoPedido;
            

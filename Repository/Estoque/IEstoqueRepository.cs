@@ -11,5 +11,8 @@ namespace TCC.Repository
         List<EstoqueModel> ListarEstoque();
 
         EstoqueModel BuscarProduto(int idProduto);
+        EstoqueModel BaixaEstoque(PedidoModel pedido);
+        
     }
+
 }
