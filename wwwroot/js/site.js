@@ -53,3 +53,29 @@ function atribuirTotal(s, size) {
         
 // });
 
+
+function SomarTotalDesc(i,j,k,l){
+    var inputSubTotal = document.getElementById(i).value || 0;
+    var inputDesc = document.getElementById(j).value || 0;
+    var inputPagPrevio = document.getElementById(l).value || 0;
+
+    var subTotal = parseFloat(inputSubTotal);
+    var desconto = parseFloat(inputDesc);
+    var previo = parseFloat(inputPagPrevio);
+
+    var total = subTotal-subTotal*(desconto/100);
+    if(total <0){
+        total = 0;
+    }
+    
+    if(previo > total){
+        previo = total
+        document.getElementById(l).value = previo.toFixed(2).replace('.',',');
+    }else
+
+    document.getElementById(k).value = total.toFixed(2).replace('.',',');
+    
+
+}
+
+

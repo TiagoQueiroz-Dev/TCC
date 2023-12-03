@@ -14,6 +14,14 @@ namespace TCC.Repository
         public EstoqueRepository (BancoContext dataContexto){
             _dataContexto = dataContexto;   
         }
+
+        public EstoqueModel BuscarProduto(int idProduto)
+        {
+            var produto = _dataContexto.EstoqueGeral.Find(idProduto);
+
+            return produto;
+        }
+
         public List<EstoqueModel> ListarEstoque()
         {
             return _dataContexto.EstoqueGeral.ToList();
