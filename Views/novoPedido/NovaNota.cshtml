@@ -59,7 +59,8 @@
         </div>
         <div>
           <label for="valor_total" class="form-label">Total:</label>
-          <input type="text" class="form-control" id="valor_total" min="0" value="@Model.SubTotalPedido" asp-for="@Model.NovaNota.ValorTotal" readonly>
+          <input type="text" class="form-control" id="valor_total" min="0" value="@Model.SubTotalPedido"
+            asp-for="@Model.NovaNota.ValorTotal" readonly>
         </div>
       </div>
       <div class="mb-3 text-start d-flex flex-column">
@@ -76,6 +77,10 @@
           <div class="w-100">
             <label for="Bairro" class="form-label">Bairro:</label>
             <input type="text" asp-for="@Model.NovaNota.Bairro" class="form-control" id="Bairro">
+          </div>
+          <div class="ms-3 w-100">
+            <label for="Rua" class="form-label">Rua / Logadouro:</label>
+            <input type="text" asp-for="@Model.NovaNota.Rua" class="form-control" id=rua>
           </div>
         </div>
         <div class="mb-3 d-flex justify-content-around">

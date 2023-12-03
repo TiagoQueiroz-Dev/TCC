@@ -33,13 +33,13 @@ namespace TCC.Repository
         public EstoqueModel BaixaEstoque(PedidoModel pedido)
         {
             var produtoEstoque = _dataContexto.EstoqueGeral.Find(pedido.IdProduto);
-
             if (produtoEstoque != null)
             {
                 if (produtoEstoque.Disponiveis >= pedido.Quantidade)
                 {
                     produtoEstoque.Disponiveis -= pedido.Quantidade;
                     produtoEstoque.Alugados += pedido.Quantidade;
+                    Console.WriteLine(produtoEstoque.Disponiveis);
                     _dataContexto.EstoqueGeral.Update(produtoEstoque);
                     _pedidoRepository.AdicionarPedido(pedido);
                     _dataContexto.SaveChanges();

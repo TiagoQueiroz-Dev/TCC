@@ -80,7 +80,8 @@ public class novoPedidoController : Controller
             foreach (var item in estoquePedidoNota.Pedidos)
             {
                 //para pegar o id da nota gerada e incuir no pedido, foi criado este metodo de consulta de Id
-                item.IdNota = _notaRepository.BuscarIdNota(estoquePedidoNota.NovaNota); 
+                item.IdNota = _notaRepository.BuscarIdNota(estoquePedidoNota.NovaNota);
+                
                 _estoqueRepository.BaixaEstoque(item);
                 //cada item do pedido irá receber o mesmo idNota antes de ser adicionado ao banco
                 //_pedidoRepository.AdicionarPedido(item);
