@@ -15,8 +15,9 @@ namespace TCC.Repository
         private readonly IPedidoRepository _pedidoRepository;
 
 
-        public EstoqueRepository (BancoContext dataContexto,IPedidoRepository pedidoRepository){
-            _dataContexto = dataContexto;   
+        public EstoqueRepository(BancoContext dataContexto, IPedidoRepository pedidoRepository)
+        {
+            _dataContexto = dataContexto;
             _pedidoRepository = pedidoRepository;
         }
 
@@ -25,14 +26,20 @@ namespace TCC.Repository
             var produto = _dataContexto.EstoqueGeral.Find(idProduto);
 
             return produto;
+
+
+        }
+
         public EstoqueModel BaixaEstoque(PedidoModel pedido)
         {
             var produtoEstoque = _dataContexto.EstoqueGeral.Find(pedido.IdProduto);
 
-            if(produtoEstoque != null){
-                if(produtoEstoque.Disponiveis >= pedido.Quantidade){
+            if (produtoEstoque != null)
+            {
+                if (produtoEstoque.Disponiveis >= pedido.Quantidade)
+                {
                     produtoEstoque.Disponiveis -= pedido.Quantidade;
-                    produtoEstoque.Alugados += pedido.Quantidade; 
+                    produtoEstoque.Alugados += pedido.Quantidade;
                     _dataContexto.EstoqueGeral.Update(produtoEstoque);
                     _pedidoRepository.AdicionarPedido(pedido);
                     _dataContexto.SaveChanges();
@@ -44,8 +51,7 @@ namespace TCC.Repository
         public List<EstoqueModel> ListarEstoque()
         {
             return _dataContexto.EstoqueGeral.ToList();
-             
+
         }
-        
     }
 }
