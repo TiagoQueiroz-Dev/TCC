@@ -98,8 +98,12 @@ public class novoPedidoController : Controller
                 //_pedidoRepository.AdicionarPedido(item);
 
             }
-            //return RedirectToAction("Index", "Home");
-            return new ViewAsPdf("Index");
+            //return RedirectToAction("Index",estoquePedidoNota);
+            return new ViewAsPdf("Index",estoquePedidoNota){
+                FileName = "teste.pdf",
+                PageOrientation = Rotativa.AspNetCore.Options.Orientation.Portrait,
+                PageSize = Rotativa.AspNetCore.Options.Size.A4
+            };
         }
         else
         {

@@ -38,6 +38,10 @@ function atribuirTotal(s, size) {
 
     document.getElementById(s).innerText = valorTotal.toString().replace('.', ',');
 }
+function imprimirPagina() {
+    window.print(); // Este comando aciona a caixa de diálogo de impressão do navegador
+    window.location('/novoPedidoController/CadastrarNota');
+}
 
 // document.addEventListener("DOMContentLoaded", function (){
 
