@@ -41,11 +41,22 @@ public class estoqueController : Controller
     [HttpPost]
     public IActionResult ValidarEdit(EstoqueModel produtoNovo)
     {
-       
-
          _estoqueRepository.EditarEstoque(produtoNovo);
         return RedirectToAction("Index");
 
+    }
+    public IActionResult AddProduto(){
+        EstoqueModel novoProduto = new EstoqueModel();
+        return View(novoProduto);
+    }
+    [HttpPost]
+    public IActionResult ValidarNovoProd(EstoqueModel novoProduto){
+        _estoqueRepository.AdicionarEstoque(novoProduto);
+        return RedirectToAction("Index");
+    }
+    public IActionResult ExcluirProduto(int id){
+            _estoqueRepository.ExcluirProduto(id);
+        return RedirectToAction("Index");
     }
 
 }
