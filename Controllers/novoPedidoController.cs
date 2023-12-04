@@ -56,11 +56,12 @@ public class novoPedidoController : Controller
                     if(item2.Nome.Split(' ')[0] == "Escora"){
                         estoquePedidoNota.NovaNota.ValorPag += item2.ValorUnid*item1.Quantidade;
                     }
+
                 }
                 qtdPedidos += item1.Quantidade;
         }
 
-        if(qtdPedidos < 20){
+        if(qtdPedidos < 20 || estoquePedidoNota.SubTotalPedido < 500){
             estoquePedidoNota.Entrega = true;
         }else{
             estoquePedidoNota.Entrega = false;

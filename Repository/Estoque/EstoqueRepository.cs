@@ -80,5 +80,12 @@ namespace TCC.Repository
             _dataContexto.SaveChanges();
             return editProduto;
         }
+
+        public EstoqueModel AdicionarEstoque(EstoqueModel novoProduto)
+        {
+            _dataContexto.EstoqueGeral.Add(novoProduto);
+            _dataContexto.SaveChanges();
+            return novoProduto;
+        }
     }
 }
