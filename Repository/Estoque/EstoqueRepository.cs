@@ -53,5 +53,12 @@ namespace TCC.Repository
             return _dataContexto.EstoqueGeral.ToList();
 
         }
+
+        public EstoqueModel EditarEstoque(EstoqueModel editProduto)
+        {
+            _dataContexto.EstoqueGeral.Update(editProduto);
+            _dataContexto.SaveChanges();
+            return editProduto;
+        }
     }
 }
