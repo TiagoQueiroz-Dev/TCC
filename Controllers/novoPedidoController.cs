@@ -84,6 +84,8 @@ public class novoPedidoController : Controller
 
         if (estoquePedidoNota.Pedidos != null)
         {   
+            estoquePedidoNota.NovaNota.ValorDesconto = estoquePedidoNota.NovaNota.ValorDesconto/100*estoquePedidoNota.NovaNota.ValorTotal;
+            Console.WriteLine(estoquePedidoNota.NovaNota.ValorDesconto);
 
             _notaRepository.AdicionarNota(estoquePedidoNota.NovaNota);
         

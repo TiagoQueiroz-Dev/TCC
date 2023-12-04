@@ -32,6 +32,12 @@ namespace TCC.Repository.Nota
             return notaConsulta.Id;
         }
 
+        public NotaModel BuscarNota(int id)
+        {
+            var nota = _bancoContex.Notas.Find(id);
+            return nota;
+        }
+
         public List<NotaModel> BuscarNotas(string pesquisa, string opcBusca)
         {
 

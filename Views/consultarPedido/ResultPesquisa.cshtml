@@ -48,6 +48,7 @@
                     <th scope="col">Nº Nota</th>
                     <th scope="col">CPF/CNPJ</th>
                     <th scope="col">Cliente</th>
+                    <th scope="col"></th>
                 </tr>
             </thead>
             <tbody>
@@ -57,7 +58,9 @@
                         <th scope="row">@item.Id</th>
                         <td>@item.CPF_CNPJ</td>
                         <td>@item.Nome</td>
+                        <td><a role="button" class="btn btn-primary w-50" asp-action="VisualizarNota" asp-controller="ConsultarPedido" asp-route-id="@item.Id">Visualizar</a></td>
                     </tr>
+                    
                 }
             </tbody>
         </table>

@@ -47,6 +47,14 @@ public class consultarPedidoController : Controller
         return View(estoquePedidoNota);
     }
 
+    public IActionResult VisualizarNota(int id){
+        EstoquePedidoNotaModel pedidoNota = new EstoquePedidoNotaModel();
+        pedidoNota.NovaNota = _notaRepository.BuscarNota(id);
+        pedidoNota.Pedidos = _pedidoRepository.PedidosNota(id);
+        pedidoNota.Estoque = _estoqueRepository.ListarEstoque();
+        return View(pedidoNota);
+    }
+
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {
