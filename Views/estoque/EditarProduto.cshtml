@@ -12,12 +12,12 @@
         <div class="mb-3">
             <label for="qtdTotal" class="form-label">Quantidade Total:</label>
             <input type="number" class="form-control" id="qtdTotal" placeholder="@Model.QuantidadeTotal"
-                asp-for="@Model.QuantidadeTotal">
+                asp-for="@Model.QuantidadeTotal" min="@Model.Alugados">
         </div>
         <div>
             <label for="valorDiaria" class="form-label">Valor Diária:</label>
             <input type="number" class="form-control" id="valorDiaria" placeholder="@Model.ValorUnid"
-                asp-for="@Model.ValorUnid">
+                asp-for="@Model.ValorUnid" min="0">
         </div>
         <div class="d-flex justify-content-end">
             <button type="submit" class="btn btn-success mt-3">Confirmar</button>

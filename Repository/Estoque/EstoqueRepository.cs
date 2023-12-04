@@ -66,14 +66,15 @@ namespace TCC.Repository
             }
             if (prodVelho.QuantidadeTotal != editProduto.QuantidadeTotal)
             {
+                if(prodVelho.Alugados<=editProduto.QuantidadeTotal){
                 prodVelho.QuantidadeTotal = editProduto.QuantidadeTotal;
                 prodVelho.Disponiveis = prodVelho.QuantidadeTotal-prodVelho.Alugados;
+                }
             }
             if (prodVelho.ValorUnid != editProduto.ValorUnid)
             {
                 prodVelho.ValorUnid = editProduto.ValorUnid;
             }
-
         }
 
             _dataContexto.SaveChanges();
