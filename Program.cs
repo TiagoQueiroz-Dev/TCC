@@ -6,6 +6,14 @@ using TCC.Repository.Pedido;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddCors(options =>{
+        options.AddPolicy("CorsPolicy",
+            policy => {
+                policy.WithOrigins("http://localhost:3000");
+                });
+
+});
+
 builder.Services.AddControllersWithViews();
 string mySqlConnection = builder.Configuration.GetConnectionString("Conexao");
 builder.Services.AddDbContext<BancoContext>(opt => {
@@ -26,6 +34,8 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+
+app.UseCors("CorsPolicy");
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
@@ -36,5 +46,14 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllerRoute(
+        name: "api",
+        pattern: "api/{controller=ConsultarPedido}/{action=ConsultaNota}/{id?}");
+    endpoints.MapControllers();
+});
+
 
 app.Run();

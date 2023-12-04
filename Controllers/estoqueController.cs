@@ -5,7 +5,8 @@ using TCC.Models;
 using TCC.Repository;
 
 namespace TCC.Controllers;
-
+[ApiController]
+[Route("api/[controller]/[action]")]
 public class estoqueController : Controller
 {
     public readonly IEstoqueRepository _estoqueRepository;
@@ -15,10 +16,11 @@ public class estoqueController : Controller
         _estoqueRepository = estoqueRepository;
     }
 
-    public IActionResult Index()
+    [HttpGet]
+   public IActionResult Index()
     {
         var estoque = _estoqueRepository.ListarEstoque();
-        return View(estoque);
+        return Ok(estoque);
     }
 
     public IActionResult EditarProduto(int id)

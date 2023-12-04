@@ -7,7 +7,8 @@ using TCC.Repository.Nota;
 using TCC.Repository.Pedido;
 
 namespace TCC.Controllers;
-
+[ApiController]
+[Route("api/[controller]/[action]")]
 public class consultarPedidoController : Controller
 {
     public readonly IPedidoRepository _pedidoRepository;
@@ -20,11 +21,11 @@ public class consultarPedidoController : Controller
         _notaRepository = notaRepository;
         _estoqueRepository = estoqueRepository;
     }
-
-    public IActionResult Index()
+    [HttpGet]
+    public ActionResult Index()
     {
         EstoquePedidoNotaModel estoquePedidoNota = new EstoquePedidoNotaModel();
-        return View(estoquePedidoNota);
+        return Ok(estoquePedidoNota);
     }
 
     [HttpPost]
@@ -36,10 +37,10 @@ public class consultarPedidoController : Controller
             estoquePedidoNota.ListaNotas.NotasEncontradas = _notaRepository.BuscarNotas(estoquePedidoNota.ListaNotas.stringBusca, estoquePedidoNota.ListaNotas.opcBusca);
             //Console.WriteLine(estoquePedidoNota.ListaNotas.NotasEncontradas);
 
-            return View("ResultPesquisa", estoquePedidoNota);
+            return Ok(estoquePedidoNota);
         }
         //necessário notificar usuário sobre o erro de busca
-        return View("Index");
+        return Ok("Index");
     }
 
     public IActionResult ResultPesquisa(EstoquePedidoNotaModel estoquePedidoNota)
