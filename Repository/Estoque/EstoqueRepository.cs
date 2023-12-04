@@ -87,5 +87,14 @@ namespace TCC.Repository
             _dataContexto.SaveChanges();
             return novoProduto;
         }
+
+        public EstoqueModel ExcluirProduto(int id)
+        {
+            var produto = BuscarProduto(id);
+            _dataContexto.EstoqueGeral.Remove(produto);
+            _dataContexto.SaveChanges();
+
+            return produto;
+        }
     }
 }

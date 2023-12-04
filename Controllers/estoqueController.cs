@@ -54,5 +54,9 @@ public class estoqueController : Controller
         _estoqueRepository.AdicionarEstoque(novoProduto);
         return RedirectToAction("Index");
     }
+    public IActionResult ExcluirProduto(int id){
+            _estoqueRepository.ExcluirProduto(id);
+        return RedirectToAction("Index");
+    }
 
 }

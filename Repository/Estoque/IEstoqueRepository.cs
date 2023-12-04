@@ -15,6 +15,7 @@ namespace TCC.Repository
         EstoqueModel EditarEstoque(EstoqueModel produto);
         
         EstoqueModel AdicionarEstoque(EstoqueModel novoProduto);
+        EstoqueModel ExcluirProduto(int id);
     }
 
 }
