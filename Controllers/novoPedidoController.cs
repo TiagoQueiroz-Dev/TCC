@@ -34,6 +34,8 @@ public class novoPedidoController : Controller
     public IActionResult NovoPedido(EstoquePedidoNotaModel estoquePedidoNota)
     {
 
+        var qtdPedidos = 0;
+
         estoquePedidoNota.Estoque = _estoqueRepository.ListarEstoque();
 
         estoquePedidoNota.NovaNota = new NotaModel();
@@ -55,7 +57,15 @@ public class novoPedidoController : Controller
                         estoquePedidoNota.NovaNota.ValorPag += item2.ValorUnid*item1.Quantidade;
                     }
                 }
+                qtdPedidos += item1.Quantidade;
         }
+
+        if(qtdPedidos < 20){
+            estoquePedidoNota.Entrega = true;
+        }else{
+            estoquePedidoNota.Entrega = false;
+        }
+        
 
         return View("NovaNota", estoquePedidoNota);
         //representa ação do form da View "Index" para fezer um pedido
@@ -72,11 +82,10 @@ public class novoPedidoController : Controller
     {
 
         if (estoquePedidoNota.Pedidos != null)
-        {
+        {   
 
             _notaRepository.AdicionarNota(estoquePedidoNota.NovaNota);
-
-
+        
             foreach (var item in estoquePedidoNota.Pedidos)
             {
                 //para pegar o id da nota gerada e incuir no pedido, foi criado este metodo de consulta de Id

@@ -17,6 +17,8 @@ namespace TCC.Models
 
         public decimal SubTotalPedido { get; set; }
 
+        public bool Entrega {get;set;}
+
         //atribuir a lista de estoque dentro da bag
         public EstoquePedidoNotaModel(List<EstoqueModel> estoque)
         {
