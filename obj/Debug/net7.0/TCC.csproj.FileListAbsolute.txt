@@ -514,3 +514,5 @@ C:\Users\kevin\Documents\GitHub\TCC\obj\Debug\net7.0\TCC.pdb
 C:\Users\kevin\Documents\GitHub\TCC\obj\Debug\net7.0\TCC.genruntimeconfig.cache
 C:\Users\kevin\Documents\GitHub\TCC\obj\Debug\net7.0\ref\TCC.dll
 C:\Users\kevin\Documents\GitHub\TCC\obj\Debug\net7.0\TCC.sourcelink.json
+C:\Users\Suricato Furtivo\Documents\TCC\bin\Debug\net7.0\Rotativa.AspNetCore.dll
+C:\Users\Suricato Furtivo\Documents\TCC\obj\Debug\net7.0\TCC.MvcApplicationPartsAssemblyInfo.cs

@@ -1,6 +1,7 @@
 using System.Diagnostics;
 using System.Security.Cryptography.X509Certificates;
 using Microsoft.AspNetCore.Mvc;
+using Rotativa.AspNetCore;
 using TCC.Database;
 using TCC.Models;
 using TCC.Repository;
@@ -96,7 +97,8 @@ public class novoPedidoController : Controller
                 //_pedidoRepository.AdicionarPedido(item);
 
             }
-            return RedirectToAction("Index", "Home");
+            //return RedirectToAction("Index", "Home");
+            return new ViewAsPdf("Index");
         }
         else
         {

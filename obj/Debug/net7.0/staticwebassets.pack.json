@@ -5,6 +5,18 @@
       "PackagePath": "staticwebassets\\TCC.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\Rotativa\\wkhtmltoimage.exe",
+      "PackagePath": "staticwebassets\\Rotativa\\wkhtmltoimage.exe"
+    },
+    {
+      "Id": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\Rotativa\\wkhtmltopdf.exe",
+      "PackagePath": "staticwebassets\\Rotativa\\wkhtmltopdf.exe"
+    },
+    {
+      "Id": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\Rotativa\\wkhtmltox.dll",
+      "PackagePath": "staticwebassets\\Rotativa\\wkhtmltox.dll"
+    },
+    {
       "Id": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

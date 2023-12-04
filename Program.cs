@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using Rotativa.AspNetCore;
 using TCC.Database;
 using TCC.Repository;
 using TCC.Repository.Nota;
@@ -36,5 +37,8 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+string env = app.Environment.WebRootPath;
+RotativaConfiguration.Setup(env,"rotativa");
+    
 
 app.Run();
