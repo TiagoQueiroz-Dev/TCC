@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "MRUi2ZzCH/K/igqkfvJHv10iEC3fWKdVOLceMyFGsb5AMTmj2bzxT0qRF7cP3rNyIEGVdzTrsWJp5Xbz+MDGpw==",
+  "dgSpecHash": "b3Pev0mrqk14Lfchhb92YCZPzlfgetJIoXiFZq9Yc3M4tkDQ+p9Y+kHLx9aQ3DgzU7bRBKlfu4gcib8aYjLgtQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\TCC.csproj",
   "expectedPackageFiles": [
@@ -131,6 +131,7 @@
     "C:\\Users\\Suricato Furtivo\\.nuget\\packages\\nuget.versioning\\6.6.1\\nuget.versioning.6.6.1.nupkg.sha512",
     "C:\\Users\\Suricato Furtivo\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\7.0.0\\pomelo.entityframeworkcore.mysql.7.0.0.nupkg.sha512",
     "C:\\Users\\Suricato Furtivo\\.nuget\\packages\\pomelo.entityframeworkcore.mysql.design\\1.1.2\\pomelo.entityframeworkcore.mysql.design.1.1.2.nupkg.sha512",
+    "C:\\Users\\Suricato Furtivo\\.nuget\\packages\\rotativa.aspnetcore\\1.3.2\\rotativa.aspnetcore.1.3.2.nupkg.sha512",
     "C:\\Users\\Suricato Furtivo\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\Suricato Furtivo\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\Suricato Furtivo\\.nuget\\packages\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",

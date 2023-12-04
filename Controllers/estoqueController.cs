@@ -10,7 +10,8 @@ public class estoqueController : Controller
 {
     public readonly IEstoqueRepository _estoqueRepository;
 
-    public estoqueController(IEstoqueRepository estoqueRepository){
+    public estoqueController(IEstoqueRepository estoqueRepository)
+    {
         _estoqueRepository = estoqueRepository;
     }
 
@@ -20,9 +21,31 @@ public class estoqueController : Controller
         return View(estoque);
     }
 
-    [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-    public IActionResult Error()
+    public IActionResult EditarProduto(int id)
     {
-        return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        var estoque = _estoqueRepository.ListarEstoque();
+
+        EstoqueModel produto = new EstoqueModel();
+
+        foreach (var item in estoque)
+        {
+            if (item.Id == id)
+            {
+                produto = item;
+                break;
+            }
+        }
+        return View(produto);
     }
+
+    [HttpPost]
+    public IActionResult ValidarEdit(EstoqueModel produtoNovo)
+    {
+       
+
+         _estoqueRepository.EditarEstoque(produtoNovo);
+        return RedirectToAction("Index");
+
+    }
+
 }

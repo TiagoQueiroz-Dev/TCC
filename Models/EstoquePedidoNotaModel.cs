@@ -15,7 +15,9 @@ namespace TCC.Models
 
         public ListaConsultaNotasModel ListaNotas { get; set; }
 
-        public decimal ValorTotalPedido { get; set; }
+        public decimal SubTotalPedido { get; set; }
+
+        public bool Entrega {get;set;}
 
         //atribuir a lista de estoque dentro da bag
         public EstoquePedidoNotaModel(List<EstoqueModel> estoque)
@@ -38,7 +40,7 @@ namespace TCC.Models
                     }
                 }
             }
-            this.ValorTotalPedido = somaParcial;
+            this.SubTotalPedido = somaParcial;
         }
 
         

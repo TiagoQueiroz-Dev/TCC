@@ -12,5 +12,6 @@ namespace TCC.Models
         public int IdProduto { get; set; }
         public int IdNota{ get; set;}
         public int Quantidade { get; set; }
+        public int QtdDias { get; set; }
     }
 }

@@ -34,9 +34,16 @@
                     <td>
                         R$ @item.ValorUnid
                     </td>
+                    <td>
+                        <a role="button" class="btn btn-primary" asp-action="EditarProduto" asp-controller="Estoque"
+                            asp-route-id="@item.Id">Editar</a>
+                    </td>
                 </tr>
+
             }
         </tbody>
 
     </table>
+
+    <div class="d-flex justify-content-end"><a role="button" class="btn btn-success">Adicionar Produto</a></div>
 </div>

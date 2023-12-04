@@ -69,6 +69,10 @@
             "Pomelo.EntityFrameworkCore.Mysql": {
               "target": "Package",
               "version": "[7.0.0, )"
+            },
+            "Rotativa.AspNetCore": {
+              "target": "Package",
+              "version": "[1.3.2, )"
             }
           },
           "imports": [

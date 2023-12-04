@@ -34,17 +34,44 @@ public class novoPedidoController : Controller
     public IActionResult NovoPedido(EstoquePedidoNotaModel estoquePedidoNota)
     {
 
+        var qtdPedidos = 0;
+
         estoquePedidoNota.Estoque = _estoqueRepository.ListarEstoque();
+
+        estoquePedidoNota.NovaNota = new NotaModel();
 
         estoquePedidoNota.Pedidos.RemoveAll(Pedidos => Pedidos.Quantidade == 0);
 
         estoquePedidoNota.SomarTotal();
 
+        estoquePedidoNota.NovaNota.ValorPag = 0;
+
+        foreach (var item1 in estoquePedidoNota.Pedidos)
+        {
+           // aplicada regra de negocio para verificar pagamento imediato das escoras
+            foreach (var item2 in estoquePedidoNota.Estoque)
+
+                if (item1.IdProduto == item2.Id)
+                {
+                    if(item2.Nome.Split(' ')[0] == "Escora"){
+                        estoquePedidoNota.NovaNota.ValorPag += item2.ValorUnid*item1.Quantidade;
+                    }
+                }
+                qtdPedidos += item1.Quantidade;
+        }
+
+        if(qtdPedidos < 20){
+            estoquePedidoNota.Entrega = true;
+        }else{
+            estoquePedidoNota.Entrega = false;
+        }
+        
+
         return View("NovaNota", estoquePedidoNota);
         //representa ação do form da View "Index" para fezer um pedido
     }
 
-    public IActionResult NovaNota(EstoquePedidoNotaModel estoquePedidoNota)
+    public IActionResult NovaNota()
     {
 
         return View();
@@ -55,15 +82,15 @@ public class novoPedidoController : Controller
     {
 
         if (estoquePedidoNota.Pedidos != null)
-        {
+        {   
 
             _notaRepository.AdicionarNota(estoquePedidoNota.NovaNota);
-
-            
+        
             foreach (var item in estoquePedidoNota.Pedidos)
             {
                 //para pegar o id da nota gerada e incuir no pedido, foi criado este metodo de consulta de Id
-                item.IdNota = _notaRepository.BuscarIdNota(estoquePedidoNota.NovaNota); 
+                item.IdNota = _notaRepository.BuscarIdNota(estoquePedidoNota.NovaNota);
+                
                 _estoqueRepository.BaixaEstoque(item);
                 //cada item do pedido irá receber o mesmo idNota antes de ser adicionado ao banco
                 //_pedidoRepository.AdicionarPedido(item);
