@@ -41,23 +41,9 @@ public class estoqueController : Controller
     [HttpPost]
     public IActionResult ValidarEdit(EstoqueModel produtoNovo)
     {
-        var prodVelho = _estoqueRepository.BuscarProduto(produtoNovo.Id);
-        if (prodVelho != null)
-        {
-            if (prodVelho.Nome != produtoNovo.Nome)
-            {
-                prodVelho.Nome = produtoNovo.Nome;
-            }
-            if (prodVelho.QuantidadeTotal != produtoNovo.QuantidadeTotal)
-            {
-                prodVelho.QuantidadeTotal = produtoNovo.QuantidadeTotal;
-            }
-            if (prodVelho.ValorUnid != produtoNovo.ValorUnid)
-            {
-                prodVelho.ValorUnid = produtoNovo.ValorUnid;
-            }
-            _estoqueRepository.EditarEstoque(produtoNovo);
-        }
+       
+
+         _estoqueRepository.EditarEstoque(produtoNovo);
         return RedirectToAction("Index");
 
     }

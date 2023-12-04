@@ -56,7 +56,26 @@ namespace TCC.Repository
 
         public EstoqueModel EditarEstoque(EstoqueModel editProduto)
         {
-            _dataContexto.EstoqueGeral.Update(editProduto);
+             var prodVelho = BuscarProduto(editProduto.Id);
+
+        if (prodVelho != null)
+        {
+            if (prodVelho.Nome != editProduto.Nome)
+            {
+                prodVelho.Nome = editProduto.Nome;
+            }
+            if (prodVelho.QuantidadeTotal != editProduto.QuantidadeTotal)
+            {
+                prodVelho.QuantidadeTotal = editProduto.QuantidadeTotal;
+                prodVelho.Disponiveis = prodVelho.QuantidadeTotal-prodVelho.Alugados;
+            }
+            if (prodVelho.ValorUnid != editProduto.ValorUnid)
+            {
+                prodVelho.ValorUnid = editProduto.ValorUnid;
+            }
+
+        }
+
             _dataContexto.SaveChanges();
             return editProduto;
         }
