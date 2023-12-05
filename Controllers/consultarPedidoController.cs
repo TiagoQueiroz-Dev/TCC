@@ -40,7 +40,7 @@ public class consultarPedidoController : Controller
             return Ok(estoquePedidoNota);
         }
         //necessário notificar usuário sobre o erro de busca
-        return Ok("Index");
+        return Ok();
     }
 
     public IActionResult ResultPesquisa(EstoquePedidoNotaModel estoquePedidoNota)

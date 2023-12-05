@@ -37,28 +37,29 @@ public class estoqueController : Controller
                 break;
             }
         }
-        return View(produto);
+        return Ok(produto);
     }
 
     [HttpPost]
     public IActionResult ValidarEdit(EstoqueModel produtoNovo)
     {
          _estoqueRepository.EditarEstoque(produtoNovo);
-        return RedirectToAction("Index");
+        return Ok();
 
     }
     public IActionResult AddProduto(){
         EstoqueModel novoProduto = new EstoqueModel();
         return View(novoProduto);
     }
+
     [HttpPost]
     public IActionResult ValidarNovoProd(EstoqueModel novoProduto){
         _estoqueRepository.AdicionarEstoque(novoProduto);
-        return RedirectToAction("Index");
+        return Ok();
     }
     public IActionResult ExcluirProduto(int id){
             _estoqueRepository.ExcluirProduto(id);
-        return RedirectToAction("Index");
+        return Ok();
     }
 
 }
