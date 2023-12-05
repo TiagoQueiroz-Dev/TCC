@@ -26,7 +26,6 @@ public class novoPedidoController : Controller
     public IActionResult Index()
     {
         EstoquePedidoNotaModel estoquePedidoNota = new EstoquePedidoNotaModel(_estoqueRepository.ListarEstoque());
-        //Incluindo a lista que temos no Estoque
         return View(estoquePedidoNota);
     }
 

@@ -55,6 +55,12 @@ public class consultarPedidoController : Controller
         return View(pedidoNota);
     }
 
+    [HttpPost]
+    public IActionResult BaixarNota(EstoquePedidoNotaModel nota){
+        _notaRepository.BaixarNota(nota.NovaNota);
+        return RedirectToAction("Index");
+    }
+
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {

@@ -5,16 +5,21 @@ using System.Threading.Tasks;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using TCC.Database;
 using TCC.Models;
+using TCC.Repository.Pedido;
 
 namespace TCC.Repository.Nota
 {
     public class NotaRepository : INotaRepository
     {
         public readonly BancoContext _bancoContex;
+        public readonly IPedidoRepository _pedidoRepository;
+        public readonly IEstoqueRepository _estoqueRepository;
 
-        public NotaRepository(BancoContext bancoContext)
+        public NotaRepository(BancoContext bancoContext, IPedidoRepository pedidoRepository, IEstoqueRepository estoqueRepository)
         {
             _bancoContex = bancoContext;
+            _pedidoRepository = pedidoRepository;
+            _estoqueRepository = estoqueRepository;
         }
 
         public NotaModel AdicionarNota(NotaModel novaNota)
@@ -23,6 +28,28 @@ namespace TCC.Repository.Nota
             _bancoContex.Notas.Add(novaNota);
             _bancoContex.SaveChanges();
             return novaNota;
+        }
+
+        public NotaModel BaixarNota(NotaModel nota)
+        {
+            List<PedidoModel> produtos = new List<PedidoModel>();
+            EstoqueModel itemEstoque = new EstoqueModel();
+
+            produtos = _pedidoRepository.PedidosNota(nota.Id);
+            Console.WriteLine(nota.StatusNota);
+            if(nota.StatusNota){
+                foreach(var i in produtos ){
+                    itemEstoque = _estoqueRepository.BuscarProduto(i.IdProduto);
+                    itemEstoque.Alugados -= i.Quantidade;
+                    itemEstoque.Disponiveis += i.Quantidade; 
+                    _bancoContex.EstoqueGeral.Update(itemEstoque);
+                }
+                nota.StatusNota = false;
+                _bancoContex.Notas.Update(nota);
+            }
+
+            _bancoContex.SaveChanges();
+            return nota;
         }
 
         public int BuscarIdNota(NotaModel nota)
@@ -79,13 +106,15 @@ namespace TCC.Repository.Nota
             }
             return listaDeBusca;
         }
-        public List<NotaModel> NotasAbertas(){
+        public List<NotaModel> NotasAbertas()
+        {
             List<NotaModel> abertas = new List<NotaModel>();
 
             var notas = _bancoContex.Notas.Where(u => u.StatusNota == true);
             abertas = notas.ToList();
-            
+
             return abertas;
         }
+
     }
 }
