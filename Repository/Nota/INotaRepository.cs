@@ -15,5 +15,6 @@ namespace TCC.Repository.Nota
         List<NotaModel> BuscarNotas(string pesquisa,string opcBusca);
 
         NotaModel BuscarNota(int id);
+        List<NotaModel> NotasAbertas();
     }
 }

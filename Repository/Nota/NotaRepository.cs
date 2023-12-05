@@ -19,6 +19,7 @@ namespace TCC.Repository.Nota
 
         public NotaModel AdicionarNota(NotaModel novaNota)
         {
+            novaNota.StatusNota = true;
             _bancoContex.Notas.Add(novaNota);
             _bancoContex.SaveChanges();
             return novaNota;
@@ -77,7 +78,14 @@ namespace TCC.Repository.Nota
                     break;
             }
             return listaDeBusca;
+        }
+        public List<NotaModel> NotasAbertas(){
+            List<NotaModel> abertas = new List<NotaModel>();
 
+            var notas = _bancoContex.Notas.Where(u => u.StatusNota == true);
+            abertas = notas.ToList();
+            
+            return abertas;
         }
     }
 }

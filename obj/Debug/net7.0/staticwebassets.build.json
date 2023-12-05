@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "N6v6NqxjTDFBV1bArR2kS0wULLf6TcqN4r3xKuVCTjY=",
+  "Hash": "RfX4nKHzn0bOREJdZ2N4cZOQqC5+gBM5IKzSJ/yvNRI=",
   "Source": "TCC",
   "BasePath": "_content/TCC",
   "Mode": "Default",
@@ -167,6 +167,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\lupa.svg"
+    },
+    {
+      "Identity": "C:\\Users\\kevin\\Documents\\GitHub\\TCC\\wwwroot\\img\\nota.svg",
+      "SourceId": "TCC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kevin\\Documents\\GitHub\\TCC\\wwwroot\\",
+      "BasePath": "_content/TCC",
+      "RelativePath": "img/nota.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\nota.svg"
     },
     {
       "Identity": "C:\\Users\\kevin\\Documents\\GitHub\\TCC\\wwwroot\\img\\novoPedido.svg",

@@ -36,6 +36,13 @@
                         </li>
                         <section id="vertical_line"></section>
                         <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="NotasAbertas"
+                                asp-action="Index"><div class="estoque d-flex flex-column align-items-center">
+                                    <img src="@Url.Content("~/img/nota.svg")" alt="Estoque" width="48"> Notas Abertas
+                                </div></a>
+                        </li>
+                        <section id="vertical_line"></section>
+                        <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="consultarPedido"
                                 asp-action="Index"><div class="consulta d-flex flex-column align-items-center">
                                     <img src="@Url.Content("~/img/consultaPedido.svg")" alt="Consultar Pedido" width="48"> Consultar pedido

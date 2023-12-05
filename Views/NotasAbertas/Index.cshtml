@@ -1,0 +1,63 @@
+@model EstoquePedidoNotaModel 
+@{
+    ViewData["Title"] = "Notas Abertas";
+}
+
+<div class="text-center row">
+    <h1>Consultar Nota</h1>
+    <form method="post" asp-action="ConsultaNota" asp-controller="ConsultarPedido">
+        <div class="d-flex justify-content-center align-items-center">
+            <div class="text-end rounded-pill bg-warning w-100 d-flex align-items-center justify-content-between me-3">
+                <h2 class="mt-1 flex-fill"><input asp-for="@Model.ListaNotas.stringBusca" type="search"
+                        id="pesquisa" class="ms-3 bg-transparent border-0 outline-0 w-100 d-flex"
+                        placeholder="Pesquisar"></h2>
+                <button type="submit" class="btn btn-link p-0"><a>
+                        @* -To querendo botar um circulo em volta da Lupa !! *@
+                        <img class="ms-3 me-3 custom-img-btn" src="@Url.Content("~/img/lupa.svg")" alt="Lupa" width="30"
+                            </a></button>
+            </div>
+
+
+            <h2>
+                <select id="filtros" class="rounded-pill ps-1" asp-for="@Model.ListaNotas.opcBusca">
+                    <option value="" disabled selected>Selecione Filtro</option>
+                    <option value="CPF/CNPJ">CPF/CNPJ</option>
+                    <option value="NNota">Nº Nota</option>
+                    <option value="Tel">Telefone</option>
+                    <option value="DATA-NOTA">DATA INICIO</option>
+                    <option value="DATA-RECOLHIMENTO">DATA RECOLHIMENTO</option>
+                    <option value="CEP">CEP</option>
+                </select>
+            </h2>
+    </form>
+</div>
+@if(Model.ListaNotas.NotasEncontradas.Any()){
+      <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Nº Nota</th>
+                    <th scope="col">CPF/CNPJ</th>
+                    <th scope="col">Cliente</th>
+                    <th scope="col">Status</th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in @Model.ListaNotas.NotasEncontradas)
+                {
+                    <tr>
+                        <th scope="row">@item.Id</th>
+                        <td>@item.CPF_CNPJ</td>
+                        <td>@item.Nome</td>
+                        <td>@item.StatusNota</td>
+                        <td><a role="button" class="btn btn-primary w-50" asp-action="VisualizarNota" asp-controller="ConsultarPedido" asp-route-id="@item.Id">Visualizar</a></td>
+                    </tr>
+                    
+                }
+            </tbody>
+        </table>
+    }
+    else{
+        <h1>Nota não encontrada</h1>
+    }
+</div>
