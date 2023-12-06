@@ -23,14 +23,21 @@ public class consultarPedidoController : Controller
 
     public IActionResult Index()
     {
-        EstoquePedidoNotaModel estoquePedidoNota = new EstoquePedidoNotaModel();
-        return View(estoquePedidoNota);
+        return View();
     }
 
     [HttpPost]
-    public IActionResult ConsultaNota(EstoquePedidoNotaModel estoquePedidoNota)
+    public IActionResult ConsultaNota(string busca,string opc)
     {
-
+        Console.WriteLine(busca,opc);
+        EstoquePedidoNotaModel estoquePedidoNota = new EstoquePedidoNotaModel();
+        ListaConsultaNotasModel consulta = new ListaConsultaNotasModel();
+        
+        estoquePedidoNota.ListaNotas = consulta;
+        
+        estoquePedidoNota.ListaNotas.stringBusca = busca;
+        estoquePedidoNota.ListaNotas.opcBusca = opc;
+        
         if (estoquePedidoNota.ListaNotas.stringBusca != null && estoquePedidoNota.ListaNotas.opcBusca != null)
         {
             estoquePedidoNota.ListaNotas.NotasEncontradas = _notaRepository.BuscarNotas(estoquePedidoNota.ListaNotas.stringBusca, estoquePedidoNota.ListaNotas.opcBusca);

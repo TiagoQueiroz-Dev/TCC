@@ -18,7 +18,7 @@
     <form method="post" asp-action="ConsultaNota" asp-controller="ConsultarPedido">
         <div class="d-flex justify-content-center align-items-center">
             <div class="text-end rounded-pill bg-warning w-100 d-flex align-items-center justify-content-between me-3">
-                <h2 class="mt-1 flex-fill"><input asp-for="@Model.ListaNotas.stringBusca" type="search"
+                <h2 class="mt-1 flex-fill"><input name="busca" type="search"
                         id="pesquisa" class="ms-3 bg-transparent border-0 outline-0 w-100 d-flex"
                         placeholder="Pesquisar"></h2>
                 <button type="submit" class="btn btn-link p-0"><a>
@@ -26,9 +26,8 @@
                         <img class="ms-3 me-3 custom-img-btn" src="@Url.Content("~/img/lupa.svg")" alt="Lupa" width="30"
                             </a></button>
             </div>
-
             <h2>
-                <select id="filtros" class="rounded-pill ps-1" asp-for="@Model.ListaNotas.opcBusca">
+                <select id="filtros" class="rounded-pill ps-1" name="opc">
                     <option value="" disabled selected>Selecione Filtro</option>
                     <option value="CPF/CNPJ">CPF/CNPJ</option>
                     <option value="NNota">Nº Nota</option>
