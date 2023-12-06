@@ -26,7 +26,6 @@ public class novoPedidoController : Controller
     public IActionResult Index()
     {
         EstoquePedidoNotaModel estoquePedidoNota = new EstoquePedidoNotaModel(_estoqueRepository.ListarEstoque());
-        //Incluindo a lista que temos no Estoque
         return View(estoquePedidoNota);
     }
 
@@ -84,6 +83,8 @@ public class novoPedidoController : Controller
 
         if (estoquePedidoNota.Pedidos != null)
         {   
+            estoquePedidoNota.NovaNota.ValorDesconto = estoquePedidoNota.NovaNota.ValorDesconto/100*estoquePedidoNota.NovaNota.ValorTotal;
+            Console.WriteLine(estoquePedidoNota.NovaNota.ValorDesconto);
 
             _notaRepository.AdicionarNota(estoquePedidoNota.NovaNota);
         

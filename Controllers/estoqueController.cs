@@ -49,7 +49,7 @@ public class estoqueController : Controller
     }
     public IActionResult AddProduto(){
         EstoqueModel novoProduto = new EstoqueModel();
-        return View(novoProduto);
+        return Ok(novoProduto);
     }
 
     [HttpPost]

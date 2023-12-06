@@ -24,14 +24,20 @@ public class consultarPedidoController : Controller
     [HttpGet]
     public ActionResult Index()
     {
-        EstoquePedidoNotaModel estoquePedidoNota = new EstoquePedidoNotaModel();
-        return Ok(estoquePedidoNota);
+        return Ok();
     }
 
     [HttpPost]
-    public IActionResult ConsultaNota(EstoquePedidoNotaModel estoquePedidoNota)
+    public IActionResult ConsultaNota(string busca,string opc)
     {
-
+        EstoquePedidoNotaModel estoquePedidoNota = new EstoquePedidoNotaModel();
+        ListaConsultaNotasModel consulta = new ListaConsultaNotasModel();
+        
+        estoquePedidoNota.ListaNotas = consulta;
+        
+        estoquePedidoNota.ListaNotas.stringBusca = busca;
+        estoquePedidoNota.ListaNotas.opcBusca = opc;
+        
         if (estoquePedidoNota.ListaNotas.stringBusca != null && estoquePedidoNota.ListaNotas.opcBusca != null)
         {
             estoquePedidoNota.ListaNotas.NotasEncontradas = _notaRepository.BuscarNotas(estoquePedidoNota.ListaNotas.stringBusca, estoquePedidoNota.ListaNotas.opcBusca);
@@ -40,12 +46,26 @@ public class consultarPedidoController : Controller
             return Ok(estoquePedidoNota);
         }
         //necessário notificar usuário sobre o erro de busca
-        return Ok();
+        return Ok("pix");
     }
 
     public IActionResult ResultPesquisa(EstoquePedidoNotaModel estoquePedidoNota)
     {
-        return View(estoquePedidoNota);
+        return Ok(estoquePedidoNota);
+    }
+
+    public IActionResult VisualizarNota(int id){
+        EstoquePedidoNotaModel pedidoNota = new EstoquePedidoNotaModel();
+        pedidoNota.NovaNota = _notaRepository.BuscarNota(id);
+        pedidoNota.Pedidos = _pedidoRepository.PedidosNota(id);
+        pedidoNota.Estoque = _estoqueRepository.ListarEstoque();
+        return View(pedidoNota);
+    }
+
+    [HttpPost]
+    public IActionResult BaixarNota(EstoquePedidoNotaModel nota){
+        _notaRepository.BaixarNota(nota.NovaNota);
+        return RedirectToAction("Index");
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

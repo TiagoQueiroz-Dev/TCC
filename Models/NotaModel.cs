@@ -30,6 +30,7 @@ namespace TCC.Models
         [Column(TypeName = "decimal(10,2)")]
         public decimal ValorDesconto { get; set; }
         [Column(TypeName = "decimal(10,2)")]
-        public decimal TaxaEntrega { get; set; }
+        public decimal? TaxaEntrega { get; set; }
+        public bool StatusNota { get; set; }
     }
 }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "WMfDnxkwcVqp/eE2nwHNws9UNZdt7zVAgWc36JyLHfw=",
+  "Hash": "B9jUtQ2rGLL/dzp78NaI6M0/B0EreKJuYu9eyzFCLLo=",
   "Source": "TCC",
   "BasePath": "_content/TCC",
   "Mode": "Default",
@@ -151,6 +151,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\lupa.svg"
+    },
+    {
+      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\img\\nota.svg",
+      "SourceId": "TCC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
+      "BasePath": "_content/TCC",
+      "RelativePath": "img/nota.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\nota.svg"
     },
     {
       "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\img\\novoPedido.svg",
