@@ -514,5 +514,9 @@ C:\Users\kevin\Documents\GitHub\TCC\obj\Debug\net7.0\TCC.pdb
 C:\Users\kevin\Documents\GitHub\TCC\obj\Debug\net7.0\TCC.genruntimeconfig.cache
 C:\Users\kevin\Documents\GitHub\TCC\obj\Debug\net7.0\ref\TCC.dll
 C:\Users\kevin\Documents\GitHub\TCC\obj\Debug\net7.0\TCC.sourcelink.json
-C:\Users\Suricato Furtivo\Documents\TCC\bin\Debug\net7.0\Rotativa.AspNetCore.dll
-C:\Users\Suricato Furtivo\Documents\TCC\obj\Debug\net7.0\TCC.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Suricato Furtivo\Documents\TCC\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Suricato Furtivo\Documents\TCC\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Suricato Furtivo\Documents\TCC\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Suricato Furtivo\Documents\TCC\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Suricato Furtivo\Documents\TCC\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\Suricato Furtivo\Documents\TCC\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
