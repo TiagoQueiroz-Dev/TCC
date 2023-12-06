@@ -1,0 +1,40 @@
+﻿@model EstoquePedidoNotaModel
+
+@{
+  ViewData["Title"] = "Criar pedido";
+  var cont=1;
+}
+
+<h2 class="text-center mb-3">Novo Pedido</h2>
+<form asp-action="NovoPedido" asp-controller="NovoPedido" method="post">
+
+  @if (Model != null && Model.Estoque.Any())
+  {
+    @foreach (var item in Model.Estoque)
+    {
+
+            <div class="mb-3 d-flex align-items-end justify-content-between">
+              <label for="@item.Id" class="form-label text-nowrap w-50">@item.Nome</label>
+              <input class="escondido" type="number" value="@item.Id" asp-for="@Model.Pedidos[cont-1].IdProduto">
+              <input type="number" class="form-control" asp-for="@Model.Pedidos[cont-1].Quantidade" id="@item.Id" placeholder="0" min="0" max="@Model.Estoque[cont-1].Disponiveis" oninput="calcularValorTotal('@cont-valorUnidade',@item.Id,'@cont-lista','valorTotal',@Model.Estoque.Count)">
+              
+              <div class="ms-3">
+                <input type="number"class="form-control" id="qtdEstoque" value="@Model.Estoque[cont-1].Disponiveis" readonly>
+              </div>
+              
+              <div class="w-50 text-end d-flex justify-content-center">R$<p id="@cont-valorUnidade">@item.ValorUnid</p></div>        
+              <input type="hidden" id="@cont-lista">
+            </div>
+            @*Varivel cont para referencia do id que quarda os valores relativos de custo de cada elemento*@         
+            cont++;
+                
+    }
+  }
+
+  <div class="col-12">
+    <button class="btn btn-success" type="submit">Gerar Nota</button>
+  </div>
+  <h3 class="text-end d-flex justify-content-end">Total = R$<p id="valorTotal">0,00</h3>
+</form>
+
+  
