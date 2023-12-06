@@ -29,7 +29,7 @@ public class consultarPedidoController : Controller
     [HttpPost]
     public IActionResult ConsultaNota(string busca,string opc)
     {
-        Console.WriteLine(busca,opc);
+
         EstoquePedidoNotaModel estoquePedidoNota = new EstoquePedidoNotaModel();
         ListaConsultaNotasModel consulta = new ListaConsultaNotasModel();
         

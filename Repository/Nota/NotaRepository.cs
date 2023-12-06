@@ -116,5 +116,14 @@ namespace TCC.Repository.Nota
             return abertas;
         }
 
+        public List<NotaModel> RelatorioData(DateTime inicial, DateTime final)
+        {   
+            List<NotaModel> relatorioNotas = new List<NotaModel>();
+
+            var notas = _bancoContex.Notas.Where(u => u.DataEmissao >=inicial && u.DataEmissao <= final);
+            relatorioNotas = notas.ToList();
+            
+            return relatorioNotas;
+        }
     }
 }
