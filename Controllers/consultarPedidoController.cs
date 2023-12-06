@@ -25,7 +25,7 @@ public class consultarPedidoController : Controller
     public ActionResult Index()
     {
         EstoquePedidoNotaModel estoquePedidoNota = new EstoquePedidoNotaModel();
-        return Ok(estoquePedidoNota);
+        return View(estoquePedidoNota);
     }
 
     [HttpPost]
