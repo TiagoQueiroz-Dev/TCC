@@ -24,7 +24,10 @@ public class consultarPedidoController : Controller
     [HttpGet]
     public ActionResult Index()
     {
-        return Ok();
+        List<NotaModel> AllNotas = new List<NotaModel>(); 
+        AllNotas = _notaRepository.TodasNotas();
+        
+        return Ok(AllNotas);
     }
 
     [HttpPost]

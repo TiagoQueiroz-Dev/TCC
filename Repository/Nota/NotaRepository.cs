@@ -125,5 +125,23 @@ namespace TCC.Repository.Nota
             
             return relatorioNotas;
         }
+
+        public List<NotaModel> NotasRecolher(){
+            List<NotaModel> recolherNotas = new List<NotaModel>();
+
+             DateTime now = DateTime.Now;
+             TimeSpan intervalo = TimeSpan.FromDays(5);
+
+            var notas = _bancoContex.Notas.Where(u => u.DataRecolhimento > now && u.DataRecolhimento <= now + intervalo && u.StatusNota == true);
+            recolherNotas = notas.ToList();
+
+            return recolherNotas;
+        }
+
+        public List<NotaModel> TodasNotas(){
+
+            var notas = _bancoContex.Notas.ToList();
+            return notas;
+        }
     }
 }
