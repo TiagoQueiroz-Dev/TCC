@@ -54,6 +54,7 @@ public class estoqueController : Controller
 
     [HttpPost]
     public IActionResult ValidarNovoProd(EstoqueModel novoProduto){
+        novoProduto.Disponiveis = novoProduto.QuantidadeTotal;
         _estoqueRepository.AdicionarEstoque(novoProduto);
         return Ok();
     }
