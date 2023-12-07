@@ -3,6 +3,7 @@ using TCC.Database;
 using TCC.Repository;
 using TCC.Repository.Nota;
 using TCC.Repository.Pedido;
+using TCC.Repository.Usuario;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -15,6 +16,7 @@ opt.UseMySql(mySqlConnection, ServerVersion.AutoDetect(mySqlConnection));
 builder.Services.AddScoped<IEstoqueRepository, EstoqueRepository>();
 builder.Services.AddScoped<IPedidoRepository, PedidoRepository>();
 builder.Services.AddScoped<INotaRepository, NotaRepository>();
+builder.Services.AddScoped<IUsuarioRepository,UsuarioRepository>();
 
 var app = builder.Build();
 
@@ -35,6 +37,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Login}/{action=Index}/{id?}");
 
 app.Run();

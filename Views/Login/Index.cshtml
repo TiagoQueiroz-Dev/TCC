@@ -1,0 +1,16 @@
+
+@{
+    ViewData["Title"] = "ValidarLogin";
+}
+
+<form asp-action="ValidarLogin" asp-controller="Login" method="post">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Usuario</label>
+    <input type="Text" name="Usuario" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Senha</label>
+    <input type="password" name="Senha" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>

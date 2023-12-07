@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TCC.Database;
 
@@ -10,9 +11,11 @@ using TCC.Database;
 namespace TCC.Migrations
 {
     [DbContext(typeof(BancoContext))]
-    partial class BancoContextModelSnapshot : ModelSnapshot
+    [Migration("20231206212414_login")]
+    partial class login
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -133,7 +136,7 @@ namespace TCC.Migrations
                     b.ToTable("Pedidos");
                 });
 
-            modelBuilder.Entity("TCC.Models.UsuarioModel", b =>
+            modelBuilder.Entity("TCC.Models.UsusarioModel", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -143,7 +146,7 @@ namespace TCC.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<string>("Usuario")
+                    b.Property<string>("Ususario")
                         .IsRequired()
                         .HasColumnType("longtext");
 
