@@ -9,6 +9,7 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TCC
 build_property.RootNamespace = TCC
+<<<<<<< HEAD
 build_property.ProjectDir = C:\Users\Condoriano\Desktop\Front\backImperio\TCC\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
@@ -24,11 +25,30 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcY29uc3VsdGFyUGVkaWRvXFJlc3VsdFBlc3F1aXNhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+=======
+build_property.ProjectDir = C:\Users\rapha\OneDrive\Área de Trabalho\TCC\backImperio\TCC\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\rapha\OneDrive\Área de Trabalho\TCC\backImperio\TCC
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/rapha/OneDrive/Área de Trabalho/TCC/backImperio/TCC/Views/consultarPedido/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcY29uc3VsdGFyUGVkaWRvXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rapha/OneDrive/Área de Trabalho/TCC/backImperio/TCC/Views/consultarPedido/ResultPesquisa.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcY29uc3VsdGFyUGVkaWRvXFJlc3VsdFBlc3F1aXNhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+<<<<<<< HEAD
+>>>>>>> b7c6ae046bdae880ff5f5cd29850ab930129d8b2
 [C:/Users/Condoriano/Desktop/Front/backImperio/TCC/Views/consultarPedido/VisualizarNota.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcY29uc3VsdGFyUGVkaWRvXFZpc3VhbGl6YXJOb3RhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Condoriano/Desktop/Front/backImperio/TCC/Views/estoque/AddProduto.cshtml]
+<<<<<<< HEAD
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcZXN0b3F1ZVxBZGRQcm9kdXRvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
@@ -52,6 +72,35 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3Ncbm92b1BlZGlkb1xOb3ZhTm90YS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+=======
+=======
+[C:/Users/rapha/OneDrive/Área de Trabalho/TCC/backImperio/TCC/Views/estoque/AddProduto.cshtml]
+>>>>>>> 6b64af54ca69c169e9adce66250b652cb0663289
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcZXN0b3F1ZVxBZGRQcm9kdXRvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rapha/OneDrive/Área de Trabalho/TCC/backImperio/TCC/Views/estoque/EditarProduto.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcZXN0b3F1ZVxFZGl0YXJQcm9kdXRvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rapha/OneDrive/Área de Trabalho/TCC/backImperio/TCC/Views/estoque/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcZXN0b3F1ZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rapha/OneDrive/Área de Trabalho/TCC/backImperio/TCC/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rapha/OneDrive/Área de Trabalho/TCC/backImperio/TCC/Views/novoPedido/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3Ncbm92b1BlZGlkb1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rapha/OneDrive/Área de Trabalho/TCC/backImperio/TCC/Views/novoPedido/NovaNota.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3Ncbm92b1BlZGlkb1xOb3ZhTm90YS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+<<<<<<< HEAD
+>>>>>>> b7c6ae046bdae880ff5f5cd29850ab930129d8b2
 [C:/Users/Condoriano/Desktop/Front/backImperio/TCC/Views/Relatorio/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVsYXRvcmlvXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -61,6 +110,7 @@ build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVsYXRvcmlvXFJlc3VsdFJlbGF0
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Condoriano/Desktop/Front/backImperio/TCC/Views/Shared/Error.cshtml]
+<<<<<<< HEAD
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
@@ -77,5 +127,26 @@ build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Condoriano/Desktop/Front/backImperio/TCC/Views/Shared/_Layout.cshtml]
+=======
+=======
+[C:/Users/rapha/OneDrive/Área de Trabalho/TCC/backImperio/TCC/Views/Shared/Error.cshtml]
+>>>>>>> 6b64af54ca69c169e9adce66250b652cb0663289
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rapha/OneDrive/Área de Trabalho/TCC/backImperio/TCC/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rapha/OneDrive/Área de Trabalho/TCC/backImperio/TCC/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rapha/OneDrive/Área de Trabalho/TCC/backImperio/TCC/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/rapha/OneDrive/Área de Trabalho/TCC/backImperio/TCC/Views/Shared/_Layout.cshtml]
+>>>>>>> b7c6ae046bdae880ff5f5cd29850ab930129d8b2
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-r5vxt2sssx

@@ -11381,25 +11381,22 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Condoriano\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\rapha\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\TCC.csproj",
+      "projectUniqueName": "C:\\Users\\rapha\\OneDrive\\Área de Trabalho\\TCC\\backImperio\\TCC\\TCC.csproj",
       "projectName": "TCC",
-      "projectPath": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\TCC.csproj",
-      "packagesPath": "C:\\Users\\Condoriano\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\obj\\",
+      "projectPath": "C:\\Users\\rapha\\OneDrive\\Área de Trabalho\\TCC\\backImperio\\TCC\\TCC.csproj",
+      "packagesPath": "C:\\Users\\rapha\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\rapha\\OneDrive\\Área de Trabalho\\TCC\\backImperio\\TCC\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Condoriano\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\rapha\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -11471,7 +11468,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

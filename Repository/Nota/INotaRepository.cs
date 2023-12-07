@@ -17,6 +17,11 @@ namespace TCC.Repository.Nota
         NotaModel BuscarNota(int id);
         List<NotaModel> NotasAbertas();
         NotaModel BaixarNota(NotaModel nota);
+        List<NotaModel> TodasNotas();
         List<NotaModel> RelatorioData (DateTime inicial,DateTime final);
+<<<<<<< HEAD
+=======
+        List<NotaModel> NotasRecolher();
+>>>>>>> b7c6ae046bdae880ff5f5cd29850ab930129d8b2
     }
 }

@@ -5,7 +5,8 @@ using TCC.Models;
 using TCC.Repository;
 
 namespace TCC.Controllers;
-
+[ApiController]
+[Route("api/[controller]/[action]")]
 public class estoqueController : Controller
 {
     public readonly IEstoqueRepository _estoqueRepository;
@@ -15,10 +16,11 @@ public class estoqueController : Controller
         _estoqueRepository = estoqueRepository;
     }
 
-    public IActionResult Index()
+    [HttpGet]
+   public IActionResult Index()
     {
         var estoque = _estoqueRepository.ListarEstoque();
-        return View(estoque);
+        return Ok(estoque);
     }
 
     public IActionResult EditarProduto(int id)
@@ -35,29 +37,30 @@ public class estoqueController : Controller
                 break;
             }
         }
-        return View(produto);
+        return Ok(produto);
     }
 
     [HttpPost]
     public IActionResult ValidarEdit(EstoqueModel produtoNovo)
     {
          _estoqueRepository.EditarEstoque(produtoNovo);
-        return RedirectToAction("Index");
+        return Ok();
 
     }
     public IActionResult AddProduto(){
         EstoqueModel novoProduto = new EstoqueModel();
-        return View(novoProduto);
+        return Ok(novoProduto);
     }
+
     [HttpPost]
     public IActionResult ValidarNovoProd(EstoqueModel novoProduto){
         novoProduto.Disponiveis = novoProduto.QuantidadeTotal;
         _estoqueRepository.AdicionarEstoque(novoProduto);
-        return RedirectToAction("Index");
+        return Ok();
     }
     public IActionResult ExcluirProduto(int id){
             _estoqueRepository.ExcluirProduto(id);
-        return RedirectToAction("Index");
+        return Ok();
     }
 
 }
