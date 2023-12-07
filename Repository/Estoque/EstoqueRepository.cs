@@ -96,14 +96,5 @@ namespace TCC.Repository
 
             return produto;
         }
-
-        public List<EstoqueModel> PoucoEstoque()
-        {
-            var estoque = _dataContexto.EstoqueGeral.Where(u => u.Disponiveis <= 5);
-            List<EstoqueModel> listaEstoque = new List<EstoqueModel>();
-            listaEstoque = estoque.ToList();
-
-            return listaEstoque;
-        }
     }
 }

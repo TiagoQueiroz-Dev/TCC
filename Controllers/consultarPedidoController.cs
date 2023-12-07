@@ -23,10 +23,7 @@ public class consultarPedidoController : Controller
 
     public IActionResult Index()
     {
-        List<NotaModel> AllNotas = new List<NotaModel>(); 
-        AllNotas = _notaRepository.TodasNotas();
-        
-        return View(AllNotas);
+        return View();
     }
 
     [HttpPost]
