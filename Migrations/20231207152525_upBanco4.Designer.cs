@@ -11,8 +11,8 @@ using TCC.Database;
 namespace TCC.Migrations
 {
     [DbContext(typeof(BancoContext))]
-    [Migration("20231203194733_NotasUp")]
-    partial class NotasUp
+    [Migration("20231207152525_upBanco4")]
+    partial class upBanco4
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -57,21 +57,24 @@ namespace TCC.Migrations
 
                     b.Property<string>("Bairro")
                         .IsRequired()
-                        .HasColumnType("longtext");
+                        .HasMaxLength(50)
+                        .HasColumnType("varchar(50)");
 
-                    b.Property<int>("CPF_CNPJ")
-                        .HasColumnType("int");
+                    b.Property<long>("CPF_CNPJ")
+                        .HasColumnType("BIGINT");
 
                     b.Property<int>("Cep")
-                        .HasColumnType("int");
+                        .HasColumnType("MEDIUMINT");
 
                     b.Property<string>("Cidade")
                         .IsRequired()
-                        .HasColumnType("longtext");
+                        .HasMaxLength(50)
+                        .HasColumnType("varchar(50)");
 
                     b.Property<string>("Complemento")
                         .IsRequired()
-                        .HasColumnType("longtext");
+                        .HasMaxLength(50)
+                        .HasColumnType("varchar(50)");
 
                     b.Property<DateTime>("DataEmissao")
                         .HasColumnType("DATE");
@@ -81,22 +84,30 @@ namespace TCC.Migrations
 
                     b.Property<string>("Nome")
                         .IsRequired()
-                        .HasColumnType("longtext");
+                        .HasMaxLength(255)
+                        .HasColumnType("varchar(255)");
 
                     b.Property<int>("Numero")
                         .HasColumnType("int");
 
                     b.Property<string>("Rua")
                         .IsRequired()
-                        .HasColumnType("longtext");
+                        .HasMaxLength(50)
+                        .HasColumnType("varchar(50)");
 
-                    b.Property<int>("Telefone")
-                        .HasColumnType("int");
+                    b.Property<bool>("StatusNota")
+                        .HasColumnType("tinyint(1)");
+
+                    b.Property<decimal?>("TaxaEntrega")
+                        .HasColumnType("decimal(10,2)");
+
+                    b.Property<long>("Telefone")
+                        .HasColumnType("BIGINT");
 
                     b.Property<decimal>("ValorDesconto")
                         .HasColumnType("decimal(10,2)");
 
-                    b.Property<decimal>("ValorPag")
+                    b.Property<decimal>("ValorPago")
                         .HasColumnType("decimal(10,2)");
 
                     b.Property<decimal>("ValorTotal")
@@ -117,6 +128,9 @@ namespace TCC.Migrations
                         .HasColumnType("int");
 
                     b.Property<int>("IdProduto")
+                        .HasColumnType("int");
+
+                    b.Property<int>("QtdDias")
                         .HasColumnType("int");
 
                     b.Property<int>("Quantidade")

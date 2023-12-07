@@ -14,5 +14,5 @@ public class BancoContext : DbContext
     public DbSet<EstoqueModel> EstoqueGeral { get; set; }
     public DbSet<PedidoModel> Pedidos { get; set; }
     public DbSet<NotaModel> Notas { get; set; }
-    
+
 }
