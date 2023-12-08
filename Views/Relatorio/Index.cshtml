@@ -1,0 +1,19 @@
+@{
+    ViewData["Title"] = "Relatório";
+}
+
+<div class="text-center">
+    <div class="d-flex justify-content-center">
+        <form asp-action="GerarRelatorio" asp-controller="Relatorio" class="d-flex">
+            <div class="">
+                <label class="me-2" for="dataInicio">Data Inicial:</label>
+                <input type="date" id="dataInicio" name="datanicial">
+                <label class="me-2" for="dataFinal">Data Final:</label>
+                <input type="date" id="dataFinal" name="dataFinal">
+            </div>
+            <div class="d-flex justify-content-end">
+                <button type="submit" class="btn btn-success ms-3">Gerar Relatorio</button>
+            </div>
+        </form>
+    </div>
+</div>
