@@ -1,10 +1,6 @@
 {
   "Version": 1,
-<<<<<<< HEAD
-  "Hash": "hIB4gXRZI1gIWdRKDRLEvczKEOhEdJgIvTbrbpAdKig=",
-=======
-  "Hash": "fhH/jOdmPv68697VLdk5YCpCZzqzDSGp8Hp7aR3ttko=",
->>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
+  "Hash": "VErfRaCk5zD60HBvKXHnuYMHlcq7ds+4B+zsnXJzEWc=",
   "Source": "TCC",
   "BasePath": "_content/TCC",
   "Mode": "Default",
@@ -14,39 +10,29 @@
     {
       "Name": "TCC\\wwwroot",
       "Source": "TCC",
-<<<<<<< HEAD
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
-=======
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
->>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
       "BasePath": "_content/TCC",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\obj\\Debug\\net7.0\\scopedcss\\bundle\\TCC.styles.css",
       "SourceId": "TCC",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
-=======
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\obj\\Debug\\net7.0\\scopedcss\\bundle\\TCC.styles.css",
-      "SourceId": "TCC",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
->>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
       "BasePath": "_content/TCC",
       "RelativePath": "TCC.styles.css",
       "AssetKind": "All",
       "AssetMode": "CurrentProject",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\obj\\Debug\\net7.0\\scopedcss\\bundle\\TCC.styles.css"
     },
     {
@@ -54,26 +40,18 @@
       "SourceId": "TCC",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
-=======
-      "OriginalItemSpec": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\obj\\Debug\\net7.0\\scopedcss\\bundle\\TCC.styles.css"
-    },
-    {
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\TCC.bundle.scp.css",
-      "SourceId": "TCC",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
->>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
       "BasePath": "_content/TCC",
       "RelativePath": "TCC.bundle.scp.css",
       "AssetKind": "All",
       "AssetMode": "Reference",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
       "OriginalItemSpec": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\TCC.bundle.scp.css"
     },
     {
@@ -81,20 +59,13 @@
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
-=======
-      "OriginalItemSpec": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\TCC.bundle.scp.css"
-    },
-    {
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\css\\site.css",
-      "SourceId": "TCC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
->>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
       "BasePath": "_content/TCC",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -103,22 +74,17 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\favicon.ico",
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\favicon.ico",
-      "SourceId": "TCC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
->>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
       "BasePath": "_content/TCC",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -127,22 +93,17 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\img\\andaime.svg",
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\img\\andaime.svg",
-      "SourceId": "TCC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
->>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
       "BasePath": "_content/TCC",
       "RelativePath": "img/andaime.svg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -151,22 +112,17 @@
       "OriginalItemSpec": "wwwroot\\img\\andaime.svg"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\img\\consultaPedido.svg",
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\img\\consultaPedido.svg",
-      "SourceId": "TCC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
->>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
       "BasePath": "_content/TCC",
       "RelativePath": "img/consultaPedido.svg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -175,22 +131,17 @@
       "OriginalItemSpec": "wwwroot\\img\\consultaPedido.svg"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\img\\estoque.svg",
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\img\\estoque.svg",
-      "SourceId": "TCC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
->>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
       "BasePath": "_content/TCC",
       "RelativePath": "img/estoque.svg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -199,21 +150,17 @@
       "OriginalItemSpec": "wwwroot\\img\\estoque.svg"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\img\\lupa.svg",
+      "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\img\\home.svg",
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\img\\home.svg",
-      "SourceId": "TCC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
       "BasePath": "_content/TCC",
       "RelativePath": "img/home.svg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -222,16 +169,17 @@
       "OriginalItemSpec": "wwwroot\\img\\home.svg"
     },
     {
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\img\\lupa.svg",
+      "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\img\\lupa.svg",
       "SourceId": "TCC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
->>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
+      "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
       "BasePath": "_content/TCC",
       "RelativePath": "img/lupa.svg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -240,22 +188,17 @@
       "OriginalItemSpec": "wwwroot\\img\\lupa.svg"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\img\\nota.svg",
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\img\\nota.svg",
-      "SourceId": "TCC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
->>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
       "BasePath": "_content/TCC",
       "RelativePath": "img/nota.svg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -264,22 +207,17 @@
       "OriginalItemSpec": "wwwroot\\img\\nota.svg"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\img\\novoPedido.svg",
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\img\\novoPedido.svg",
-      "SourceId": "TCC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
->>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
       "BasePath": "_content/TCC",
       "RelativePath": "img/novoPedido.svg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -288,21 +226,17 @@
       "OriginalItemSpec": "wwwroot\\img\\novoPedido.svg"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\img\\warning.svg",
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\img\\warning.svg",
-      "SourceId": "TCC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
       "BasePath": "_content/TCC",
       "RelativePath": "img/warning.svg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -311,16 +245,17 @@
       "OriginalItemSpec": "wwwroot\\img\\warning.svg"
     },
     {
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\js\\site.js",
       "SourceId": "TCC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
->>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
+      "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
       "BasePath": "_content/TCC",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -329,22 +264,17 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
-      "SourceId": "TCC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
->>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
       "BasePath": "_content/TCC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -353,22 +283,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
-      "SourceId": "TCC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
->>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
       "BasePath": "_content/TCC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -377,22 +302,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
-      "SourceId": "TCC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
->>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
       "BasePath": "_content/TCC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -401,22 +321,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
-      "SourceId": "TCC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
->>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
       "BasePath": "_content/TCC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -425,22 +340,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
-      "SourceId": "TCC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
->>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
       "BasePath": "_content/TCC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -449,22 +359,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
-      "SourceId": "TCC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
->>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
       "BasePath": "_content/TCC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -473,22 +378,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
-      "SourceId": "TCC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
->>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
       "BasePath": "_content/TCC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -497,22 +397,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
-      "SourceId": "TCC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
->>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
       "BasePath": "_content/TCC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -521,22 +416,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
-      "SourceId": "TCC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
->>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
       "BasePath": "_content/TCC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -545,22 +435,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
-      "SourceId": "TCC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
->>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
       "BasePath": "_content/TCC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -569,22 +454,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
-      "SourceId": "TCC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
->>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
       "BasePath": "_content/TCC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -593,22 +473,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
-      "SourceId": "TCC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
->>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
       "BasePath": "_content/TCC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -617,22 +492,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
-      "SourceId": "TCC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
->>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
       "BasePath": "_content/TCC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -641,22 +511,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
-      "SourceId": "TCC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
->>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
       "BasePath": "_content/TCC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -665,22 +530,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
-      "SourceId": "TCC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
->>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
       "BasePath": "_content/TCC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -689,22 +549,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
-      "SourceId": "TCC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
->>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
       "BasePath": "_content/TCC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -713,22 +568,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
-      "SourceId": "TCC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
->>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
       "BasePath": "_content/TCC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -737,22 +587,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
-      "SourceId": "TCC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
->>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
       "BasePath": "_content/TCC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -761,22 +606,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
-      "SourceId": "TCC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
->>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
       "BasePath": "_content/TCC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -785,22 +625,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
-      "SourceId": "TCC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
->>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
       "BasePath": "_content/TCC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -809,22 +644,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
-      "SourceId": "TCC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
->>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
       "BasePath": "_content/TCC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -833,22 +663,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
-      "SourceId": "TCC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
->>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
       "BasePath": "_content/TCC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -857,22 +682,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
-      "SourceId": "TCC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
->>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
       "BasePath": "_content/TCC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -881,22 +701,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
-      "SourceId": "TCC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
->>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
       "BasePath": "_content/TCC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -905,22 +720,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
-      "SourceId": "TCC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
->>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
       "BasePath": "_content/TCC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -929,22 +739,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
-      "SourceId": "TCC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
->>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
       "BasePath": "_content/TCC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -953,22 +758,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
-      "SourceId": "TCC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
->>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
       "BasePath": "_content/TCC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -977,22 +777,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
-      "SourceId": "TCC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
->>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
       "BasePath": "_content/TCC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1001,22 +796,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
-      "SourceId": "TCC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
->>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
       "BasePath": "_content/TCC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1025,22 +815,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
-      "SourceId": "TCC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
->>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
       "BasePath": "_content/TCC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1049,22 +834,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
-      "SourceId": "TCC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
->>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
       "BasePath": "_content/TCC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1073,22 +853,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
-      "SourceId": "TCC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
->>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
       "BasePath": "_content/TCC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1097,22 +872,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
-      "SourceId": "TCC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
->>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
       "BasePath": "_content/TCC",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1121,22 +891,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
-      "SourceId": "TCC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
->>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
       "BasePath": "_content/TCC",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1145,22 +910,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
-      "SourceId": "TCC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
->>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
       "BasePath": "_content/TCC",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1169,22 +929,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
-      "SourceId": "TCC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
->>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
       "BasePath": "_content/TCC",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1193,22 +948,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
-      "SourceId": "TCC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
->>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
       "BasePath": "_content/TCC",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1217,22 +967,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
-      "SourceId": "TCC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
->>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
       "BasePath": "_content/TCC",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1241,22 +986,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
-      "SourceId": "TCC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
->>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
       "BasePath": "_content/TCC",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1265,22 +1005,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
-      "SourceId": "TCC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
->>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
       "BasePath": "_content/TCC",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1289,22 +1024,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
-      "SourceId": "TCC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
->>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
       "BasePath": "_content/TCC",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1313,22 +1043,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
-      "SourceId": "TCC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
->>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
       "BasePath": "_content/TCC",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1337,22 +1062,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
-      "SourceId": "TCC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
->>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
       "BasePath": "_content/TCC",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1361,22 +1081,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
-      "SourceId": "TCC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
->>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
       "BasePath": "_content/TCC",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1385,22 +1100,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\lib\\bootstrap\\LICENSE",
-      "SourceId": "TCC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
->>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
       "BasePath": "_content/TCC",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1409,22 +1119,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
-      "SourceId": "TCC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
->>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
       "BasePath": "_content/TCC",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1433,22 +1138,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
-      "SourceId": "TCC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
->>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
       "BasePath": "_content/TCC",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1457,22 +1157,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
-      "SourceId": "TCC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
->>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
       "BasePath": "_content/TCC",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1481,22 +1176,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
-      "SourceId": "TCC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
->>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
       "BasePath": "_content/TCC",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1505,22 +1195,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
-      "SourceId": "TCC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
->>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
       "BasePath": "_content/TCC",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1529,22 +1214,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
-      "SourceId": "TCC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
->>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
       "BasePath": "_content/TCC",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1553,22 +1233,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
-      "SourceId": "TCC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
->>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
       "BasePath": "_content/TCC",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1577,22 +1252,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
-      "SourceId": "TCC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
->>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
       "BasePath": "_content/TCC",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1601,22 +1271,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\lib\\jquery\\dist\\jquery.js",
-      "SourceId": "TCC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
->>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
       "BasePath": "_content/TCC",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1625,22 +1290,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
-      "SourceId": "TCC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
->>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
       "BasePath": "_content/TCC",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1649,22 +1309,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
-      "SourceId": "TCC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
->>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
       "BasePath": "_content/TCC",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1673,22 +1328,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\lib\\jquery\\LICENSE.txt",
-      "SourceId": "TCC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
->>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
       "BasePath": "_content/TCC",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
@@ -1697,22 +1347,17 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-<<<<<<< HEAD
       "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\miniatura.ico",
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
-=======
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\miniatura.ico",
-      "SourceId": "TCC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
->>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
       "BasePath": "_content/TCC",
       "RelativePath": "miniatura.ico",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
