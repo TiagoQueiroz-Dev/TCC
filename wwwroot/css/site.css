@@ -1,3 +1,19 @@
+:root{
+  --border-radius: 12px;
+  --primary-1: #FFF;
+  --primary-2: #E5E5E5;
+  --primary-3: #DADADA;
+  --contrast-3: #343B3F;
+  --contrast-4: #545c60;
+  --highlight-1: #7075D0;
+  --highlight-2: #5D62B5;
+  --highlight-3: #4B50A3;
+  --success: #61B937;
+  --error: #CB3F3F;
+  --success-2: #68de32;
+  --error-2: #ea3030;
+}
+
 html {
   font-size: 14px;
 }
@@ -58,4 +74,90 @@ body {
 
 #map {
   width: 400px; height: 400px; background: #ddd;
+}
+
+.Card{
+  display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 8px;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    border-radius: 4px;
+    background: var(--primary-3);
+}
+input{
+  border-radius: 12px;
+  border: none;
+}
+.Title{
+  color: var(--contrast-3);
+  text-align: center;
+  font-family: 'Roboto', 'sans-serif';
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+
+.Chart{
+  display: flex;
+  width: 100%;
+  gap: 12px;
+}
+
+.CardItens{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.PedidoLista{
+  gap: 10px;
+}
+
+.PedidoCard{
+  border-radius: 12px;
+  width: 223.672px;
+  height: 224px;
+}
+
+.Relatorio{
+  background-color: var(--primary-1);
+  border-radius: 12px;
+}
+
+.NovaNotaForm{
+  overflow: auto;
+}
+.Table{
+  display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    align-self: stretch;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.TableRows{
+  display: flex;
+    padding: 15px 10px;
+    align-items: center;
+    gap: 20px;
+    align-self: stretch;
+    border-radius: 8px;
+}
+
+.Th{
+  color: var(--contrast-3);
+    text-align: start;
+    font-family: inherit;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    flex: 1 0 0;
 }

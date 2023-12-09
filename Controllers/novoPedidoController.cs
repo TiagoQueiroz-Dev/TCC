@@ -43,7 +43,7 @@ public class novoPedidoController : Controller
 
         estoquePedidoNota.SomarTotal();
 
-        estoquePedidoNota.NovaNota.ValorPag = 0;
+        estoquePedidoNota.NovaNota.ValorPago = 0;
 
         foreach (var item1 in estoquePedidoNota.Pedidos)
         {
@@ -53,7 +53,7 @@ public class novoPedidoController : Controller
                 if (item1.IdProduto == item2.Id)
                 {
                     if(item2.Nome.Split(' ')[0] == "Escora"){
-                        estoquePedidoNota.NovaNota.ValorPag += item2.ValorUnid*item1.Quantidade;
+                        estoquePedidoNota.NovaNota.ValorPago += item2.ValorUnid*item1.Quantidade;
                     }
 
                 }

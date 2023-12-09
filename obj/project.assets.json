@@ -11381,23 +11381,39 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\Suricato Furtivo\\.nuget\\packages\\": {},
+=======
+    "C:\\Users\\Condoriano\\.nuget\\packages\\": {},
+>>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\TCC.csproj",
       "projectName": "TCC",
       "projectPath": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\TCC.csproj",
       "packagesPath": "C:\\Users\\Suricato Furtivo\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\TCC.csproj",
+      "projectName": "TCC",
+      "projectPath": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\TCC.csproj",
+      "packagesPath": "C:\\Users\\Condoriano\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\obj\\",
+>>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
+<<<<<<< HEAD
         "C:\\Users\\Suricato Furtivo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+        "C:\\Users\\Condoriano\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -11406,6 +11422,10 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+<<<<<<< HEAD
+=======
+        "C:\\Program Files\\dotnet\\library-packs": {},
+>>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -11470,7 +11490,11 @@
             "privateAssets": "all"
           }
         },
+<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-rc.1.23463.5\\RuntimeIdentifierGraph.json"
+=======
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+>>>>>>> 97f4ad56ddc03c1e918587a1b3a26c5a040c0c54
       }
     }
   }
