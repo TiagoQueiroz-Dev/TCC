@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "B9jUtQ2rGLL/dzp78NaI6M0/B0EreKJuYu9eyzFCLLo=",
+  "Hash": "fhH/jOdmPv68697VLdk5YCpCZzqzDSGp8Hp7aR3ttko=",
   "Source": "TCC",
   "BasePath": "_content/TCC",
   "Mode": "Default",
@@ -136,6 +136,23 @@
       "OriginalItemSpec": "wwwroot\\img\\estoque.svg"
     },
     {
+      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\img\\home.svg",
+      "SourceId": "TCC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
+      "BasePath": "_content/TCC",
+      "RelativePath": "img/home.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\home.svg"
+    },
+    {
       "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\img\\lupa.svg",
       "SourceId": "TCC",
       "SourceType": "Discovered",
@@ -185,6 +202,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\novoPedido.svg"
+    },
+    {
+      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\img\\warning.svg",
+      "SourceId": "TCC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
+      "BasePath": "_content/TCC",
+      "RelativePath": "img/warning.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\warning.svg"
     },
     {
       "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\js\\site.js",

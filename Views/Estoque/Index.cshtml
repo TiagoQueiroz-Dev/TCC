@@ -3,9 +3,10 @@
     ViewData["Title"] = "Estoque";
 }
 
-<div class="text-center">
-    <h2 class="mb-3">Lista de Estoque</h2>
-    <table class="table table-bordered">
+<div class="text-center Card">
+    <p class="Title">Lista de Estoque</p>
+    <div class="NovaNotaForm w-100">
+        <table class="table table-bordered">
         <thead>
             <tr>
                 <th>Nome</th>
@@ -34,7 +35,9 @@
                     <td>
                         R$ @item.ValorUnid
                     </td>
-                    <td>
+                    <td class="gap-2">
+                        <a role="button" class="btn btn-primary" asp-action="EditarProduto" asp-controller="Estoque"
+                            asp-route-id="@item.Id">Editar</a>
                         <a role="button" class="btn btn-primary" asp-action="EditarProduto" asp-controller="Estoque"
                             asp-route-id="@item.Id">Editar</a>
                     </td>
@@ -45,5 +48,6 @@
 
     </table>
 
+    </div>
     <div class="d-flex justify-content-end"><a role="button" class="btn btn-success" asp-action="AddProduto" asp-controller="Estoque">Adicionar Produto</a></div>
 </div>

@@ -25,6 +25,10 @@
       "PackagePath": "staticwebassets\\img\\estoque.svg"
     },
     {
+      "Id": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\img\\home.svg",
+      "PackagePath": "staticwebassets\\img\\home.svg"
+    },
+    {
       "Id": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\img\\lupa.svg",
       "PackagePath": "staticwebassets\\img\\lupa.svg"
     },
@@ -35,6 +39,10 @@
     {
       "Id": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\img\\novoPedido.svg",
       "PackagePath": "staticwebassets\\img\\novoPedido.svg"
+    },
+    {
+      "Id": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\img\\warning.svg",
+      "PackagePath": "staticwebassets\\img\\warning.svg"
     },
     {
       "Id": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\js\\site.js",

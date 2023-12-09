@@ -3,11 +3,13 @@
     ViewData["Title"] = "Resultado Relatório";
 }
 
-<div class="text-center">
+<div class="Card">
+    <p class="Title">Resultado do Relatório</p>
+    <div class="text-center Relatorio px-4 p-4 fs-5">
     <div class="d-flex justify-content-center">
         <div class="me-2">
             <label class="form-label ">Data Inicial</label>
-            <input class="form-control" type="date" value="@Model.DataInicial.ToString("yyyy-MM-dd")" readonly>
+            <input class="form-control text-center" type="date" value="@Model.DataInicial.ToString("yyyy-MM-dd")" readonly>
         </div>
         <div>
             <label class="form-label me-2">Data Final</label>
@@ -16,11 +18,17 @@
     </div>
     <div>
         <label for="TotalVendas" class="form-label">Valor de Vendas Bruto em R$: </label>
-        <input class="form-control" type="text" value="@Model.ValorTotalVendas" readonly>
+        <input class="form-control text-center" type="text" value="@Model.ValorTotalVendas" readonly>
     </div>
-    <div><label class="form-label">Quantidade de Notas Geradas</label><input type="number" class="form-control" value="@Model.Notas.Count" readonly></div>
-        <div><label class="form-label">Notas em Abertas</label><input type="number" class="form-control" value="@Model.NotasAbertas" readonly></div>
-        <div><label class="form-label">Notas em Fechadas</label><input type="number" class="form-control" value="@Model.NotasFechadas" readonly></div>
+    <div><label class="form-label">Quantidade de Notas Geradas</label>
+    <input type="number" class="form-control text-center" value="@Model.Notas.Count" readonly>
+    </div>
+        <div><label class="form-label">Notas Abertas</label>
+        <input type="number" class="form-control text-center" value="@Model.NotasAbertas" readonly>
+        </div>
+        <div><label class="form-label">Notas Fechadas</label>
+        <input type="number" class="form-control text-center" value="@Model.NotasFechadas" readonly>
+        </div>
     <div>
         <p>Produtos mais Alugados: </p>
         @for (int i = 0; i < @Model.TopProdutos.Count; i++)
@@ -31,10 +39,14 @@
                 {
                     <div class=" ">
                         <label class="form-label">@Model.Estoque[j].Nome</label>
-                        <input class="form-control" value="@Model.TopProdutos[i].Quantidade" readonly>
+                        <input class="form-control text-center" value="@Model.TopProdutos[i].Quantidade" readonly>
                     </div>
                 }
             }
         }
+        <div class="d-flex justify-content-center">
+                        <a role="button" asp-action="Index" asp-controller="Relatorio" class="btn btn-primary mt-3 fs-4">Gerar outro relatório</a>
+                    </div>
     </div>
+</div>
 </div>

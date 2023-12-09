@@ -4,15 +4,29 @@
   ViewData["Title"] = "Criar pedido";
   var cont=1;
 }
+<div class="Card">
+    <p class="Title">Novo Pedido</p>
+      <form class="w-100 d-flex" action="" method="post">
+          <table class="Table overflow-auto d-flex w-100">
+                <tbody class="w-100 d-flex">
+                  <tr class="TableRows w-100">
+                    <th class="Th d-flex justify-content-start">Nome</th>
+                    <th class="Th d-flex justify-content-center">Disponíveis</th>
+                    <th class="Th d-flex justify-content-center">Valor unidade</th>
+                  </tr>
+                </tbody>
+            </table>
+      </form>
+    <div>
 
-<h2 class="text-center mb-3">Novo Pedido</h2>
-<form asp-action="NovoPedido" asp-controller="NovoPedido" method="post">
 
-  @if (Model != null && Model.Estoque.Any())
+  @* <div class="w-100 px-5">
+<form class="" asp-action="NovoPedido" asp-controller="NovoPedido" method="post">
+  <div class="overflow-auto">
+     @if (Model != null && Model.Estoque.Any())
   {
     @foreach (var item in Model.Estoque)
     {
-
             <div class="mb-3 d-flex align-items-end justify-content-between">
               <label for="@item.Id" class="form-label text-nowrap w-50">@item.Nome</label>
               <input class="escondido" type="number" value="@item.Id" asp-for="@Model.Pedidos[cont-1].IdProduto">
@@ -25,16 +39,9 @@
               <div class="w-50 text-end d-flex justify-content-center">R$<p id="@cont-valorUnidade">@item.ValorUnid</p></div>        
               <input type="hidden" id="@cont-lista">
             </div>
-            @*Varivel cont para referencia do id que quarda os valores relativos de custo de cada elemento*@         
-            cont++;
-                
-    }
-  }
-
-  <div class="col-12">
-    <button class="btn btn-success" type="submit">Gerar Nota</button>
-  </div>
-  <h3 class="text-end d-flex justify-content-end">Total = R$<p id="valorTotal">0,00</h3>
-</form>
-
-  
+            @*Varivel cont para referencia do id que quarda os valores relativos de custo de cada elemento*@
+    @* }
+  }</div>
+      <button class="btn btn-success" type="submit">Gerar Nota</button>
+      <h3 class="text-end d-flex justify-content-end">Total = R$<p id="valorTotal">0,00</h3>
+</form>  *@

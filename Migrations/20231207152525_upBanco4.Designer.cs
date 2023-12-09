@@ -11,8 +11,8 @@ using TCC.Database;
 namespace TCC.Migrations
 {
     [DbContext(typeof(BancoContext))]
-    [Migration("20231208043508_notas")]
-    partial class notas
+    [Migration("20231207152525_upBanco4")]
+    partial class upBanco4
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
