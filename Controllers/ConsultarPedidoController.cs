@@ -23,29 +23,34 @@ public class consultarPedidoController : Controller
 
     public IActionResult Index()
     {
-        List<NotaModel> AllNotas = new List<NotaModel>(); 
+        List<NotaModel> AllNotas = new List<NotaModel>();
         AllNotas = _notaRepository.TodasNotas();
-        
+
         return View(AllNotas);
     }
 
     [HttpPost]
-    public IActionResult ConsultaNota(string busca,string opc)
+    public IActionResult ConsultaNota(string busca, string opc, string dataFinal)
     {
-        System.Console.WriteLine("busca , opc");
+
         EstoquePedidoNotaModel estoquePedidoNota = new EstoquePedidoNotaModel();
         ListaConsultaNotasModel consulta = new ListaConsultaNotasModel();
-        
+
         estoquePedidoNota.ListaNotas = consulta;
-        
+
         estoquePedidoNota.ListaNotas.stringBusca = busca;
         estoquePedidoNota.ListaNotas.opcBusca = opc;
-        
-        if (estoquePedidoNota.ListaNotas.stringBusca != null && estoquePedidoNota.ListaNotas.opcBusca != null)
+
+
+        if (estoquePedidoNota.ListaNotas.stringBusca != null && estoquePedidoNota.ListaNotas.opcBusca != null && opc != "Periodo")
         {
             estoquePedidoNota.ListaNotas.NotasEncontradas = _notaRepository.BuscarNotas(estoquePedidoNota.ListaNotas.stringBusca, estoquePedidoNota.ListaNotas.opcBusca);
-            //Console.WriteLine(estoquePedidoNota.ListaNotas.NotasEncontradas);
+            return View("ResultPesquisa", estoquePedidoNota);
 
+        }
+        else if (opc == "Periodo")
+        {
+            estoquePedidoNota.ListaNotas.NotasEncontradas = _notaRepository.RelatorioData(DateTime.Parse(busca), DateTime.Parse(dataFinal));
             return View("ResultPesquisa", estoquePedidoNota);
         }
         //necessário notificar usuário sobre o erro de busca
@@ -57,7 +62,8 @@ public class consultarPedidoController : Controller
         return View(estoquePedidoNota);
     }
 
-    public IActionResult VisualizarNota(int id){
+    public IActionResult VisualizarNota(int id)
+    {
         EstoquePedidoNotaModel pedidoNota = new EstoquePedidoNotaModel();
         pedidoNota.NovaNota = _notaRepository.BuscarNota(id);
         pedidoNota.Pedidos = _pedidoRepository.PedidosNota(id);
@@ -66,7 +72,8 @@ public class consultarPedidoController : Controller
     }
 
     [HttpPost]
-    public IActionResult BaixarNota(EstoquePedidoNotaModel nota){
+    public IActionResult BaixarNota(EstoquePedidoNotaModel nota)
+    {
         _notaRepository.BaixarNota(nota.NovaNota);
         return RedirectToAction("Index");
     }
