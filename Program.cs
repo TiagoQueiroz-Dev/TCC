@@ -1,14 +1,20 @@
 using Microsoft.EntityFrameworkCore;
 using TCC.Database;
+using TCC.Repository;
+using TCC.Repository.Nota;
+using TCC.Repository.Pedido;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 string mySqlConnection = builder.Configuration.GetConnectionString("Conexao");
-builder.Services.AddDbContext<Contexto>(opt => {
+builder.Services.AddDbContext<BancoContext>(opt => {
 opt.UseMySql(mySqlConnection, ServerVersion.AutoDetect(mySqlConnection));
 });
 
+builder.Services.AddScoped<IEstoqueRepository, EstoqueRepository>();
+builder.Services.AddScoped<IPedidoRepository, PedidoRepository>();
+builder.Services.AddScoped<INotaRepository, NotaRepository>();
 
 var app = builder.Build();
 
