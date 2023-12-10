@@ -203,3 +203,16 @@ input{
   font-family: 'Roboto';
   font-weight: 600;
 }
+
+.Logout{
+  background: var(--highlight-3)!important;
+  color: var(--primary-1);
+  cursor: pointer;
+  transition: 0.5s;
+}
+.Logout:hover{
+  transform: scale(1.05);
+  background: var(--highlight-2)!important;
+  color: var(--primary-1);
+  cursor: pointer;
+}

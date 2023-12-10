@@ -22,6 +22,9 @@ function calcularValorParcial(p, q, r) {
     document.getElementById(r).innerText = valorParcial.toString();
 };
 
+function cancelarNota() {
+    window.location.href = '@Url.Action("Index", "novoPedido")';
+}
 
 function atribuirTotal(s, size) {
 

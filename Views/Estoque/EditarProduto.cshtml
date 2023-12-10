@@ -2,7 +2,9 @@
 @{
     ViewData["Title"] = "Editar Estoque";
 }
-<div classe="d-flex ">
+<div class="Card">
+    <p class="Title">Editar "@Model.Nome"</p>
+    <div classe="d-flex justify-content-center w-100 px-5 p-5">
     <form asp-action="ValidarEdit" asp-controller="Estoque">
         <input type="hidden" value="@Model.Id" asp-for="@Model.Id">
         <div class="mb-3">
@@ -24,4 +26,6 @@
             <button type="submit" class="btn btn-success mt-3">Confirmar</button>
         </div>
     </form>
+</div>
+
 </div>

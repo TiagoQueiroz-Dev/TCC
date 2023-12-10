@@ -133,7 +133,7 @@
     </div>
     </div>
        <div class="d-flex justify-content-center gap-5">
-        <button type="button" asp-action="Index" asp-controller="novoPedido" class="btn btn-danger fs-3 Botao">Cancelar</button>
+        <a href="@Url.Action("Index", "novoPedido")" class="btn btn-danger fs-3 Botao">Cancelar</a>
        <button type="submit" class="btn btn-success fs-3 Botao">Enviar</button>
        </div>
   </form>
