@@ -9,8 +9,6 @@ function calcularValorParcial(p, q, r) {
     var unidadeSemVirgula = (document.getElementById(p).innerText).toString();
     var valorUnidade = unidadeSemVirgula.replace(',', '.');
     valorUnidade = parseFloat(valorUnidade) || 0;
-    
-    console.log(document.getElementById(r))
 
     var inputQtd = parseFloat(document.getElementById(q).value) || 0;
 
@@ -81,4 +79,14 @@ function SomarTotalDesc(i,j,k,l){
 
 }
 
-
+function verificarFiltro(e){
+    const item = document.getElementById(e).value;
+    console.log(item)
+    if(item.toLowerCase() === 'periodo'){
+        document.getElementById('barraPesquisa').style.display = 'none';
+        document.getElementById('barraPeriodo').style.display = 'flex';
+    }else{
+        document.getElementById('barraPesquisa').style.display = 'flex';
+        document.getElementById('barraPeriodo').style.display = 'none';
+    }
+}

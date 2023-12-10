@@ -62,7 +62,9 @@
                                 <div class="modal-dialog modal-dialog-centered">
                                     <div class="modal-content">
                                         <div class="modal-header d-flex justify-content-center">
-                                            <h1 class="modal-title fs-5" id="excluirModalLabel-@item.Id">Tem certeza que deseja excluir<br><p style="color: var(--error);">"@item.Nome"?</p></h1>
+                                            <h1 class="modal-title fs-5" id="excluirModalLabel-@item.Id">Tem certeza que deseja excluir<br>
+                                            <p style="color: var(--error);">"@item.Nome"?</p>
+                                            </h1>
                                         </div>
                                         <div class="modal-body d-flex justify-content-center gap-4">
                                             <form asp-action="ExcluirProduto" asp-controller="Estoque" asp-route-id="@item.Id" method="post">
