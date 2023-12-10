@@ -14,7 +14,6 @@ function calcularValorParcial(p, q, r) {
 
     var inputQtd = parseFloat(document.getElementById(q).value) || 0;
 
-
     var valorParcial = parseFloat(document.getElementById(r).innerText) || 0;
 
     valorParcial = (valorUnidade * inputQtd).toFixed(2);
