@@ -149,12 +149,4 @@ li[b-r5vxt2sssx]{
   line-height: 60px;
 }
 
-.desktop[b-r5vxt2sssx]{
-  @media only screen and (max-width: 600px){
-    display: none!important;[b-r5vxt2sssx]
-  }
-}
 
-.Main[b-r5vxt2sssx]{
-  overflow: auto;
-}

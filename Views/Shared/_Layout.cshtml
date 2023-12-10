@@ -18,7 +18,7 @@
     <script src="~/js/site.js"></script>
     <link rel="icon" href="@Url.Content("~/img/andaime.svg")">
 </head>
-<body class="d-flex h-100" style="background-color: var(--primary-2);">
+<body class="h-100" style="background-color: var(--primary-2);">
     <div class="d-flex w-100 mx-0 h-100 p-3 px-3 principal">
         <div class="d-flex h-100 desktop">
             <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light p-0"
@@ -61,7 +61,7 @@
             </div>
         </nav>
     </div>
-    <div class="w-100 d-flex flex-column ">
+    <div class="w-100">
         <div class="d-flex w-100">
             <ul class="Top">
             <li>
@@ -87,16 +87,11 @@
                 </div>
         </ul>
         </div>
-        <main class="w-100 h-100 d-flex NovaNotaForm">
+        <div class="d-flex">
             @RenderBody()
-        </main>
-    </div>
-    </div>
-    <footer class="border-top text-muted">
-        <div class="container">
-            &copy; 2023 - KOIOS -<a asp-area="" asp-controller="Home" asp-action="Privacy"> Privacy</a>
         </div>
-    </footer>
+    </div>
+    </div>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

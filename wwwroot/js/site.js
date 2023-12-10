@@ -6,11 +6,11 @@ function calcularValorTotal(p, q, r, s, size) {
 }
 
 function calcularValorParcial(p, q, r) {
-
     var unidadeSemVirgula = (document.getElementById(p).innerText).toString();
     var valorUnidade = unidadeSemVirgula.replace(',', '.');
     valorUnidade = parseFloat(valorUnidade) || 0;
-
+    
+    console.log(document.getElementById(r))
 
     var inputQtd = parseFloat(document.getElementById(q).value) || 0;
 

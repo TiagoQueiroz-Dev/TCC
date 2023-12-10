@@ -86,6 +86,7 @@ body {
     gap: 12px;
     border-radius: 4px;
     background: var(--primary-3);
+    max-height: 87.5vh;
 }
 input{
   border-radius: 12px;
@@ -129,9 +130,6 @@ input{
   border-radius: 12px;
 }
 
-.NovaNotaForm{
-  overflow: auto;
-}
 .Table{
   display: flex;
     flex-direction: column;
@@ -141,9 +139,11 @@ input{
     width: 100%;
     margin-bottom: 20px;
 }
-
+.Tbody{
+  
+  padding: 15px 10px;
+}
 .TableRows{
-  display: flex;
     padding: 15px 10px;
     align-items: center;
     gap: 20px;
@@ -152,12 +152,54 @@ input{
 }
 
 .Th{
-  color: var(--contrast-3);
+    color: var(--contrast-3);
     text-align: start;
     font-family: inherit;
     font-size: 1.25rem;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    flex: 1 0 0;
+}
+.Td{
+    color: var(--contrast-3);
+    font-family: 'Roboto';
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 121px;
+    align-items: center;
+}
+.desktop{
+  @media only screen and (max-width: 600px){
+    display: none!important;
+  }
+}
+.mobile{
+  @media only screen and (min-width: 600px){
+    display: none!important;
+  }
+}
+
+.Flex-1-0-0{
+  
+  flex: 1 0 0;
+}
+
+.Over{
+  max-height: 70vh;
+  margin-bottom: 20px;
+  background-color: var(--primary-2);
+  border-radius: 12px;
+  font-family: 'Roboto';
+}
+
+.Botao{
+  padding: 0 15px;
+  width: 50%;
+}
+
+.Roboto{
+  font-family: 'Roboto';
+  font-weight: 600;
 }

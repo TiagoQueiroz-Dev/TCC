@@ -149,12 +149,4 @@ li{
   line-height: 60px;
 }
 
-.desktop{
-  @media only screen and (max-width: 600px){
-    display: none!important;
-  }
-}
 
-.Main{
-  overflow: auto;
-}
