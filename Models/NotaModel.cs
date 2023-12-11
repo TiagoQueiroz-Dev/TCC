@@ -14,10 +14,10 @@ namespace TCC.Models
         public int Id { get; set; }
         [MaxLength(255)]
         public string Nome { get; set; }
-        [Column(TypeName = "BIGINT")]
-        public int CPF_CNPJ { get; set; }
-        [Column(TypeName = "BIGINT")]
-        public int Telefone { get; set; }
+
+        public string CPF_CNPJ { get; set; }
+
+        public string Telefone { get; set; }
         [Column(TypeName = "DATE")]
         public DateTime DataEmissao { get; set; }
         [Column(TypeName = "DATE")]
@@ -33,7 +33,7 @@ namespace TCC.Models
 
         public int Cep { get; set; }
 
-        public int ? Numero { get; set; }
+        public int? Numero { get; set; }
         [Column(TypeName = "decimal(10,2)")]
 
         public decimal ValorTotal { get; set; }
@@ -51,14 +51,14 @@ namespace TCC.Models
         {
             var notaValida = true;
 
-            if (this.Nome == null || 
-            this.CPF_CNPJ == null || 
-            this.Telefone == null || 
-            this.DataEmissao == null || 
-            this.DataRecolhimento == null || 
-            this.Cidade == null || 
+            if (this.Nome == null ||
+            this.CPF_CNPJ == null ||
+            this.Telefone == null ||
+            this.DataEmissao == null ||
+            this.DataRecolhimento == null ||
+            this.Cidade == null ||
             this.Bairro == null ||
-            this.Rua == null || 
+            this.Rua == null ||
             this.Cep == null ||
             this.ValorTotal == null)
             {
