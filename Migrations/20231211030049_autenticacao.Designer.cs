@@ -11,7 +11,7 @@ using TCC.Database;
 namespace TCC.Migrations
 {
     [DbContext(typeof(BancoContext))]
-    [Migration("20231211011013_autenticacao")]
+    [Migration("20231211030049_autenticacao")]
     partial class autenticacao
     {
         /// <inheritdoc />
@@ -331,25 +331,6 @@ namespace TCC.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Pedidos");
-                });
-
-            modelBuilder.Entity("TCC.Models.UsuarioModel", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    b.Property<string>("Senha")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("Usuario")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Usuarios");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

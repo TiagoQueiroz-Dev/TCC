@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TCC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0b8466cc4d5aa91dcb860b930c4753f58889163b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+266f1d28fe1c86042b7092573fd46a773a6cb69b")]
 [assembly: System.Reflection.AssemblyProductAttribute("TCC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TCC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
