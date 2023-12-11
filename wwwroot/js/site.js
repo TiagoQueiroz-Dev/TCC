@@ -163,11 +163,14 @@ function verificarNovosDados(){
 }
 
 function calcularPeriodo( data1 , data2 ){
+    
+    const dataFinal = document.getElementById(data1).value
+    const dataInicio = document.getElementById(data2).value
 
-    data1 = new Date(data1)
-    data2 = new Date(data2)
+    data1 = new Date(dataFinal)
+    data2 = new Date(dataInicio)
 
-    var diferenca = Math.abs(data1.getTime() - data2.getTime())
+    var diferenca = Math.abs(dataFinal.getTime() - dataInicio.getTime())
 
     var dias = diferenca / (1000606024);
 
