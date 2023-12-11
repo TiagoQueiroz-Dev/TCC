@@ -68,7 +68,7 @@ public class consultarPedidoController : Controller
         EstoquePedidoNotaModel pedidoNota = new EstoquePedidoNotaModel();
         pedidoNota.NovaNota = _notaRepository.BuscarNota(id);
         pedidoNota.Pedidos = _pedidoRepository.PedidosNota(id);
-        pedidoNota.Estoque = _estoqueRepository.ListarEstoque();
+        pedidoNota.Estoque = _estoqueRepository.TodosProdutos();
         return View(pedidoNota);
     }
 

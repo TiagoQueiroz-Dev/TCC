@@ -29,7 +29,7 @@ namespace TCC.Models
         [MaxLength(50)]
         public string Rua { get; set; }
         [MaxLength(50)]
-        public string Complemento { get; set; }
+        public string ? Complemento { get; set; }
         
         public int Cep { get; set; }
         
@@ -39,9 +39,9 @@ namespace TCC.Models
         public decimal ValorTotal { get; set; }
         
         [Column(TypeName = "decimal(10,2)")]
-        public decimal ValorPago { get; set; }
+        public decimal ? ValorPago { get; set; }
         [Column(TypeName = "decimal(10,2)")]
-        public decimal ValorDesconto { get; set; }
+        public decimal ? ValorDesconto { get; set; }
         
         [Column(TypeName = "decimal(10,2)")]
         public decimal? TaxaEntrega { get; set; }

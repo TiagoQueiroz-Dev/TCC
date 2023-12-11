@@ -50,7 +50,7 @@ namespace TCC.Repository
 
         public List<EstoqueModel> ListarEstoque()
         {
-            return _dataContexto.EstoqueGeral.ToList();
+            return _dataContexto.EstoqueGeral.Where(u => u.ProdutoAtivo == true).ToList();
 
         }
 
@@ -91,7 +91,8 @@ namespace TCC.Repository
         public EstoqueModel ExcluirProduto(int id)
         {
             var produto = BuscarProduto(id);
-            _dataContexto.EstoqueGeral.Remove(produto);
+            produto.ProdutoAtivo = false;
+            _dataContexto.EstoqueGeral.Update(produto);
             _dataContexto.SaveChanges();
 
             return produto;
@@ -105,5 +106,11 @@ namespace TCC.Repository
 
             return listaEstoque;
         }
+
+        public List<EstoqueModel> TodosProdutos()
+        {
+            return _dataContexto.EstoqueGeral.ToList();
+        }
+
     }
 }

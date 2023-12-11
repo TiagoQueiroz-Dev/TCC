@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TCC.Database;
 
@@ -10,9 +11,11 @@ using TCC.Database;
 namespace TCC.Migrations
 {
     [DbContext(typeof(BancoContext))]
-    partial class BancoContextModelSnapshot : ModelSnapshot
+    [Migration("20231211055239_produtAtivo")]
+    partial class produtAtivo
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -74,6 +77,7 @@ namespace TCC.Migrations
                         .HasColumnType("varchar(50)");
 
                     b.Property<string>("Complemento")
+                        .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("varchar(50)");
 
@@ -105,10 +109,10 @@ namespace TCC.Migrations
                     b.Property<long>("Telefone")
                         .HasColumnType("BIGINT");
 
-                    b.Property<decimal?>("ValorDesconto")
+                    b.Property<decimal>("ValorDesconto")
                         .HasColumnType("decimal(10,2)");
 
-                    b.Property<decimal?>("ValorPago")
+                    b.Property<decimal>("ValorPago")
                         .HasColumnType("decimal(10,2)");
 
                     b.Property<decimal>("ValorTotal")
