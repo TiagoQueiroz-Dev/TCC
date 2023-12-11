@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\img\\andaime.svg"
     },
     {
+      "Id": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\img\\cadastro.svg",
+      "PackagePath": "staticwebassets\\img\\cadastro.svg"
+    },
+    {
       "Id": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\img\\consultaPedido.svg",
       "PackagePath": "staticwebassets\\img\\consultaPedido.svg"
     },
@@ -43,6 +47,18 @@
     {
       "Id": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\img\\novoPedido.svg",
       "PackagePath": "staticwebassets\\img\\novoPedido.svg"
+    },
+    {
+      "Id": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\img\\relatorio.svg",
+      "PackagePath": "staticwebassets\\img\\relatorio.svg"
+    },
+    {
+      "Id": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\img\\user.svg",
+      "PackagePath": "staticwebassets\\img\\user.svg"
+    },
+    {
+      "Id": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\img\\userhover.svg",
+      "PackagePath": "staticwebassets\\img\\userhover.svg"
     },
     {
       "Id": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\img\\warning.svg",

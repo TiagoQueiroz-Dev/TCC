@@ -94,7 +94,7 @@ input{
 }
 .Title{
   color: var(--contrast-3);
-  text-align: center;
+  text-align: start;
   font-family: 'Roboto', 'sans-serif';
   font-size: 2rem;
   font-style: normal;
@@ -208,10 +208,10 @@ input{
   background: var(--highlight-3)!important;
   color: var(--primary-1);
   cursor: pointer;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 .Logout:hover{
-  transform: scale(1.05);
+  transform: scale(1.03);
   background: var(--highlight-2)!important;
   color: var(--primary-1);
   cursor: pointer;
@@ -225,4 +225,23 @@ input{
 
 .None{
   display: none;
+}
+
+.User{
+  display: flex;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    border-radius: 8px;
+    background: var(--primary-3);
+    color: var(--contrast-3);
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.User:hover{
+  transform: scale(1.03);
+  background: var(--primary-1);
 }
