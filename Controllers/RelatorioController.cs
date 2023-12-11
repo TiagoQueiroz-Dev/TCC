@@ -38,7 +38,7 @@ namespace TCC.Controllers
             RelatorioModel relatorio = new RelatorioModel();
             List<PedidoModel> listProduto = new List<PedidoModel>();
             List<PedidoModel> topProduto = new List<PedidoModel>();
-            relatorio.Estoque = _estoqueRepository.ListarEstoque();
+            relatorio.Estoque = _estoqueRepository.TodosProdutos();
             relatorio.Notas = _notaRepository.RelatorioData(datanicial, dataFinal);
             relatorio.Produtos = listProduto;
             relatorio.TopProdutos = topProduto;

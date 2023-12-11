@@ -11,8 +11,8 @@ using TCC.Database;
 namespace TCC.Migrations
 {
     [DbContext(typeof(BancoContext))]
-    [Migration("20231210072422_cepUpdate")]
-    partial class cepUpdate
+    [Migration("20231211060713_upBanco5")]
+    partial class upBanco5
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -37,6 +37,11 @@ namespace TCC.Migrations
                     b.Property<string>("Nome")
                         .IsRequired()
                         .HasColumnType("longtext");
+
+                    b.Property<bool>("ProdutoAtivo")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("tinyint(1)")
+                        .HasDefaultValue(true);
 
                     b.Property<int>("QuantidadeTotal")
                         .HasColumnType("int");
@@ -72,7 +77,6 @@ namespace TCC.Migrations
                         .HasColumnType("varchar(50)");
 
                     b.Property<string>("Complemento")
-                        .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("varchar(50)");
 
@@ -104,10 +108,10 @@ namespace TCC.Migrations
                     b.Property<long>("Telefone")
                         .HasColumnType("BIGINT");
 
-                    b.Property<decimal>("ValorDesconto")
+                    b.Property<decimal?>("ValorDesconto")
                         .HasColumnType("decimal(10,2)");
 
-                    b.Property<decimal>("ValorPago")
+                    b.Property<decimal?>("ValorPago")
                         .HasColumnType("decimal(10,2)");
 
                     b.Property<decimal>("ValorTotal")
