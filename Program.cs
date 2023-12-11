@@ -13,7 +13,7 @@ string mySqlConnection = builder.Configuration.GetConnectionString("Conexao");
 builder.Services.AddDbContext<BancoContext>(opt => {
 opt.UseMySql(mySqlConnection, ServerVersion.AutoDetect(mySqlConnection));
 });
-builder.Services.AddIdentity<IdentityUser,IdentityRole>().AddEntityFrameworkStores<BancoContext>().AddDefaultTokenProviders();
+builder.Services.AddIdentity<IdentityUser,IdentityRole>().AddEntityFrameworkStores<BancoContext>();
 
 builder.Services.AddScoped<IEstoqueRepository, EstoqueRepository>();
 builder.Services.AddScoped<IPedidoRepository, PedidoRepository>();
