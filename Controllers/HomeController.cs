@@ -35,6 +35,11 @@ public class HomeController : Controller
         ViewBag.Page = "Usuario";
         return View("Usuario");
     }
+    public IActionResult Alterar()
+    {   
+        ViewBag.Page = "Usuario";
+        return View("AlterarDados");
+    }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
