@@ -115,3 +115,31 @@ function verificarCadastro(){
 function test(){
     console.log('submitou')
 }
+
+function abrirMenuMobile(){
+    
+    const menu = document.getElementById('BurguerClicked');
+
+    menu.style.display = 'block';
+}
+function fecharMenuMobile(){
+
+    const menu = document.getElementById('BurguerClicked');
+
+    menu.style.display = 'none';
+}
+
+function verificarCamposVazios() {
+    var inputs = document.getElementsByClassName('form-control');
+
+    var todosCamposVazios = Array.from(inputs).every(function(input) {
+        return input.value.trim() === '';
+    });
+
+    if (todosCamposVazios) {
+        alert('Nenhum campo foi preenchido!');
+        return false;
+    }
+
+    return true;
+}

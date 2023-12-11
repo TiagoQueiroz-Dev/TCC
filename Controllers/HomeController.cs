@@ -30,6 +30,12 @@ public class HomeController : Controller
         return View("CadastrarUsuario");
     }
 
+    public IActionResult Usuario()
+    {   
+        ViewBag.Page = "Usuario";
+        return View("Usuario");
+    }
+
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {

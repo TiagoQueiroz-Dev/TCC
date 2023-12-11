@@ -40,44 +40,44 @@
                             <a asp-area="" asp-controller="novoPedido" asp-action="Index">
                         @if(ViewBag.Page == "NovoPedido"){
                             <li class="nav-item MenuItem d-flex justify-content-center">
-                                <img src="@Url.Content("~/img/novoPedidoTrue.svg")" width="32" alt="Home">
+                                <img src="@Url.Content("~/img/novoPedidoTrue.svg")" width="32" alt="Novo pedido">
                         </li>
                         }else{
                             <li class="nav-item User d-flex justify-content-center">
-                                <img src="@Url.Content("~/img/novoPedido.svg")" width="32" alt="Home">
+                                <img src="@Url.Content("~/img/novoPedido.svg")" width="32" alt="Novo pedido">
                         </li>
                         }
                             </a>
                             <a asp-area="" asp-controller="Relatorio" asp-action="Index">
                         @if(ViewBag.Page == "Relatorio"){
                             <li class="nav-item MenuItem d-flex justify-content-center">
-                                <img src="@Url.Content("~/img/relatorioTrue.svg")" width="32" alt="Home">
+                                <img src="@Url.Content("~/img/relatorioTrue.svg")" width="32" alt="Relatorio">
                         </li>
                         }else{
                             <li class="nav-item User d-flex justify-content-center">
-                                <img src="@Url.Content("~/img/relatorio.svg")" width="32" alt="Home">
+                                <img src="@Url.Content("~/img/relatorio.svg")" width="32" alt="Relatorio">
                         </li>
                         }
                             </a>
                             <a asp-area="" asp-controller="consultarPedido" asp-action="Index">
                         @if(ViewBag.Page == "Consulta"){
                             <li class="nav-item MenuItem d-flex justify-content-center">
-                                <img src="@Url.Content("~/img/consultaTrue.svg")" width="32" alt="Home">
+                                <img src="@Url.Content("~/img/consultaTrue.svg")" width="32" alt="Consulta">
                         </li>
                         }else{
                             <li class="nav-item User d-flex justify-content-center">
-                                <img src="@Url.Content("~/img/consultaPedido.svg")" width="32" alt="Home">
+                                <img src="@Url.Content("~/img/consultaPedido.svg")" width="32" alt="Consulta">
                         </li>
                         }
                             </a>
                             <a asp-area="" asp-controller="estoque" asp-action="Index">
                         @if(ViewBag.Page == "Estoque"){
                             <li class="nav-item MenuItem d-flex justify-content-center">
-                                <img src="@Url.Content("~/img/estoqueTrue.svg")" width="32" alt="Home">
+                                <img src="@Url.Content("~/img/estoqueTrue.svg")" width="32" alt="Estoque">
                         </li>
                         }else{
                             <li class="nav-item User d-flex justify-content-center">
-                                <img src="@Url.Content("~/img/estoque.svg")" width="32" alt="Home">
+                                <img src="@Url.Content("~/img/estoque.svg")" width="32" alt="Estoque">
                         </li>
                         }
                                 </a>
@@ -86,11 +86,11 @@
                         <a asp-area="" asp-controller="Home" asp-action="Cadastrar">
                             @if(ViewBag.page == "Cadastro"){
                             <li class="nav-item d-flex justify-content-center MenuItem">
-                            <img src="@Url.Content("~/img/cadastroTrue.svg")" alt="Estoque" width="32">
+                            <img src="@Url.Content("~/img/cadastroTrue.svg")" alt="Cadastrar" width="32">
                         </li>
                         }else{
                             <li class="nav-item User">
-                            <img src="@Url.Content("~/img/cadastro.svg")" alt="Estoque" width="32">
+                            <img src="@Url.Content("~/img/cadastro.svg")" alt="Cadastrar" width="32">
                         </li>
                         }
                         </a>
@@ -99,14 +99,71 @@
             </div>
         </nav>
     </div>
-    <div class="w-100">
+    <div class="MenuMobile">
+            <div class="d-flex justify-content-between m-4">
+                            <div class="Logout LogoutMobile p-4" onclick="abrirMenuMobile()">
+                                <img src="@Url.Content("~/img/burguerButton.svg")">
+                            </div>
+                        <div class="Logout LogoutMobile p-4">
+                            <img src="@Url.Content("~/img/logout.svg")">
+                        </div>
+                    </div>
+                </div>
+    <div class="w-100 BodyMobile">
         <div class="d-flex w-100 mb-3">
             <div class="Top">
-                <div class="DivWrap justify-content-start">
-                    <button class="User d-flex align-items-center Back Title fs-4 mb-0">
-                        <img id="userIcon" src="@Url.Content("~/img/user.svg")">
-                        <p class="mb-0">Olá, username</p>
-                    </button>
+                <div class="DivWrap justify-content-start w-100">
+                    <a asp-action="Usuario" asp-controller="Home"
+                     class="User d-flex align-items-center Back Title fs-4 mb-0 desktop">
+                        @if(ViewBag.Page == "Usuario"){
+                            <div class="MenuItem d-flex align-items-center">
+                                <img id="userIcon" src="@Url.Content("~/img/userHover.svg")">
+                                <p class="mb-0">Olá, username</p>
+                            </div>
+                        }else{
+                            <div class="d-flex align-items-center">
+                                <img id="userIcon" src="@Url.Content("~/img/user.svg")">
+                                <p class="mb-0">Olá, username</p>
+                            </div>
+                        }
+                    </a>
+                </div>
+            </div>
+            <div class="BurguerClicked" id="BurguerClicked">
+                <div class="BurguerMenu">
+                    <div class="p-2 w-100" onclick="fecharMenuMobile()">
+                        <img id="userIcon" src="@Url.Content("~/img/xButton.svg")">
+                    </div>
+                    <a asp-action="Index" asp-controller="Home">
+                    <div class="MenuBar">
+                        <p class="m-0">Início</p>
+                    </div>
+                    </a>
+                    <a asp-action="Index" asp-controller="consultarPedido">
+                        <div class="MenuBar">
+                            <p class="m-0">Consulta</p>
+                        </div>
+                    </a>
+                    <a asp-action="Index" asp-controller="estoque">
+                        <div class="MenuBar">
+                            <p class="m-0">Estoque</p>
+                        </div>
+                    </a>
+                    <a asp-action="Index" asp-controller="novoPedido">
+                        <div class="MenuBar">
+                            <p class="m-0">Novo pedido</p>
+                        </div>
+                    </a>
+                    <a asp-action="Index" asp-controller="novoPedido">
+                        <div class="MenuBar">
+                            <p class="m-0">Conta</p>
+                        </div>
+                    </a>
+                    <a asp-action="Cadastrar" asp-controller="Home">
+                        <div class="MenuBar">
+                            <p class="m-0">Criar usuário</p>
+                        </div>
+                    </a>
                 </div>
             </div>
             @* <ul class="Top">
@@ -126,9 +183,9 @@
                 <div class="DivWrap">
                 </div>
             </li> *@
-            <header class="TopHeader w-100 h-100">
+            <header class="TopHeader w-100 h-100 desktop">
             </header>
-                <div class="CardInfo Logout">
+                <div class="CardInfo Logout desktop">
                     <div class="DivWrap d-flex">
                         <div class="d-flex align-items-center gap-3">
                             <img src="@Url.Content("~/img/logout.svg")">

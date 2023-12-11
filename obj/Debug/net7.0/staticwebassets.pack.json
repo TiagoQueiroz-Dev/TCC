@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets\\img\\andaime.svg"
     },
     {
+      "Id": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\img\\burguerButton.svg",
+      "PackagePath": "staticwebassets\\img\\burguerButton.svg"
+    },
+    {
       "Id": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\img\\cadastro.svg",
       "PackagePath": "staticwebassets\\img\\cadastro.svg"
     },
@@ -95,6 +99,10 @@
     {
       "Id": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\img\\warning.svg",
       "PackagePath": "staticwebassets\\img\\warning.svg"
+    },
+    {
+      "Id": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\img\\xButton.svg",
+      "PackagePath": "staticwebassets\\img\\xButton.svg"
     },
     {
       "Id": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\js\\site.js",
