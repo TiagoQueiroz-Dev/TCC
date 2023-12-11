@@ -56,5 +56,10 @@ namespace TCC.Repository.Usuario
             
             return novoUsuario;
         }
+
+        public UsuarioModel AlterarDados(string nome, string email, string senha)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

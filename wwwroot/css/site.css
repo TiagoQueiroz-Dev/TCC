@@ -132,9 +132,19 @@ input{
     }
 }
 
+.RelatorioBusca{
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+  }
+}
+
 .Relatorio{
   background-color: var(--primary-1);
   border-radius: 12px;
+    @media screen and (max-width: 600px) {
+      margin: 0!important;
+      width: 100%!important;
+    }
 }
 
 .Table{

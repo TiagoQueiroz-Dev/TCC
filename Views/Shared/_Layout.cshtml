@@ -83,6 +83,7 @@
                                 </a>
                         <li class="bottom">
                         </li>
+                        @if(ViewBag.TipoConta == "Administrador"){
                         <a asp-area="" asp-controller="Home" asp-action="CadastrarUsuario">
                             @if(ViewBag.page == "Cadastro"){
                             <li class="nav-item d-flex justify-content-center MenuItem">
@@ -94,6 +95,7 @@
                         </li>
                         }
                         </a>
+                        }
                     </ul>
                 </div>
             </div>
@@ -104,9 +106,11 @@
                             <div class="Logout LogoutMobile p-4" onclick="abrirMenuMobile()">
                                 <img src="@Url.Content("~/img/burguerButton.svg")">
                             </div>
-                        <div class="Logout LogoutMobile p-4">
-                            <img src="@Url.Content("~/img/logout.svg")">
-                        </div>
+                        <a asp-action="Logout" asp-controller="Login">
+                            <div class="Logout LogoutMobile p-4">
+                                <img src="@Url.Content("~/img/logout.svg")">
+                            </div>
+                        </a>
                     </div>
                 </div>
     <div class="w-100 BodyMobile">
@@ -118,7 +122,7 @@
                      class="Usuario MenuItem d-flex align-items-center Back Title fs-4 mb-0 desktop">
                             <div class="d-flex align-items-center">
                                 <img id="userIcon" src="@Url.Content("~/img/userHover.svg")">
-                                <p class="mb-0" style="color: var(--primary-1);">Olá, username</p>
+                                <p class="mb-0" style="color: var(--primary-1);">Olá, @ViewBag.Nome</p>
                             </div>
                     </a>
                         }else{
@@ -126,7 +130,7 @@
                      class="User d-flex align-items-center Back Title fs-4 mb-0 desktop">
                             <div class="d-flex align-items-center">
                                 <img id="userIcon" src="@Url.Content("~/img/user.svg")">
-                                <p class="mb-0">Olá, username</p>
+                                <p class="mb-0">Olá, @ViewBag.Nome</p>
                             </div>
                     </a>
                         }
@@ -163,9 +167,11 @@
                         </div>
                     </a>
                     <a asp-action="CadastrarUsuario" asp-controller="Home">
-                        <div class="MenuBar">
-                            <p class="m-0">Criar usuário</p>
-                        </div>
+                        @if(ViewBag.TipoConta == "Administrador"){
+                            <div class="MenuBar">
+                                <p class="m-0">Criar usuário</p>
+                            </div>
+                        }
                     </a>
                 </div>
             </div>
@@ -188,7 +194,8 @@
             </li> *@
             <header class="TopHeader w-100 h-100 desktop">
             </header>
-                <div class="CardInfo Logout desktop">
+                <a asp-action="Logout" asp-controller="Login">
+                    <div class="CardInfo Logout desktop">
                     <div class="DivWrap d-flex">
                         <div class="d-flex align-items-center gap-3">
                             <img src="@Url.Content("~/img/logout.svg")">
@@ -196,6 +203,7 @@
                         </div>
                     </div>
                 </div>
+                </a>
         </ul>
         </div>
         <div class="d-flex">

@@ -27,7 +27,6 @@ public class HomeController : Controller
     {   
         var role = User.Claims.FirstOrDefault(u => u.Type == ClaimTypes.Role);
         string tipoConta = role?.Value;
-        
         ViewBag.Page = "Home";
         RelatorioModel geral = new RelatorioModel();
         geral.Estoque = _estoqueRepository.PoucoEstoque();
@@ -38,6 +37,7 @@ public class HomeController : Controller
     [Authorize(Roles = "Administrador")]
     public IActionResult CadastrarUsuario(){
         ViewBag.Page = "Cadastro";
+        
         return View();
     }
 

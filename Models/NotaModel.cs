@@ -40,8 +40,6 @@ namespace TCC.Models
 
         [Column(TypeName = "decimal(10,2)")]
         public decimal? ValorPago { get; set; }
-        [Column(TypeName = "decimal(10,2)")]
-        public decimal? ValorDesconto { get; set; }
 
         [Column(TypeName = "decimal(10,2)")]
         public decimal? TaxaEntrega { get; set; }

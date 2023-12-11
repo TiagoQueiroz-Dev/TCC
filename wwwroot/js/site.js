@@ -55,29 +55,30 @@ function atribuirTotal(s, size) {
 // });
 
 
-function SomarTotalDesc(i,j,k,l){
-    var inputSubTotal = document.getElementById(i).value || 0;
-    var inputDesc = document.getElementById(j).value || 0;
-    var inputPagPrevio = document.getElementById(l).value || 0;
+// function SomarTotalDesc(i,j,k,l){
+//     var inputSubTotal = document.getElementById(i).value || 0;
+//     var inputDesc = document.getElementById(j).value || 0;
+//     var inputPagPrevio = document.getElementById(l).value || 0;
 
-    var subTotal = parseFloat(inputSubTotal);
-    var desconto = parseFloat(inputDesc);
-    var previo = parseFloat(inputPagPrevio);
+//     var subTotal = parseFloat(inputSubTotal);
+//     var desconto = parseFloat(inputDesc);
+//     var previo = parseFloat(inputPagPrevio);
 
-    var total = subTotal-subTotal*(desconto/100);
-    if(total <0){
-        total = 0;
-    }
+//     var total = subTotal-subTotal*(desconto/100);
     
-    if(previo > total){
-        previo = total
-        document.getElementById(l).value = previo.toFixed(2).replace('.',',');
-    }else
+//     if(total <0){
+//         total = 0;
+//     }
+    
+//     if(previo > total){
+//         previo = total;
+//         document.getElementById(l).value = previo.toFixed(2).replace('.',',');
+//     }else
 
-    document.getElementById(k).value = total.toFixed(2).replace('.',',');
+//     document.getElementById(k).value = total.toFixed(2).replace('.',',');
     
 
-}
+// }
 
 function verificarFiltro(e){
     const item = document.getElementById(e).value;
@@ -144,17 +145,13 @@ function verificarCamposVazios() {
     return true;
 }
 
-function verificarNovosDados(senha){
+function verificarNovosDados(){
     const nome = document.getElementById('nome').value;
-    const senhaAtual = document.getElementById('senhaAtual').value;
     const novaSenha = document.getElementById('novaSenha').value;
     const confirmarNovaSenha = document.getElementById('confirmarNovaSenha').value;
 
     if(nome === ''){
         alert("Por favor, preencha o campo de nome!")
-        return false;
-    }else if(senhaAtual !== senha){
-        alert("A senha atual está errada!")
         return false;
     }else if(novaSenha == '' && confirmarNovaSenha == ''){
         return true;
@@ -172,22 +169,37 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function CalcularValorRestante(){
     var valorRestante = document.getElementById("pagRestante").value
-    var valorPrevio = document.getElementById("pagPrevio").value
-    var valorTotal = (document.getElementById("valor_total").innerText).toString();
-    var valorEntrega = document.getElementById("taxaEntrega").value
+    var valorPrevio = document.getElementById("pagPrevio").value || 0;
+    var valorTotal = (document.getElementById("valor_total").value).toString();
+    var valorEntrega = document.getElementById("taxaEntrega").value || 0;
 
     
-    // var total = valorTotal.replace(',', '.');
-    // var totalFloat = parseFloat(valorUnidade) || 0;
+    var total = valorTotal.replace(',', '.');
 
-    var somaTotal = valorEntrega + valorTotal - valorPrevio; 
+    var entrega = parseFloat(valorEntrega) || 0;
 
-    document.getElementById("pagRestante").innerText = somaTotal.toString
+    var previo = valorPrevio.toString().replace(',','.');
+    previo = parseFloat(previo);
 
-    console.log(valorTotal);
+    
+    var somaTotal = entrega + (total - previo); 
+    if(somaTotal <=0){
+        somaTotal = 0;
+    }
 
-    // console.log(valorRestante);
-    // console.log(valorPrevio);
-    // console.log(total);
-    // console.log(valorEntrega);
+    document.getElementById("pagRestante").value = somaTotal.toString().replace('.',',');
+    
 }
+
+function calcularPeriodo( data1 , data2 ){
+
+    data1 = new Date(data1)
+    data2 = new Date(data2)
+
+    var diferenca = Math.abs(data1.getTime() - data2.getTime())
+
+    var dias = diferenca / (1000606024);
+
+    return dias;
+    
+    }

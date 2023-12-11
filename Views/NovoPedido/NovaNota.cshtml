@@ -54,18 +54,6 @@
           }
           <div class="mb-3 d-flex justify-content-evenly">
             <div>
-              <label for="valor_subTotal" class="form-label ">SubTotal:</label>
-              <input type="number" class="form-control mb-3" asp-for="@Model.SubTotalPedido" id="valor_subTotal"
-                readonly>
-
-            </div>
-            <div>
-              <label for="valor_deconto" class="form-label">Desconto:</label>
-              <input type="number" class="form-control" id="valor_deconto" min="0" max="100" placeholder="%"
-                asp-for="@Model.NovaNota.ValorDesconto"
-                oninput="SomarTotalDesc('valor_subTotal','valor_deconto','valor_total','pagPrevio')">
-            </div>
-            <div>
               <label for="valor_total" class="form-label">Total:</label>
               <input type="text" class="form-control" id="valor_total" min="0" value="@Model.SubTotalPedido"
                 asp-for="@Model.NovaNota.ValorTotal" readonly>
@@ -107,7 +95,7 @@
               {
                 <div class="form-check w-100">
                   <label class="form-label" for="entregaMenos20">Valor de Entrega:</label>
-                  <input type="number" class="form-control" asp-for="@Model.NovaNota.TaxaEntrega" id="taxaEntrega" step="0.01" min="0">
+                  <input type="number" class="form-control" asp-for="@Model.NovaNota.TaxaEntrega" id="taxaEntrega" step="0.01" min="0" oninput="CalcularValorRestante()">
                 </div>
               }
 
@@ -124,11 +112,11 @@
               <div>
                 <label class="form-label" for="pagPrevio">Pagamento Prévio</label>
                 <input class="form-control" id="pagPrevio" type="text" min="0" max="@Model.NovaNota.ValorTotal"
-                  step="0.01" value="@Model.NovaNota.ValorPago" asp-for="@Model.NovaNota.ValorPago">
+                  step="0.01" value="@Model.NovaNota.ValorPago" asp-for="@Model.NovaNota.ValorPago" oninput="CalcularValorRestante()">
               </div>
               <div>
                 <label for="pagRestante" class="form-label">Pagamento Restante</label>
-                <input type="text" class="form-control" id="pagRestante" value="" readonly>
+                <input type="text" class="form-control" id="pagRestante" min="0" value="" readonly>
               </div>
             </div>
           </div>

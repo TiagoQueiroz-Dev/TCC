@@ -54,7 +54,7 @@ namespace TCC.Controllers
                     ExpiresUtc = DateTime.UtcNow.AddMinutes(20)
                 });
 
-
+                TempData["Nome"] = nome;
                 return RedirectToAction("Index", "Home");
             }
             else
