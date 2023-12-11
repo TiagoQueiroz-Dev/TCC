@@ -172,7 +172,17 @@ function CalcularValorRestante(){
     var valorPrevio = document.getElementById("pagPrevio").value || 0;
     var valorTotal = (document.getElementById("valor_total").value).toString();
     var valorEntrega = document.getElementById("taxaEntrega").value || 0;
+    const qtdDias = calcularPeriodo('Data_recolhimento', 'Data_aluguel');
 
+    console.log(qtdDias);
+    
+    const calcularTotal = () =>{
+        if(qtdDias === 0){
+            return total * 1
+        }else{
+            return total * qtdDias
+        }
+    }
     
     var total = valorTotal.replace(',', '.');
 
@@ -182,11 +192,13 @@ function CalcularValorRestante(){
     previo = parseFloat(previo);
 
     
-    var somaTotal = entrega + (total - previo); 
+    var somaTotal = entrega + ((total * qtdDias) - previo); 
     if(somaTotal <=0){
         somaTotal = 0;
     }
 
+
+    document.getElementById("valor_total_visible").value = calcularTotal().toString().replace('.',',');
     document.getElementById("pagRestante").value = somaTotal.toString().replace('.',',');
     
 }
@@ -199,9 +211,9 @@ function calcularPeriodo( data1 , data2 ){
     data1 = new Date(dataFinal)
     data2 = new Date(dataInicio)
 
-    var diferenca = Math.abs(dataFinal.getTime() - dataInicio.getTime())
+    var diferenca = Math.abs(data1.getTime() - data2.getTime())
 
-    var dias = diferenca / (1000606024);
+    var dias = diferenca / (1000*60*60*24);
 
     return dias;
     

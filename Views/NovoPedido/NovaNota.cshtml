@@ -24,12 +24,12 @@
           <div class="mb-3">
             <label for="Data_aluguel" class="">Data da nota:</label>
             <input type="date" asp-for="@Model.NovaNota.DataEmissao" class="form-control" id="Data_aluguel"
-              value="@DateTime.Now.ToString("yyyy-MM-dd")">
+              value="@DateTime.Now.ToString("yyyy-MM-dd")" oninput="CalcularValorRestante()">
           </div>
           <div class="mb-3">
             <label for="Data_recolhimento" class="">Data de recolhimento:</label>
             <input type="date" asp-for="@Model.NovaNota.DataRecolhimento" class="form-control" id="Data_recolhimento"
-              value="@DateTime.Now.ToString("yyyy-MM-dd")">
+              value="@DateTime.Now.ToString("yyyy-MM-dd")" oninput="CalcularValorRestante()">
 
           </div>
         </div>
@@ -55,7 +55,9 @@
           <div class="mb-3 d-flex justify-content-evenly">
             <div>
               <label for="valor_total" class="form-label">Total:</label>
-              <input type="text" class="form-control" id="valor_total" min="0" value="@Model.SubTotalPedido"
+              <input type="text" class="form-control" id="valor_total_visible" step="0.01" min="0" value="@Model.SubTotalPedido"
+                asp-for="@Model.NovaNota.ValorTotal" readonly>
+              <input type="hidden" class="form-control" id="valor_total" step="0.01" min="0" value="@Model.SubTotalPedido"
                 asp-for="@Model.NovaNota.ValorTotal" readonly>
             </div>
           </div>
