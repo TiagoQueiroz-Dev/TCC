@@ -165,3 +165,29 @@ function verificarNovosDados(senha){
         return true;
     }
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    CalcularValorRestante();
+});
+
+function CalcularValorRestante(){
+    var valorRestante = document.getElementById("pagRestante").value
+    var valorPrevio = document.getElementById("pagPrevio").value
+    var valorTotal = (document.getElementById("valor_total").innerText).toString();
+    var valorEntrega = document.getElementById("taxaEntrega").value
+
+    
+    // var total = valorTotal.replace(',', '.');
+    // var totalFloat = parseFloat(valorUnidade) || 0;
+
+    var somaTotal = valorEntrega + valorTotal - valorPrevio; 
+
+    document.getElementById("pagRestante").innerText = somaTotal.toString
+
+    console.log(valorTotal);
+
+    // console.log(valorRestante);
+    // console.log(valorPrevio);
+    // console.log(total);
+    // console.log(valorEntrega);
+}

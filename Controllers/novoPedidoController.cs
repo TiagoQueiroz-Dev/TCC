@@ -73,6 +73,9 @@ public class novoPedidoController : Controller
             {
                 estoquePedidoNota.Entrega = false;
             }
+            //calcular valores parciais 
+            
+
             return View("NovaNota", estoquePedidoNota);
         }else{
             TempData["Erro"] = "Nenhum Produto Selecionado";
