@@ -161,3 +161,16 @@ function verificarNovosDados(){
         return true;
     }
 }
+
+function calcularPeriodo( data1 , data2 ){
+
+    data1 = new Date(data1)
+    data2 = new Date(data2)
+
+    var diferenca = Math.abs(data1.getTime() - data2.getTime())
+
+    var dias = diferenca / (1000606024);
+
+    return dias;
+    
+    }
