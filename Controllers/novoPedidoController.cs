@@ -32,42 +32,49 @@ public class novoPedidoController : Controller
     [HttpPost]
     public IActionResult NovoPedido(EstoquePedidoNotaModel estoquePedidoNota)
     {
+            var qtdPedidos = 0;
 
-        var qtdPedidos = 0;
+            estoquePedidoNota.Estoque = _estoqueRepository.ListarEstoque();
 
-        estoquePedidoNota.Estoque = _estoqueRepository.ListarEstoque();
+            estoquePedidoNota.NovaNota = new NotaModel();
 
-        estoquePedidoNota.NovaNota = new NotaModel();
+            estoquePedidoNota.Pedidos.RemoveAll(Pedidos => Pedidos.Quantidade == 0);
+            
+            if(estoquePedidoNota.Pedidos.Count != 0){
+            estoquePedidoNota.SomarTotal();
 
-        estoquePedidoNota.Pedidos.RemoveAll(Pedidos => Pedidos.Quantidade == 0);
+            estoquePedidoNota.NovaNota.ValorPago = 0;
 
-        estoquePedidoNota.SomarTotal();
+            foreach (var item1 in estoquePedidoNota.Pedidos)
+            {
+                // aplicada regra de negocio para verificar pagamento imediato das escoras
+                foreach (var item2 in estoquePedidoNota.Estoque)
 
-        estoquePedidoNota.NovaNota.ValorPago = 0;
+                    if (item1.IdProduto == item2.Id)
+                    {
+                        if (item2.Nome.Split(' ')[0] == "Escora")
+                        {
+                            estoquePedidoNota.NovaNota.ValorPago += item2.ValorUnid * item1.Quantidade;
+                        }
 
-        foreach (var item1 in estoquePedidoNota.Pedidos)
-        {
-           // aplicada regra de negocio para verificar pagamento imediato das escoras
-            foreach (var item2 in estoquePedidoNota.Estoque)
-
-                if (item1.IdProduto == item2.Id)
-                {
-                    if(item2.Nome.Split(' ')[0] == "Escora"){
-                        estoquePedidoNota.NovaNota.ValorPago += item2.ValorUnid*item1.Quantidade;
                     }
-
-                }
                 qtdPedidos += item1.Quantidade;
-        }
+            }
 
-        if(qtdPedidos < 20 || estoquePedidoNota.SubTotalPedido < 500){
-            estoquePedidoNota.Entrega = true;
+            if (qtdPedidos < 20 || estoquePedidoNota.SubTotalPedido < 500)
+            {
+                estoquePedidoNota.Entrega = true;
+            }
+            else
+            {
+                estoquePedidoNota.Entrega = false;
+            }
+            return View("NovaNota", estoquePedidoNota);
         }else{
-            estoquePedidoNota.Entrega = false;
+            return RedirectToAction("Index");
         }
-        
 
-        return View("NovaNota", estoquePedidoNota);
+       
         //representa ação do form da View "Index" para fezer um pedido
     }
 
@@ -82,17 +89,17 @@ public class novoPedidoController : Controller
     {
 
         if (estoquePedidoNota.Pedidos != null)
-        {   
-            estoquePedidoNota.NovaNota.ValorDesconto = estoquePedidoNota.NovaNota.ValorDesconto/100*estoquePedidoNota.NovaNota.ValorTotal;
+        {
+            estoquePedidoNota.NovaNota.ValorDesconto = estoquePedidoNota.NovaNota.ValorDesconto / 100 * estoquePedidoNota.NovaNota.ValorTotal;
             Console.WriteLine(estoquePedidoNota.NovaNota.ValorDesconto);
 
             _notaRepository.AdicionarNota(estoquePedidoNota.NovaNota);
-        
+
             foreach (var item in estoquePedidoNota.Pedidos)
             {
                 //para pegar o id da nota gerada e incuir no pedido, foi criado este metodo de consulta de Id
                 item.IdNota = _notaRepository.BuscarIdNota(estoquePedidoNota.NovaNota);
-                
+
                 _estoqueRepository.BaixaEstoque(item);
                 //cada item do pedido irá receber o mesmo idNota antes de ser adicionado ao banco
                 //_pedidoRepository.AdicionarPedido(item);

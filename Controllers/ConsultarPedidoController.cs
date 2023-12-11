@@ -32,10 +32,7 @@ public class consultarPedidoController : Controller
     [HttpPost]
     public IActionResult ConsultaNota(string busca, string opc, DateTime dataInicial, DateTime dataFinal)
     {
-        Console.WriteLine(dataInicial);
-        //Console.WriteLine(dataFinal);
-        Console.WriteLine(busca);
-        Console.WriteLine(opc);
+
 
         EstoquePedidoNotaModel estoquePedidoNota = new EstoquePedidoNotaModel();
         ListaConsultaNotasModel consulta = new ListaConsultaNotasModel();

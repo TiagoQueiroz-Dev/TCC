@@ -107,21 +107,21 @@
             {
               <div class="form-check w-100">
                 <label class="form-label" for="entregaMenos20">Valor de Entrega:</label>
-                <input type="number" class="form-control" asp-for="@Model.NovaNota.TaxaEntrega" min="0">
+                <input type="number" class="form-control" asp-for="@Model.NovaNota.TaxaEntrega" step="0.01" min="0">
               </div>
             }
             else
             {
               <div class="form-check w-100">
                 <label class="form-label" for="entrega">Taxa de Entrega:</label>
-                <input type="number" class="form-control" asp-for="@Model.NovaNota.TaxaEntrega" min="0" readonly>
+                <input type="number" class="form-control" asp-for="@Model.NovaNota.TaxaEntrega" min="0"  readonly>
               </div>
             }
         </div>
         <div class="d-flex justify-content-evenly mb-3">
           <div>
             <label class="form-label" for="pagPrevio">Pagamento Prévio</label>
-            <input class="form-control" id="pagPrevio" type="text" min="0" max="@Model.NovaNota.ValorTotal"
+            <input class="form-control" id="pagPrevio" type="text" min="0" max="@Model.NovaNota.ValorTotal" step="0.01"
               value="@Model.NovaNota.ValorPago" asp-for="@Model.NovaNota.ValorPago">
           </div>
           <div>
