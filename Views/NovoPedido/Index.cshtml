@@ -12,14 +12,15 @@
   <p class="Title">Novo Pedido</p>
 
 
-  <form class="w-100 d-flex flex-column" asp-action="NovoPedido" asp-controller="NovoPedido" method="post">
+  <form class="w-100 d-flex flex-column" asp-action="NovoPedido" onsubmit="return verificarCamposVazios()"
+  asp-controller="NovoPedido" method="post">
     <div class="d-flex Over overflow-auto container">
       <table class="Table">
         <tbody class="w-100 d-flex Tbody flex-column">
           <tr class="TableRows d-flex w-100">
             <th class="Th Flex-1-0-0 text-start">Nome</th>
-            <th class="Th text-center">Disponíveis</th>
-            <th class="Th text-center">Valor unidade</th>
+            <th class="Th text-center desktop">Disponíveis</th>
+            <th class="Th text-center desktop">Valor unidade</th>
           </tr>
           @if (Model != null && Model.Estoque.Any())
 
@@ -39,9 +40,9 @@
                     id="@item.Id" placeholder="0" min="0" max="@Model.Estoque[cont-1].Disponiveis"
                     oninput="calcularValorTotal('@cont-valorUnidade',@item.Id,'@cont-lista','valorTotal',@Model.Estoque.Count)">
                 </td>
-                <td class="Td text-center fs-5">@item.Disponiveis</td>
+                <td class="Td text-center fs-5 desktop">@item.Disponiveis</td>
                 <input type="hidden" name="" id="qtdEstoque" value="@Model.Estoque[cont-1].Disponiveis" readonly>
-                <td class="Td text-center fs-5">R$ <span id="@cont-valorUnidade">@item.ValorUnid</span></td>
+                <td class="Td text-center fs-5 desktop">R$ <span id="@cont-valorUnidade">@item.ValorUnid</span></td>
                 <input type="hidden" id="@cont-lista">
               </tr>
               cont++;

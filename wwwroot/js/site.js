@@ -91,6 +91,55 @@ function verificarFiltro(e){
     }
 }
 
-function mudarMenu(){
+function verificarCadastro(){
+    const nome = document.getElementById('nome').value;
+    const senha = document.getElementById('senha').value;
+    const confirmarSenha = document.getElementById('confirmarSenha').value;
+    const email = document.getElementById('email').value;
+    const confirmarEmail = document.getElementById('confirmarEmail').value;
+
+    if(nome === '' || senha === '' || email === ''){
+        alert("Por favor, preencha todos os campos!")
+        return false;
+    }else if(senha === confirmarSenha && email === confirmarEmail){
+        return true;
+    }else if(senha !== confirmarSenha){
+        alert("As senhas não coincidem, por favor preencha os campos com a mesma senha")
+        return false;
+    }else if(email !== confirmarEmail){
+        alert("Os e-mails não coincidem, por favor preencha os campos com o mesmo e-mail")
+        return false;
+    }
+}
+
+function test(){
+    console.log('submitou')
+}
+
+function abrirMenuMobile(){
     
+    const menu = document.getElementById('BurguerClicked');
+
+    menu.style.display = 'block';
+}
+function fecharMenuMobile(){
+
+    const menu = document.getElementById('BurguerClicked');
+
+    menu.style.display = 'none';
+}
+
+function verificarCamposVazios() {
+    var inputs = document.getElementsByClassName('form-control');
+
+    var todosCamposVazios = Array.from(inputs).every(function(input) {
+        return input.value.trim() === '';
+    });
+
+    if (todosCamposVazios) {
+        alert('Nenhum campo foi preenchido!');
+        return false;
+    }
+
+    return true;
 }

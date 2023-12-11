@@ -20,6 +20,7 @@ public class estoqueController : Controller
 
     public IActionResult Index()
     {
+        ViewBag.Page = "Estoque";
         var estoque = _estoqueRepository.ListarEstoque();
         return View(estoque);
     }

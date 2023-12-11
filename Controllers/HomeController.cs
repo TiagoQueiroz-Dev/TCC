@@ -19,11 +19,29 @@ public class HomeController : Controller
         _notaRepository = notaRepository;
     }
     public IActionResult Index()
-    {
+    {   
+        ViewBag.Page = "Home";
         RelatorioModel geral = new RelatorioModel();
         geral.Estoque = _estoqueRepository.PoucoEstoque();
         geral.Notas = _notaRepository.NotasRecolher();
         return View(geral);
+    }
+
+    [HttpPost]
+    public IActionResult Cadastrar(string nome,string email,string confirmarEmail, string senha,string confirmarSenha)
+    {   
+        ViewBag.Page = "Cadastro";
+        
+
+
+
+        return View("CadastrarUsuario");
+    }
+
+    public IActionResult Usuario()
+    {   
+        ViewBag.Page = "Usuario";
+        return View("Usuario");
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

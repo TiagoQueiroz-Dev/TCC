@@ -13,20 +13,48 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\kevin\\Documents\\GitHub\\TCC\\wwwroot\\img\\HomeTrue.svg",
+      "PackagePath": "staticwebassets\\img\\HomeTrue.svg"
+    },
+    {
       "Id": "C:\\Users\\kevin\\Documents\\GitHub\\TCC\\wwwroot\\img\\andaime.svg",
       "PackagePath": "staticwebassets\\img\\andaime.svg"
+    },
+    {
+      "Id": "C:\\Users\\kevin\\Documents\\GitHub\\TCC\\wwwroot\\img\\burguerButton.svg",
+      "PackagePath": "staticwebassets\\img\\burguerButton.svg"
     },
     {
       "Id": "C:\\Users\\kevin\\Documents\\GitHub\\TCC\\wwwroot\\img\\cadastro.svg",
       "PackagePath": "staticwebassets\\img\\cadastro.svg"
     },
     {
+      "Id": "C:\\Users\\kevin\\Documents\\GitHub\\TCC\\wwwroot\\img\\cadastroTrue.svg",
+      "PackagePath": "staticwebassets\\img\\cadastroTrue.svg"
+    },
+    {
       "Id": "C:\\Users\\kevin\\Documents\\GitHub\\TCC\\wwwroot\\img\\consultaPedido.svg",
       "PackagePath": "staticwebassets\\img\\consultaPedido.svg"
     },
     {
+      "Id": "C:\\Users\\kevin\\Documents\\GitHub\\TCC\\wwwroot\\img\\consultaTrue.svg",
+      "PackagePath": "staticwebassets\\img\\consultaTrue.svg"
+    },
+    {
       "Id": "C:\\Users\\kevin\\Documents\\GitHub\\TCC\\wwwroot\\img\\estoque.svg",
       "PackagePath": "staticwebassets\\img\\estoque.svg"
+    },
+    {
+      "Id": "C:\\Users\\kevin\\Documents\\GitHub\\TCC\\wwwroot\\img\\estoqueTrue.svg",
+      "PackagePath": "staticwebassets\\img\\estoqueTrue.svg"
+    },
+    {
+      "Id": "C:\\Users\\kevin\\Documents\\GitHub\\TCC\\wwwroot\\img\\forma1.svg",
+      "PackagePath": "staticwebassets\\img\\forma1.svg"
+    },
+    {
+      "Id": "C:\\Users\\kevin\\Documents\\GitHub\\TCC\\wwwroot\\img\\forma2.svg",
+      "PackagePath": "staticwebassets\\img\\forma2.svg"
     },
     {
       "Id": "C:\\Users\\kevin\\Documents\\GitHub\\TCC\\wwwroot\\img\\home.svg",
@@ -49,8 +77,16 @@
       "PackagePath": "staticwebassets\\img\\novoPedido.svg"
     },
     {
+      "Id": "C:\\Users\\kevin\\Documents\\GitHub\\TCC\\wwwroot\\img\\novoPedidoTrue.svg",
+      "PackagePath": "staticwebassets\\img\\novoPedidoTrue.svg"
+    },
+    {
       "Id": "C:\\Users\\kevin\\Documents\\GitHub\\TCC\\wwwroot\\img\\relatorio.svg",
       "PackagePath": "staticwebassets\\img\\relatorio.svg"
+    },
+    {
+      "Id": "C:\\Users\\kevin\\Documents\\GitHub\\TCC\\wwwroot\\img\\relatorioTrue.svg",
+      "PackagePath": "staticwebassets\\img\\relatorioTrue.svg"
     },
     {
       "Id": "C:\\Users\\kevin\\Documents\\GitHub\\TCC\\wwwroot\\img\\user.svg",
@@ -63,6 +99,10 @@
     {
       "Id": "C:\\Users\\kevin\\Documents\\GitHub\\TCC\\wwwroot\\img\\warning.svg",
       "PackagePath": "staticwebassets\\img\\warning.svg"
+    },
+    {
+      "Id": "C:\\Users\\kevin\\Documents\\GitHub\\TCC\\wwwroot\\img\\xButton.svg",
+      "PackagePath": "staticwebassets\\img\\xButton.svg"
     },
     {
       "Id": "C:\\Users\\kevin\\Documents\\GitHub\\TCC\\wwwroot\\js\\site.js",

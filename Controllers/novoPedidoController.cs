@@ -27,6 +27,7 @@ public class novoPedidoController : Controller
 
     public IActionResult Index()
     {
+        ViewBag.Page = "NovoPedido";
         EstoquePedidoNotaModel estoquePedidoNota = new EstoquePedidoNotaModel(_estoqueRepository.ListarEstoque());
         return View(estoquePedidoNota);
     }
@@ -34,6 +35,7 @@ public class novoPedidoController : Controller
     [HttpPost]
     public IActionResult NovoPedido(EstoquePedidoNotaModel estoquePedidoNota)
     {
+            ViewBag.Page = "NovoPedido";
             var qtdPedidos = 0;
 
             estoquePedidoNota.Estoque = _estoqueRepository.ListarEstoque();
@@ -83,6 +85,8 @@ public class novoPedidoController : Controller
 
     public IActionResult NovaNota()
     {
+        
+        ViewBag.Page = "NovoPedido";
         return View();
     }
 
