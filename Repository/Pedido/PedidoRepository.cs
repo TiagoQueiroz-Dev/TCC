@@ -24,5 +24,16 @@ namespace TCC.Repository.Pedido
             return novoPedido;
            
         }
+
+        public List<PedidoModel> PedidosNota(int idNota)
+        {   
+            List<PedidoModel> listaProdutos = new List<PedidoModel>();
+
+            var produtos = _bancoContext.Pedidos.Where(u => u.IdNota == idNota);
+            
+            listaProdutos = produtos.ToList();
+
+            return listaProdutos;
+        }
     }
 }

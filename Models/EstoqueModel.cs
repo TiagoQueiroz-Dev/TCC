@@ -10,6 +10,10 @@ namespace TCC.Models;
 
 public class EstoqueModel
 {
+    // public EstoqueModel()
+    // {
+    //     ProdutoAtivo = true;
+    // }
     
     public int Id { get; set; }
     [NotNull]
@@ -23,4 +27,6 @@ public class EstoqueModel
     [NotNull]
     [Column(TypeName = "decimal(10,2)")] 
     public decimal ValorUnid { get; set; }
+    [NotNull]
+    public bool ProdutoAtivo { get; set; } 
 }

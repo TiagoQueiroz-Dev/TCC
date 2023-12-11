@@ -1,22 +1,14 @@
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 using TCC.Database;
 using TCC.Repository;
+using TCC.Repository.Conta;
 using TCC.Repository.Nota;
 using TCC.Repository.Pedido;
+using TCC.Repository.Usuario;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddCors(options =>{
-        options.AddPolicy("CorsPolicy",
-            policy => {
-                policy.WithOrigins("http://localhost:3000")
-                .AllowAnyMethod()
-                .AllowAnyOrigin()
-                .AllowAnyHeader();
-                });
-
-});
-
 builder.Services.AddControllersWithViews();
 string mySqlConnection = builder.Configuration.GetConnectionString("Conexao");
 builder.Services.AddDbContext<BancoContext>(opt => {
@@ -26,6 +18,18 @@ opt.UseMySql(mySqlConnection, ServerVersion.AutoDetect(mySqlConnection));
 builder.Services.AddScoped<IEstoqueRepository, EstoqueRepository>();
 builder.Services.AddScoped<IPedidoRepository, PedidoRepository>();
 builder.Services.AddScoped<INotaRepository, NotaRepository>();
+builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
+builder.Services.AddScoped<IContaRepository, ContaRepository>();
+
+builder.Services.AddAuthentication(options =>
+    {
+        options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+        // Adicione outros esquemas, se necessário
+    })
+    .AddCookie(options =>
+    {
+        // Configure as opções do cookie, se necessário
+    });
 
 var app = builder.Build();
 
@@ -37,8 +41,6 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
-
-app.UseCors("CorsPolicy");
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
@@ -46,17 +48,9 @@ app.UseRouting();
 
 app.UseAuthorization();
 
+
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
-
-app.UseEndpoints(endpoints =>
-{
-    endpoints.MapControllerRoute(
-        name: "api",
-        pattern: "api/{controller=ConsultarPedido}/{action=ConsultaNota}/{id?}");
-    endpoints.MapControllers();
-});
-
+    pattern: "{controller=Login}/{action=Index}/{id?}");
 
 app.Run();
