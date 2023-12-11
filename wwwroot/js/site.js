@@ -90,3 +90,7 @@ function verificarFiltro(e){
         document.getElementById('barraPeriodo').style.display = 'none';
     }
 }
+
+function mudarMenu(){
+    
+}
