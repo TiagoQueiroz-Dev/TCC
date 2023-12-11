@@ -1,0 +1,24 @@
+@model CadastrUsuarioModel
+
+
+<h3>Cadastrar usuario</h3>
+<div class="row">
+    <div class="col-md-12">
+        <form asp-action="Registrar" asp-controller="Login" method="post">
+            <div class="form-group">
+                <label asp-for="@Model.Email"></label>
+                <input asp-for="@Model.Email" class="form-control">
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.Senha"></label>
+                <input asp-for="@Model.Senha" class="form-control">
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.ConfirmSenha"></label>
+                <input asp-for="@Model.ConfirmSenha" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-primary mt-3">Cadastrar</button>
+        </form>
+            <button type="" onclick="window.location.href = '/Login/Index'" class="btn btn-primary mt-3">Voltar</button>
+    </div>
+</div>

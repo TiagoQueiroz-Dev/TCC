@@ -1,0 +1,110 @@
+﻿@{
+    var titulo = "Império dos Andaimes";
+}
+<!DOCTYPE html>
+<html lang="pt-br" class="h-100">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="KOÍOS LTDA">
+    <title>@titulo - @ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/TCC.styles.css" asp-append-version="true" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="~/js/site.js"></script>
+    <link rel="icon" href="@Url.Content("~/img/andaime.svg")">
+</head>
+<body class="h-100" style="background-color: var(--primary-2);">
+    <div class="d-flex w-100 mx-0 h-100 p-3 px-3 principal">
+        <div class="d-flex h-100 desktop">
+            <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light p-0"
+            style="background-color: var(--primary-3); border-radius: 8px;">
+            <div class="container-fluid h-100 d-flex p-3">
+                <div class="d-sm-inline-flex d-flex h-100 justify-content-between ">
+                    <ul class="navbar-nav flex-grow-1 d-flex align-items-center flex-column h-100">
+                            <a asp-area="" asp-controller="Home" asp-action="Index" style="width: 100%;">
+                        <li class="nav-item d-flex justify-content-center">
+                                <img src="@Url.Content("~/img/home.svg")" width="32" alt="Home">
+                        </li>
+                            </a>
+                            <a asp-area="" asp-controller="novoPedido" asp-action="Index">
+                        <li class="nav-item d-flex justify-content-center">
+                                <img src="@Url.Content("~/img/novoPedido.svg")" alt="Criar Pedido" width="32">
+                            </li>
+                            </a>
+                            <a asp-area="" asp-controller="Relatorio" asp-action="Index">
+                        <li class="nav-item d-flex justify-content-center">
+                                <img src="@Url.Content("~/img/nota.svg")" alt="Estoque" width="32">
+                        </li>
+                            </a>
+                            <a asp-area="" asp-controller="consultarPedido" asp-action="Index">
+                        <li class="nav-item d-flex justify-content-center">
+                                <img src="@Url.Content("~/img/consultaPedido.svg")" alt="Consultar Pedido" width="32">
+                        </li>
+                            </a>
+                            <a asp-area="" asp-controller="estoque" asp-action="Index">
+                        <li class="nav-item d-flex justify-content-center">
+                                <img src="@Url.Content("~/img/estoque.svg")" alt="Estoque" width="32">
+                        </li>
+                                </a>
+                        <li class="bottom">
+                        </li>
+                        <li class="nav-item warning">
+                            <img src="@Url.Content("~/img/warning.svg")" alt="Estoque" width="32">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="w-100">
+        <div class="d-flex w-100">
+            <ul class="Top">
+            <li>
+                <div class="DivWrap">
+                    <div class="user">
+                        <span class="Roboto">Olá,</span>
+                        <span class="Roboto">username</span>
+                    </div>
+                </div>
+            </li>
+            @* <li>
+                <div class="DivWrap">
+                </div>
+            </li>
+            <li>
+                <div class="DivWrap">
+                </div>
+            </li>
+            <li>
+                <div class="DivWrap">
+                </div>
+            </li> *@
+            <header class="TopHeader w-100 h-100">
+            </header>
+                <div class="CardInfo Logout">
+                    <div class="DivWrap d-flex">
+                        <div class="d-flex align-items-center gap-3">
+                            <img src="@Url.Content("~/img/logout.svg")">
+                            <p class="fs-4 mx-0 m-0">Sair</p>
+                        </div>
+                    </div>
+                </div>
+        </ul>
+        </div>
+        <div class="d-flex">
+            @RenderBody()
+        </div>
+    </div>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+</html>
