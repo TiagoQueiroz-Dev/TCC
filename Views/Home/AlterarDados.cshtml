@@ -1,14 +1,19 @@
+@model UsuarioModel
 @{
-    ViewData["Title"] = "Cadastrar";
+    ViewData["Title"] = "Alterar";
 }
 
 <div class="Card">
-    <p class="Title text-center">Cadastrar novo usuário</p>
-    <form action="" method="post" onsubmit="return verificarNovosDados()">
+    <p class="Title text-center">Alterar Dados</p>
+    <form  method="post" asp-action="Alterar" asp-controller="Home" onsubmit="return verificarNovosDados()">
         <div class="container Over p-3">
+            <input type="hidden" value="@Model.Id" asp-for="@Model.Id">
+            <input type="hidden" value="@Model.IdConta" asp-for="@Model.IdConta">
+            <input type="hidden" value="@Model.EmailUsuario" asp-for="@Model.EmailUsuario">
+            <input type="hidden" value="@Model.Senha" asp-for="@Model.Senha">
             <div class="mb-3">
                 <label for="nome" class="form-label fs-5 Roboto">Nome:</label>
-                <input type="text" class="form-control fs-5" id="nome" name="nome">
+                <input type="text" class="form-control fs-5" id="nome" asp-for="@Model.NomeUsuario" value="@Model.NomeUsuario">
             </div>
             <div class="mb-3">
                 <label for="novaSenha" class="form-label fs-5 Roboto">Nova senha:</label>

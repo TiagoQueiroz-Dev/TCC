@@ -13,6 +13,14 @@ namespace TCC.Repository.Conta
         {
             _bancoContext = bancoContext;
         }
+
+        public int IdTipoConta(string tipo)
+        {   
+            var tipoConta = _bancoContext.Contas.FirstOrDefault(u => u.TipoConta == tipo);
+            
+            return tipoConta.Id;
+        }
+
         public string RoleConta(int id)
         {
             var conta = _bancoContext.Contas.Find(id);
