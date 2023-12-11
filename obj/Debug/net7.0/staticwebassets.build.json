@@ -1,6 +1,10 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "Hash": "T4njLXEM0kidLKmN4C95B8WxWrpofchd35W/UVbFH1c=",
+=======
+  "Hash": "BUjalYIRL+8uOJlCw5LdeGMVJShxZ+LLeWVk6pnK/BA=",
+>>>>>>> 6ee36a447f7e92a3163e024a93631c844f3ad304
   "Source": "TCC",
   "BasePath": "_content/TCC",
   "Mode": "Default",
@@ -150,6 +154,7 @@
       "OriginalItemSpec": "wwwroot\\img\\estoque.svg"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\img\\home.svg",
       "SourceId": "TCC",
       "SourceType": "Discovered",
@@ -192,6 +197,12 @@
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\img\\lupa.svg",
+      "SourceId": "TCC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
+>>>>>>> 6ee36a447f7e92a3163e024a93631c844f3ad304
       "BasePath": "_content/TCC",
       "RelativePath": "img/lupa.svg",
       "AssetKind": "All",
@@ -207,6 +218,7 @@
       "OriginalItemSpec": "wwwroot\\img\\lupa.svg"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\img\\nota.svg",
       "SourceId": "TCC",
       "SourceType": "Discovered",
@@ -230,6 +242,12 @@
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\img\\novoPedido.svg",
+      "SourceId": "TCC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
+>>>>>>> 6ee36a447f7e92a3163e024a93631c844f3ad304
       "BasePath": "_content/TCC",
       "RelativePath": "img/novoPedido.svg",
       "AssetKind": "All",
@@ -245,6 +263,7 @@
       "OriginalItemSpec": "wwwroot\\img\\novoPedido.svg"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\img\\warning.svg",
       "SourceId": "TCC",
       "SourceType": "Discovered",
@@ -268,6 +287,12 @@
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
+=======
+      "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\js\\site.js",
+      "SourceId": "TCC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
+>>>>>>> 6ee36a447f7e92a3163e024a93631c844f3ad304
       "BasePath": "_content/TCC",
       "RelativePath": "js/site.js",
       "AssetKind": "All",

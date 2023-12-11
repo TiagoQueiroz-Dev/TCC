@@ -25,6 +25,7 @@
       "PackagePath": "staticwebassets\\img\\estoque.svg"
     },
     {
+<<<<<<< HEAD
       "Id": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\img\\home.svg",
       "PackagePath": "staticwebassets\\img\\home.svg"
     },
@@ -33,22 +34,30 @@
       "PackagePath": "staticwebassets\\img\\logout.svg"
     },
     {
+=======
+>>>>>>> 6ee36a447f7e92a3163e024a93631c844f3ad304
       "Id": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\img\\lupa.svg",
       "PackagePath": "staticwebassets\\img\\lupa.svg"
     },
     {
+<<<<<<< HEAD
       "Id": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\img\\nota.svg",
       "PackagePath": "staticwebassets\\img\\nota.svg"
     },
     {
+=======
+>>>>>>> 6ee36a447f7e92a3163e024a93631c844f3ad304
       "Id": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\img\\novoPedido.svg",
       "PackagePath": "staticwebassets\\img\\novoPedido.svg"
     },
     {
+<<<<<<< HEAD
       "Id": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\img\\warning.svg",
       "PackagePath": "staticwebassets\\img\\warning.svg"
     },
     {
+=======
+>>>>>>> 6ee36a447f7e92a3163e024a93631c844f3ad304
       "Id": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

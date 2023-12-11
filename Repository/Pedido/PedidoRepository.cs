@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http.HttpResults;
 using TCC.Database;
 using TCC.Models;
 
@@ -16,12 +17,12 @@ namespace TCC.Repository.Pedido
             _bancoContext = bancoContext;
         }
 
-        public PedidoModel AdicionarPedido(PedidoModel novoPedido)
+        public PedidoModel AdicionarPedido()
         {
             _bancoContext.Pedidos.Add(novoPedido);
             
             _bancoContext.SaveChanges();
-            return novoPedido;
+            return b;
            
         }
 

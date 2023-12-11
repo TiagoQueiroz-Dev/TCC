@@ -30,6 +30,7 @@ public class novoPedidoController : Controller
     }
 
     [HttpPost]
+<<<<<<< HEAD
     public IActionResult NovoPedido(EstoquePedidoNotaModel estoquePedidoNota)
     {
             var qtdPedidos = 0;
@@ -76,6 +77,12 @@ public class novoPedidoController : Controller
 
        
         //representa ação do form da View "Index" para fezer um pedido
+=======
+    public IActionResult NovoPedido(){
+        _pedidoRepository.AdicionarPedido();
+        return RedirectToAction("NovaNota");
+;        //representa ação do form da View "Index" para fezer um pedido
+>>>>>>> 6ee36a447f7e92a3163e024a93631c844f3ad304
     }
 
     public IActionResult NovaNota()
