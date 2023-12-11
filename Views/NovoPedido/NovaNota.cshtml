@@ -3,9 +3,12 @@
   ViewData["Title"] = "Nova Nota";
 }
 
-<div class="text-center">
+<div class="Card">
+  <p class="Title">NovoPedido</p>
+  <div class="text-center">
   <form method="post" asp-action="CadastrarNota" asp-controller="novoPedido">
-    <div class="mb-3">
+    <div class="container Over overflow-auto">
+      <div class="mb-3">
       <label for="nome" class="form-label">Nome:</label>
       <input type="text" asp-for="@Model.NovaNota.Nome" class="form-control" id="nome">
     </div>
@@ -17,16 +20,18 @@
       <label for="Telefone" class="form-label">Telefone:</label>
       <input type="number" asp-for="@Model.NovaNota.Telefone" class="form-control" id="Telefone">
     </div>
-    <div class="mb-3">
-      <label for="Data_aluguel" class="form-label">Data da nota:</label>
+    <div class="d-flex w-100 gap-5 justify-content-center">
+      <div class="mb-3">
+      <label for="Data_aluguel" class="">Data da nota:</label>
       <input type="date" asp-for="@Model.NovaNota.DataEmissao" class="form-control" id="Data_aluguel"
         value="@DateTime.Now.ToString("yyyy-MM-dd")">
     </div>
     <div class="mb-3">
-      <label for="Data_recolhimento" class="form-label">Data de recolhimento:</label>
+      <label for="Data_recolhimento" class="">Data de recolhimento:</label>
       <input type="date" asp-for="@Model.NovaNota.DataRecolhimento" class="form-control" id="Data_recolhimento"
         min="@DateTime.Now.ToString("yyyy-MM-dd")">
 
+    </div>
     </div>
     <div class="mb-3">
       <label for="produto" class="form-label">Produtos solicitados:</label>
@@ -102,22 +107,21 @@
             {
               <div class="form-check w-100">
                 <label class="form-label" for="entregaMenos20">Valor de Entrega:</label>
-                <input type="number" class="form-control" asp-for="@Model.NovaNota.TaxaEntrega" min="0">
+                <input type="number" class="form-control" asp-for="@Model.NovaNota.TaxaEntrega" step="0.01" min="0">
               </div>
             }
             else
             {
               <div class="form-check w-100">
                 <label class="form-label" for="entrega">Taxa de Entrega:</label>
-                <input type="number" class="form-control" asp-for="@Model.NovaNota.TaxaEntrega" min="0" readonly>
+                <input type="number" class="form-control" asp-for="@Model.NovaNota.TaxaEntrega" min="0"  readonly>
               </div>
             }
         </div>
-
         <div class="d-flex justify-content-evenly mb-3">
           <div>
             <label class="form-label" for="pagPrevio">Pagamento Prévio</label>
-            <input class="form-control" id="pagPrevio" type="text" min="0" max="@Model.NovaNota.ValorTotal"
+            <input class="form-control" id="pagPrevio" type="text" min="0" max="@Model.NovaNota.ValorTotal" step="0.01"
               value="@Model.NovaNota.ValorPago" asp-for="@Model.NovaNota.ValorPago">
           </div>
           <div>
@@ -125,6 +129,12 @@
             <input type="text" class="form-control" id="pagRestante" value="" readonly>
           </div>
         </div>
-        <button type="submit" class="btn btn-primary">Enviar</button>
+    </div>
+    </div>
+    </div>
+       <div class="d-flex justify-content-center gap-5">
+        <a href="@Url.Action("Index", "novoPedido")" class="btn btn-danger fs-3 Botao">Cancelar</a>
+       <button type="submit" class="btn btn-success fs-3 Botao">Enviar</button>
+       </div>
   </form>
 </div>

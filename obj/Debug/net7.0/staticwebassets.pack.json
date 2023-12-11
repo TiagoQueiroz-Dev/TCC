@@ -29,6 +29,10 @@
       "PackagePath": "staticwebassets\\img\\home.svg"
     },
     {
+      "Id": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\img\\logout.svg",
+      "PackagePath": "staticwebassets\\img\\logout.svg"
+    },
+    {
       "Id": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\img\\lupa.svg",
       "PackagePath": "staticwebassets\\img\\lupa.svg"
     },

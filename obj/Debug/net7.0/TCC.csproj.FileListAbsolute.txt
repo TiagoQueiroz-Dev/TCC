@@ -256,3 +256,9 @@ C:\Users\Suricato Furtivo\Documents\TCC\obj\Debug\net7.0\refint\TCC.dll
 C:\Users\Suricato Furtivo\Documents\TCC\obj\Debug\net7.0\TCC.pdb
 C:\Users\Suricato Furtivo\Documents\TCC\obj\Debug\net7.0\TCC.genruntimeconfig.cache
 C:\Users\Suricato Furtivo\Documents\TCC\obj\Debug\net7.0\ref\TCC.dll
+C:\Users\Suricato Furtivo\Documents\TCC\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Suricato Furtivo\Documents\TCC\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Suricato Furtivo\Documents\TCC\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Suricato Furtivo\Documents\TCC\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Suricato Furtivo\Documents\TCC\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\Suricato Furtivo\Documents\TCC\bin\Debug\net7.0\Microsoft.Extensions.Options.dll

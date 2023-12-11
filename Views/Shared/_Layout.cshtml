@@ -18,7 +18,7 @@
     <script src="~/js/site.js"></script>
     <link rel="icon" href="@Url.Content("~/img/andaime.svg")">
 </head>
-<body class="d-flex h-100" style="background-color: var(--primary-2);">
+<body class="h-100" style="background-color: var(--primary-2);">
     <div class="d-flex w-100 mx-0 h-100 p-3 px-3 principal">
         <div class="d-flex h-100 desktop">
             <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light p-0"
@@ -61,14 +61,18 @@
             </div>
         </nav>
     </div>
-    <div class="w-100 d-flex flex-column ">
+    <div class="w-100">
         <div class="d-flex w-100">
             <ul class="Top">
             <li>
                 <div class="DivWrap">
+                    <div class="user">
+                        <span class="Roboto">Olá,</span>
+                        <span class="Roboto">username</span>
+                    </div>
                 </div>
             </li>
-            <li>
+            @* <li>
                 <div class="DivWrap">
                 </div>
             </li>
@@ -79,24 +83,24 @@
             <li>
                 <div class="DivWrap">
                 </div>
-            </li>
+            </li> *@
             <header class="TopHeader w-100 h-100">
             </header>
-                <div class="CardInfo">
-                    <div class="DivWrap"></div>
+                <div class="CardInfo Logout">
+                    <div class="DivWrap d-flex">
+                        <div class="d-flex align-items-center gap-3">
+                            <img src="@Url.Content("~/img/logout.svg")">
+                            <p class="fs-4 mx-0 m-0">Sair</p>
+                        </div>
+                    </div>
                 </div>
         </ul>
         </div>
-        <main class="w-100 h-100 d-flex NovaNotaForm">
+        <div class="d-flex">
             @RenderBody()
-        </main>
-    </div>
-    </div>
-    <footer class="border-top text-muted">
-        <div class="container">
-            &copy; 2023 - KOIOS -<a asp-area="" asp-controller="Home" asp-action="Privacy"> Privacy</a>
         </div>
-    </footer>
+    </div>
+    </div>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

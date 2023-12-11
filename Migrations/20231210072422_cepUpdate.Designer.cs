@@ -11,8 +11,8 @@ using TCC.Database;
 namespace TCC.Migrations
 {
     [DbContext(typeof(BancoContext))]
-    [Migration("20231207152525_upBanco4")]
-    partial class upBanco4
+    [Migration("20231210072422_cepUpdate")]
+    partial class cepUpdate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -64,7 +64,7 @@ namespace TCC.Migrations
                         .HasColumnType("BIGINT");
 
                     b.Property<int>("Cep")
-                        .HasColumnType("MEDIUMINT");
+                        .HasColumnType("int");
 
                     b.Property<string>("Cidade")
                         .IsRequired()

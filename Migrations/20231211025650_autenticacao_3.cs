@@ -5,24 +5,18 @@
 namespace TCC.Migrations
 {
     /// <inheritdoc />
-    public partial class upBanco4 : Migration
+    public partial class autenticacao_3 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.RenameColumn(
-                name: "ValorPag",
-                table: "Notas",
-                newName: "ValorPago");
+
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.RenameColumn(
-                name: "ValorPago",
-                table: "Notas",
-                newName: "ValorPag");
+
         }
     }
 }

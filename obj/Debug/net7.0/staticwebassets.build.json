@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "VErfRaCk5zD60HBvKXHnuYMHlcq7ds+4B+zsnXJzEWc=",
+  "Hash": "T4njLXEM0kidLKmN4C95B8WxWrpofchd35W/UVbFH1c=",
   "Source": "TCC",
   "BasePath": "_content/TCC",
   "Mode": "Default",
@@ -167,6 +167,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\home.svg"
+    },
+    {
+      "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\img\\logout.svg",
+      "SourceId": "TCC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\",
+      "BasePath": "_content/TCC",
+      "RelativePath": "img/logout.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\logout.svg"
     },
     {
       "Identity": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\wwwroot\\img\\lupa.svg",

@@ -6,11 +6,9 @@ function calcularValorTotal(p, q, r, s, size) {
 }
 
 function calcularValorParcial(p, q, r) {
-
     var unidadeSemVirgula = (document.getElementById(p).innerText).toString();
     var valorUnidade = unidadeSemVirgula.replace(',', '.');
     valorUnidade = parseFloat(valorUnidade) || 0;
-
 
     var inputQtd = parseFloat(document.getElementById(q).value) || 0;
 
@@ -22,6 +20,9 @@ function calcularValorParcial(p, q, r) {
     document.getElementById(r).innerText = valorParcial.toString();
 };
 
+function cancelarNota() {
+    window.location.href = '@Url.Action("Index", "novoPedido")';
+}
 
 function atribuirTotal(s, size) {
 
@@ -78,4 +79,14 @@ function SomarTotalDesc(i,j,k,l){
 
 }
 
-
+function verificarFiltro(e){
+    const item = document.getElementById(e).value;
+    console.log(item)
+    if(item.toLowerCase() === 'periodo'){
+        document.getElementById('barraPesquisa').style.display = 'none';
+        document.getElementById('barraPeriodo').style.display = 'flex';
+    }else{
+        document.getElementById('barraPesquisa').style.display = 'flex';
+        document.getElementById('barraPeriodo').style.display = 'none';
+    }
+}

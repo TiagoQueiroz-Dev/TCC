@@ -30,7 +30,7 @@ namespace TCC.Models
         public string Rua { get; set; }
         [MaxLength(50)]
         public string Complemento { get; set; }
-        [Column(TypeName ="MEDIUMINT")]
+        
         public int Cep { get; set; }
         
         public int Numero { get; set; }
