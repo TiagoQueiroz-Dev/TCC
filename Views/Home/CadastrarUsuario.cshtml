@@ -4,7 +4,7 @@
 }
 
 <div class="Card">
-    <p class="Title">Cadastrar novo usuário</p>
+    <p class="Title text-center">Cadastrar novo usuário</p>
     <form method="post" onsubmit="return verificarCadastro()" asp-action="Cadastrar" asp-controller="Home">
         <div class="container Over p-3">
             <div class="mb-3">
@@ -30,8 +30,8 @@
             <div class="mb-3 d-flex flex-column">
                 <label for="tipoConta" class="form-label fs-5 Roboto">Tipo de conta:</label>
                 <select class="form-label fs-5 Roboto text-center" id="tipoConta" name="tipoConta">
-                    <option value="Administrador">Administrador</option>
                     <option value="Funcionario">Funcionário</option>
+                    <option value="Administrador">Administrador</option>
                 </select>
             </div>
             <div class="botoes d-flex justify-content-between">

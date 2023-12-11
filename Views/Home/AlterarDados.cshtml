@@ -1,0 +1,31 @@
+@{
+    ViewData["Title"] = "Cadastrar";
+}
+
+<div class="Card">
+    <p class="Title text-center">Cadastrar novo usuário</p>
+    <form action="" method="post" onsubmit="return verificarNovosDados('111')">
+        <div class="container Over p-3">
+            <div class="mb-3">
+                <label for="nome" class="form-label fs-5 Roboto">Nome:</label>
+                <input type="text" class="form-control fs-5" id="nome" name="nome">
+            </div>
+            <div class="mb-3">
+                <label for="senhaAtual" class="form-label fs-5 Roboto">Senha atual:</label>
+                <input type="password" class="form-control fs-5" id="senhaAtual" name="senhaAtual">
+            </div>
+            <div class="mb-3">
+                <label for="novaSenha" class="form-label fs-5 Roboto">Nova senha:</label>
+                <input type="password" class="form-control fs-5" id="novaSenha" name="novaSenha">
+            </div>
+            <div class="mb-3">
+                <label for="confirmarNovaSenha" class="form-label fs-5 Roboto">Confirmar nova senha:</label>
+                <input type="password" class="form-control fs-5" id="confirmarNovaSenha" name="confirmarNovaSenha">
+            </div>
+            <div class="botoes d-flex justify-content-between">
+                <a asp-area="" asp-controller="Home" asp-action="Usuario" class="btn btn-danger">Cancelar</a>
+                <button type="submit" class="btn btn-success">Confimar</button>
+            </div>
+        </div>
+    </form>
+</div>

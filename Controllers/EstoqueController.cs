@@ -49,8 +49,8 @@ public class estoqueController : Controller
         }
         else
         {
-            ViewBag.Erro = "Usuário Não Autorizado";
-            return View("Index");
+            TempData["Erro"] = "Usuário Não Autorizado";
+            return RedirectToAction("Index");
         }
     }
 
@@ -75,8 +75,8 @@ public class estoqueController : Controller
         }
         else
         {
-            ViewBag.Erro = "Usuário Não Autorizado";
-            return View("Index");
+           TempData["Erro"] = "Usuário Não Autorizado";
+            return RedirectToAction("Index");
         }
     }
 
@@ -101,8 +101,8 @@ public class estoqueController : Controller
         }
         else
         {
-            ViewBag.Erro = "Usuário Não Autorizado";
-            return View("Index");
+            TempData["Erro"] = "Usuário Não Autorizado";
+            return RedirectToAction("Index");
         }
 
     }
