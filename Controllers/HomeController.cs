@@ -5,6 +5,7 @@ using TCC.Database;
 using TCC.Models;
 using TCC.Repository;
 using TCC.Repository.Nota;
+using TCC.Repository.Usuario;
 
 namespace TCC.Controllers;
 
@@ -12,11 +13,14 @@ namespace TCC.Controllers;
 public class HomeController : Controller
 {
     public readonly IEstoqueRepository _estoqueRepository;
+    public readonly IUsuarioRepository _usuarioRepository;
     public readonly INotaRepository _notaRepository;
-    public HomeController(IEstoqueRepository estoqueRepository,INotaRepository notaRepository)
+    public HomeController(IEstoqueRepository estoqueRepository,INotaRepository notaRepository,IUsuarioRepository usuarioRepository)
     {
         _estoqueRepository = estoqueRepository;
         _notaRepository = notaRepository;
+        _usuarioRepository = usuarioRepository;
+
     }
     public IActionResult Index()
     {   
@@ -27,13 +31,20 @@ public class HomeController : Controller
         return View(geral);
     }
 
-    [HttpPost]
-    public IActionResult Cadastrar(string nome,string email,string confirmarEmail, string senha,string confirmarSenha)
-    {   
+    public IActionResult CadastrarUsuario(){
         ViewBag.Page = "Cadastro";
-        
+        return View();
+    }
 
+    [HttpPost]
+    public IActionResult Cadastrar(string nome,string email,string confirmarEmail, string senha,string confirmarSenha,string tipoConta)
+    {   
 
+        ViewBag.Page = "Cadastro";
+
+        if(email == confirmarEmail && senha == confirmarSenha){
+            _usuarioRepository.NovoUsuario(nome,email,senha,tipoConta);
+        }
 
         return View("CadastrarUsuario");
     }

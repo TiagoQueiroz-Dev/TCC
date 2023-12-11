@@ -247,10 +247,23 @@ input{
     border: none;
     cursor: pointer;
 }
+.Usuario{
+  display: flex;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    border-radius: 8px;
+    background: var(--primary-3);
+    color: var(--contrast-3);
+    transition: 0.3s;
+    border: none;
+}
 
 .User:hover{
   transform: scale(1.03);
   background: var(--primary-1);
+  color: var(--contrast-3)!important;
 }
 
 .MenuItem{

@@ -83,7 +83,7 @@
                                 </a>
                         <li class="bottom">
                         </li>
-                        <a asp-area="" asp-controller="Home" asp-action="Cadastrar">
+                        <a asp-area="" asp-controller="Home" asp-action="CadastrarUsuario">
                             @if(ViewBag.page == "Cadastro"){
                             <li class="nav-item d-flex justify-content-center MenuItem">
                             <img src="@Url.Content("~/img/cadastroTrue.svg")" alt="Cadastrar" width="32">
@@ -113,20 +113,23 @@
         <div class="d-flex w-100 mb-3">
             <div class="Top">
                 <div class="DivWrap justify-content-start w-100">
+                        @if(ViewBag.Page == "Usuario"){
+                    <a asp-action="Usuario" asp-controller="Home"
+                     class="Usuario MenuItem d-flex align-items-center Back Title fs-4 mb-0 desktop">
+                            <div class="d-flex align-items-center">
+                                <img id="userIcon" src="@Url.Content("~/img/userHover.svg")">
+                                <p class="mb-0" style="color: var(--primary-1);">Olá, username</p>
+                            </div>
+                    </a>
+                        }else{
                     <a asp-action="Usuario" asp-controller="Home"
                      class="User d-flex align-items-center Back Title fs-4 mb-0 desktop">
-                        @if(ViewBag.Page == "Usuario"){
-                            <div class="MenuItem d-flex align-items-center">
-                                <img id="userIcon" src="@Url.Content("~/img/userHover.svg")">
-                                <p class="mb-0">Olá, username</p>
-                            </div>
-                        }else{
                             <div class="d-flex align-items-center">
                                 <img id="userIcon" src="@Url.Content("~/img/user.svg")">
                                 <p class="mb-0">Olá, username</p>
                             </div>
-                        }
                     </a>
+                        }
                 </div>
             </div>
             <div class="BurguerClicked" id="BurguerClicked">
@@ -159,7 +162,7 @@
                             <p class="m-0">Conta</p>
                         </div>
                     </a>
-                    <a asp-action="Cadastrar" asp-controller="Home">
+                    <a asp-action="CadastrarUsuario" asp-controller="Home">
                         <div class="MenuBar">
                             <p class="m-0">Criar usuário</p>
                         </div>

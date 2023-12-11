@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using TCC.Models;
 
 namespace TCC.Repository.Usuario
 {
@@ -12,5 +13,7 @@ namespace TCC.Repository.Usuario
         string TipoUsuario(string email, string senha);
 
         string NomeUser(string email, string senha);
+
+        UsuarioModel NovoUsuario(string nome,string email,string senha,string tipoConta);
     }
 }
