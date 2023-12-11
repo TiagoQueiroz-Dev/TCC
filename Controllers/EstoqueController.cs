@@ -17,12 +17,14 @@ public class estoqueController : Controller
 
     public IActionResult Index()
     {
+        ViewBag.Page = "Estoque";
         var estoque = _estoqueRepository.ListarEstoque();
         return View(estoque);
     }
 
     public IActionResult EditarProduto(int id)
     {
+        ViewBag.Page = "Estoque";
         var estoque = _estoqueRepository.ListarEstoque();
 
         EstoqueModel produto = new EstoqueModel();
@@ -46,6 +48,7 @@ public class estoqueController : Controller
 
     }
     public IActionResult AddProduto(){
+        ViewBag.Page = "Estoque";
         EstoqueModel novoProduto = new EstoqueModel();
         return View(novoProduto);
     }

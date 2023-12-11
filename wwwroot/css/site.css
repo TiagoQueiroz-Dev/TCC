@@ -245,3 +245,7 @@ input{
   transform: scale(1.03);
   background: var(--primary-1);
 }
+
+.MenuItem{
+  background: var(--highlight-3)!important;
+}

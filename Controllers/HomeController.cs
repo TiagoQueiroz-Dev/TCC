@@ -6,7 +6,6 @@ using TCC.Repository;
 using TCC.Repository.Nota;
 
 namespace TCC.Controllers;
-
 public class HomeController : Controller
 {
     public readonly IEstoqueRepository _estoqueRepository;
@@ -17,11 +16,18 @@ public class HomeController : Controller
         _notaRepository = notaRepository;
     }
     public IActionResult Index()
-    {
+    {   
+        ViewBag.Page = "Home";
         RelatorioModel geral = new RelatorioModel();
         geral.Estoque = _estoqueRepository.PoucoEstoque();
         geral.Notas = _notaRepository.NotasRecolher();
         return View(geral);
+    }
+
+    public IActionResult Cadastrar()
+    {   
+        ViewBag.Page = "Cadastro";
+        return View("CadastrarUsuario");
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

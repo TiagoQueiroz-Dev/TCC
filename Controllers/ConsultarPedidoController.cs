@@ -23,6 +23,7 @@ public class consultarPedidoController : Controller
 
     public IActionResult Index()
     {
+        ViewBag.Page = "Consulta";
         List<NotaModel> AllNotas = new List<NotaModel>();
         AllNotas = _notaRepository.TodasNotas();
 
@@ -32,7 +33,8 @@ public class consultarPedidoController : Controller
     [HttpPost]
     public IActionResult ConsultaNota(string busca, string opc, DateTime dataInicial, DateTime dataFinal)
     {
-
+        
+        ViewBag.Page = "Consulta";
 
         EstoquePedidoNotaModel estoquePedidoNota = new EstoquePedidoNotaModel();
         ListaConsultaNotasModel consulta = new ListaConsultaNotasModel();
@@ -60,11 +62,13 @@ public class consultarPedidoController : Controller
 
     public IActionResult ResultPesquisa(EstoquePedidoNotaModel estoquePedidoNota)
     {
+        ViewBag.Page = "Consulta";
         return View(estoquePedidoNota);
     }
 
     public IActionResult VisualizarNota(int id)
     {
+        ViewBag.Page = "Consulta";
         EstoquePedidoNotaModel pedidoNota = new EstoquePedidoNotaModel();
         pedidoNota.NovaNota = _notaRepository.BuscarNota(id);
         pedidoNota.Pedidos = _pedidoRepository.PedidosNota(id);

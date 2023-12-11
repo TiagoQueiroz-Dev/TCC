@@ -27,35 +27,73 @@
                 <div class="d-sm-inline-flex d-flex h-100 justify-content-between ">
                     <ul class="navbar-nav flex-grow-1 d-flex align-items-center flex-column h-100">
                             <a asp-area="" asp-controller="Home" asp-action="Index" style="width: 100%;">
-                        <li class="nav-item User d-flex justify-content-center">
+                        @if(ViewBag.Page == "Home"){
+                            <li class="nav-item MenuItem d-flex justify-content-center">
+                                <img src="@Url.Content("~/img/homeTrue.svg")" width="32" alt="Home">
+                        </li>
+                        }else{
+                            <li class="nav-item User d-flex justify-content-center">
                                 <img src="@Url.Content("~/img/home.svg")" width="32" alt="Home">
                         </li>
+                        }
                             </a>
                             <a asp-area="" asp-controller="novoPedido" asp-action="Index">
-                        <li class="nav-item User d-flex justify-content-center">
-                                <img src="@Url.Content("~/img/novoPedido.svg")" alt="Criar Pedido" width="32">
-                            </li>
+                        @if(ViewBag.Page == "NovoPedido"){
+                            <li class="nav-item MenuItem d-flex justify-content-center">
+                                <img src="@Url.Content("~/img/novoPedidoTrue.svg")" width="32" alt="Home">
+                        </li>
+                        }else{
+                            <li class="nav-item User d-flex justify-content-center">
+                                <img src="@Url.Content("~/img/novoPedido.svg")" width="32" alt="Home">
+                        </li>
+                        }
                             </a>
                             <a asp-area="" asp-controller="Relatorio" asp-action="Index">
-                        <li class="nav-item User d-flex justify-content-center">
-                                <img src="@Url.Content("~/img/relatorio.svg")" alt="Estoque" width="32">
+                        @if(ViewBag.Page == "Relatorio"){
+                            <li class="nav-item MenuItem d-flex justify-content-center">
+                                <img src="@Url.Content("~/img/relatorioTrue.svg")" width="32" alt="Home">
                         </li>
+                        }else{
+                            <li class="nav-item User d-flex justify-content-center">
+                                <img src="@Url.Content("~/img/relatorio.svg")" width="32" alt="Home">
+                        </li>
+                        }
                             </a>
                             <a asp-area="" asp-controller="consultarPedido" asp-action="Index">
-                        <li class="nav-item User d-flex justify-content-center">
-                                <img src="@Url.Content("~/img/consultaPedido.svg")" alt="Consultar Pedido" width="32">
+                        @if(ViewBag.Page == "Consulta"){
+                            <li class="nav-item MenuItem d-flex justify-content-center">
+                                <img src="@Url.Content("~/img/consultaTrue.svg")" width="32" alt="Home">
                         </li>
+                        }else{
+                            <li class="nav-item User d-flex justify-content-center">
+                                <img src="@Url.Content("~/img/consultaPedido.svg")" width="32" alt="Home">
+                        </li>
+                        }
                             </a>
                             <a asp-area="" asp-controller="estoque" asp-action="Index">
-                        <li class="nav-item User d-flex justify-content-center">
-                                <img src="@Url.Content("~/img/estoque.svg")" alt="Estoque" width="32">
+                        @if(ViewBag.Page == "Estoque"){
+                            <li class="nav-item MenuItem d-flex justify-content-center">
+                                <img src="@Url.Content("~/img/estoqueTrue.svg")" width="32" alt="Home">
                         </li>
+                        }else{
+                            <li class="nav-item User d-flex justify-content-center">
+                                <img src="@Url.Content("~/img/estoque.svg")" width="32" alt="Home">
+                        </li>
+                        }
                                 </a>
                         <li class="bottom">
                         </li>
-                        <li class="nav-item User">
+                        <a asp-area="" asp-controller="Home" asp-action="Cadastrar">
+                            @if(ViewBag.page == "Cadastro"){
+                            <li class="nav-item d-flex justify-content-center MenuItem">
+                            <img src="@Url.Content("~/img/cadastroTrue.svg")" alt="Estoque" width="32">
+                        </li>
+                        }else{
+                            <li class="nav-item User">
                             <img src="@Url.Content("~/img/cadastro.svg")" alt="Estoque" width="32">
                         </li>
+                        }
+                        </a>
                     </ul>
                 </div>
             </div>

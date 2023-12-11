@@ -27,12 +27,14 @@ namespace TCC.Controllers
         }
         public IActionResult Index()
         {
+            ViewBag.Page = "Relatorio";
             return View();
         }
 
         [HttpPost]
         public IActionResult GerarRelatorio(DateTime datanicial, DateTime dataFinal)
         {
+            ViewBag.Page = "Relatorio";
             RelatorioModel relatorio = new RelatorioModel();
             List<PedidoModel> listProduto = new List<PedidoModel>();
             List<PedidoModel> topProduto = new List<PedidoModel>();
@@ -65,6 +67,7 @@ namespace TCC.Controllers
 
         public IActionResult ResultRelatorio(RelatorioModel relatorio)
         {
+            ViewBag.Page = "Relatorio";
             return View();
         }
 

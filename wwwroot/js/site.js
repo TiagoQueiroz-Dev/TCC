@@ -91,6 +91,18 @@ function verificarFiltro(e){
     }
 }
 
-function mudarMenu(){
-    
+function verificarSenha(){
+    const senha = document.getElementById('senha').value;
+    const confirmarSenha = document.getElementById('confirmarSenha').value;
+
+    if(senha === confirmarSenha){
+        return true;
+    }else{
+        alert("As senhas não coincidem, por favor preencha os campos com a mesma senha")
+        return false;
+    }
+}
+
+function test(){
+    console.log('submitou')
 }
