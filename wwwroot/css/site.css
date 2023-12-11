@@ -544,3 +544,7 @@ height: 2018.237px;
       width: 100%!important;
     }
   }
+
+  .Bold{
+    font-weight: 600;
+  }
