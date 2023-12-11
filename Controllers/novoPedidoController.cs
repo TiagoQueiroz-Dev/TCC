@@ -81,7 +81,6 @@ public class novoPedidoController : Controller
 
     public IActionResult NovaNota()
     {
-
         return View();
     }
 
@@ -89,7 +88,7 @@ public class novoPedidoController : Controller
     public IActionResult CadastrarNota(EstoquePedidoNotaModel estoquePedidoNota)
     {
 
-        if (estoquePedidoNota.Pedidos != null)
+        if (estoquePedidoNota.Pedidos != null && estoquePedidoNota.NovaNota.ValidarNota())
         {
             estoquePedidoNota.NovaNota.ValorDesconto = estoquePedidoNota.NovaNota.ValorDesconto / 100 * estoquePedidoNota.NovaNota.ValorTotal;
 
@@ -109,6 +108,7 @@ public class novoPedidoController : Controller
         }
         else
         {
+            TempData["Erro"] = "Campos da Nota Incompletos";
             return RedirectToAction("Index");
             //Necessário que seja informado um erro caso ele entre  
         }
