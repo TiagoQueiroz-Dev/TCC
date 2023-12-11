@@ -30,8 +30,9 @@ public class consultarPedidoController : Controller
     }
 
     [HttpPost]
-    public IActionResult ConsultaNota(string busca, string opc, string dataFinal)
+    public IActionResult ConsultaNota(string busca, string opc, DateTime dataInicial, DateTime dataFinal)
     {
+
 
         EstoquePedidoNotaModel estoquePedidoNota = new EstoquePedidoNotaModel();
         ListaConsultaNotasModel consulta = new ListaConsultaNotasModel();
@@ -50,7 +51,7 @@ public class consultarPedidoController : Controller
         }
         else if (opc == "Periodo")
         {
-            estoquePedidoNota.ListaNotas.NotasEncontradas = _notaRepository.RelatorioData(DateTime.Parse(busca), DateTime.Parse(dataFinal));
+            estoquePedidoNota.ListaNotas.NotasEncontradas = _notaRepository.RelatorioData(dataInicial, dataFinal);
             return View("ResultPesquisa", estoquePedidoNota);
         }
         //necessário notificar usuário sobre o erro de busca
