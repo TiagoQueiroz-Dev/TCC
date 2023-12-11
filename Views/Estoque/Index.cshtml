@@ -62,12 +62,14 @@
                             R$ @item.ValorUnid
                         </td>
                         <td class="gap-2 d-flex flex-wrap align-items-center justify-content-between">
+                            @if(ViewBag.TipoConta == "Administrador"){
                             <a role="button" class="btn btn-primary w-100" asp-action="EditarProduto"
                                 asp-controller="Estoque" asp-route-id="@item.Id">Editar</a>
                             <button type="button" class="btn btn-danger w-100" data-bs-toggle="modal"
                                 data-bs-target="#excluirModal-@item.Id">
                                 Excluir
                             </button>
+                            }
                             <div class="modal fade" id="excluirModal-@item.Id" data-bs-backdrop="static"
                                 data-bs-keyboard="false" tabindex="-1" aria-labelledby="excluirModalLabel"
                                 aria-hidden="true">
@@ -94,10 +96,12 @@
                     </tr>
                 }
             </tbody>
-
         </table>
-
     </div>
-    <div class="d-flex justify-content-end"><a role="button" class="btn btn-success" asp-action="AddProduto"
-            asp-controller="Estoque">Adicionar Produto</a></div>
+    @if(ViewBag.TipoConta == "Administrador"){
+    <div class="d-flex justify-content-end">
+        <a role="button" class="btn btn-success" asp-action="AddProduto"
+            asp-controller="Estoque">Adicionar Produto</a>
+            </div>
+    }
 </div>

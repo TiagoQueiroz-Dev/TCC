@@ -144,17 +144,13 @@ function verificarCamposVazios() {
     return true;
 }
 
-function verificarNovosDados(senha){
+function verificarNovosDados(){
     const nome = document.getElementById('nome').value;
-    const senhaAtual = document.getElementById('senhaAtual').value;
     const novaSenha = document.getElementById('novaSenha').value;
     const confirmarNovaSenha = document.getElementById('confirmarNovaSenha').value;
 
     if(nome === ''){
         alert("Por favor, preencha o campo de nome!")
-        return false;
-    }else if(senhaAtual !== senha){
-        alert("A senha atual está errada!")
         return false;
     }else if(novaSenha == '' && confirmarNovaSenha == ''){
         return true;
