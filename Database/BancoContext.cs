@@ -16,16 +16,15 @@ public class BancoContext : DbContext
     public DbSet<PedidoModel> Pedidos { get; set; }
     public DbSet<NotaModel> Notas { get; set; }
     public DbSet<UsuarioModel> Usuarios{get;set;}
-
-     //public DbSet<ContaModel> Contas {get;set;}
+    public DbSet<ContaModel> Contas {get;set;}
 
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<EstoqueModel>(ConfigureEstoqueModel);
         
-        // modelBuilder.Entity<ContaModel>().HasData( new ContaModel {Id = 1,TipoConta = "Administrador"},new ContaModel {Id = 2,TipoConta = "Funcionario"});
-        // modelBuilder.Entity<UsuarioModel>().HasData( new UsuarioModel {Id = 1,EmailUsuario = "koio@email.com",Senha = "123",NomeUsuario = "Koios", IdConta = 1});
+        modelBuilder.Entity<ContaModel>().HasData( new ContaModel {Id = 1,TipoConta = "Administrador"},new ContaModel {Id = 2,TipoConta = "Funcionario"});
+        modelBuilder.Entity<UsuarioModel>().HasData( new UsuarioModel {Id = 1,EmailUsuario = "koio@email.com",Senha = "123",NomeUsuario = "Koios", IdConta = 1});
     }
 
     private void ConfigureEstoqueModel(EntityTypeBuilder<EstoqueModel> builder)

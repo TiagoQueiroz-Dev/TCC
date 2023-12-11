@@ -1,5 +1,6 @@
 using System.Diagnostics;
 using System.Security.Cryptography.X509Certificates;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using TCC.Database;
 using TCC.Models;
@@ -9,6 +10,7 @@ using TCC.Repository.Pedido;
 
 namespace TCC.Controllers;
 
+[Authorize]
 public class novoPedidoController : Controller
 {
     public readonly IPedidoRepository _pedidoRepository;

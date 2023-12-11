@@ -5,6 +5,12 @@
 
 <div class="text-center Card">
     <p class="Title">Lista de Estoque</p>
+            @if (ViewBag.Erro != null)
+        {
+            <div class="alert alert-danger">
+                @ViewBag.Erro
+            </div>
+        }
     <div class="d-flex w-100 overflow-auto">
         <table class="container table table-bordered">
         <thead>

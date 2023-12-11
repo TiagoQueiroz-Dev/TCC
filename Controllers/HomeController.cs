@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using TCC.Database;
 using TCC.Models;
@@ -7,6 +8,7 @@ using TCC.Repository.Nota;
 
 namespace TCC.Controllers;
 
+[Authorize]
 public class HomeController : Controller
 {
     public readonly IEstoqueRepository _estoqueRepository;

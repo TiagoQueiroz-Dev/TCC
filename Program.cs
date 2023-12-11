@@ -1,8 +1,11 @@
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 using TCC.Database;
 using TCC.Repository;
+using TCC.Repository.Conta;
 using TCC.Repository.Nota;
 using TCC.Repository.Pedido;
+using TCC.Repository.Usuario;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -15,6 +18,18 @@ opt.UseMySql(mySqlConnection, ServerVersion.AutoDetect(mySqlConnection));
 builder.Services.AddScoped<IEstoqueRepository, EstoqueRepository>();
 builder.Services.AddScoped<IPedidoRepository, PedidoRepository>();
 builder.Services.AddScoped<INotaRepository, NotaRepository>();
+builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
+builder.Services.AddScoped<IContaRepository, ContaRepository>();
+
+builder.Services.AddAuthentication(options =>
+    {
+        options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+        // Adicione outros esquemas, se necessário
+    })
+    .AddCookie(options =>
+    {
+        // Configure as opções do cookie, se necessário
+    });
 
 var app = builder.Build();
 
@@ -32,6 +47,7 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
+
 
 app.MapControllerRoute(
     name: "default",
