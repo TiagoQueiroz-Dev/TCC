@@ -91,14 +91,23 @@ function verificarFiltro(e){
     }
 }
 
-function verificarSenha(){
+function verificarCadastro(){
+    const nome = document.getElementById('nome').value;
     const senha = document.getElementById('senha').value;
     const confirmarSenha = document.getElementById('confirmarSenha').value;
+    const email = document.getElementById('email').value;
+    const confirmarEmail = document.getElementById('confirmarEmail').value;
 
-    if(senha === confirmarSenha){
+    if(nome === '' || senha === '' || email === ''){
+        alert("Por favor, preencha todos os campos!")
+        return false;
+    }else if(senha === confirmarSenha && email === confirmarEmail){
         return true;
-    }else{
+    }else if(senha !== confirmarSenha){
         alert("As senhas não coincidem, por favor preencha os campos com a mesma senha")
+        return false;
+    }else if(email !== confirmarEmail){
+        alert("Os e-mails não coincidem, por favor preencha os campos com o mesmo e-mail")
         return false;
     }
 }

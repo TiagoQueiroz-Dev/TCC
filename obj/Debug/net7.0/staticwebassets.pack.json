@@ -45,6 +45,14 @@
       "PackagePath": "staticwebassets\\img\\estoqueTrue.svg"
     },
     {
+      "Id": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\img\\forma1.svg",
+      "PackagePath": "staticwebassets\\img\\forma1.svg"
+    },
+    {
+      "Id": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\img\\forma2.svg",
+      "PackagePath": "staticwebassets\\img\\forma2.svg"
+    },
+    {
       "Id": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\img\\home.svg",
       "PackagePath": "staticwebassets\\img\\home.svg"
     },

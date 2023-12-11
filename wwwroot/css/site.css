@@ -249,3 +249,205 @@ input{
 .MenuItem{
   background: var(--highlight-3)!important;
 }
+
+.LoginContainer{
+overflow: hidden;
+position: relative;
+font-family: inherit;
+display: flex;
+background-color: var(--primary-2);
+border-radius: 10px;
+align-items: center;
+justify-content: space-between;
+width: 100%;
+height: 100%;
+gap: 50px;
+padding: 20px;
+    @media screen and (max-width: 800px) {
+        height: 100%;
+        padding: 0px;
+        border-radius: 0px;
+    }
+}
+
+.Background{
+object-fit: cover;
+object-position: center;
+display: flex;
+bottom: -562px;
+top: -432px;
+left: -242px;
+right: 217px;
+position: absolute;
+width: 1464.955px;
+height: 2018.237px;
+    @media screen and (max-width: 800px) {
+        display: none;
+    }
+  }
+
+.Textos{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.Descricao{
+  color: var(--contrast-3);
+  font-size: 1.5em;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.Title{
+  color: var(--contrast-3);
+  font-size: 5em;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  align-self: stretch;
+}
+.LeftInformations{
+  z-index: 10;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 48px;
+      @media screen and (max-width : 800px){
+          display: none;
+      }
+}
+.Main{
+  display: flex;
+  width: 75%;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  padding-left: 50px;
+}
+
+.Form{
+    display: flex;
+    width: 75%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding-left: 64px;
+        @media screen and (max-width: 800px){
+            width: 100%;
+            padding-right: 64px
+        }
+}
+.Input{
+    padding: 0 10px 0 10px;
+    height: 40px;
+    align-self: stretch;
+    border-radius: 8px;
+    background: var(--primary-1);
+    width: 100%;
+    border: none;
+    font-size: 1.2em;
+    font-family: inherit;
+}
+.Label{
+    color: var(--primary-1);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    align-self: flex-start;
+}
+.LoginTitle{
+    color: var(--primary-1);
+    font-size: 5em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    align-self: stretch;
+}
+.RightInformation{
+    align-self: flex-end;
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: var(--highlight-2);
+    @media screen and (min-width : 800px){
+            height: 896px;
+            justify-content: space-between;
+            border-radius: 32px 0px 0px 32px;
+            align-items: center;
+        }
+}
+.RightDetails{
+    width: 48px;
+    height: 100%;
+    background: var(--highlight-3);
+        @media screen and (max-width : 800px){
+            display: none;
+        }
+    
+}
+.BotaoLogin{
+    height: 40px;
+    align-self: stretch;
+    border-radius: 8px;
+    background: var(--highlight-3);
+    width: 100%;
+    border: none;
+    color: var(--primary-1);
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover{
+        transform: scale(1.03);
+        background-color: var(--primary-1);
+        color: black;
+    }
+}
+.Form{
+    display: flex;
+    width: 75%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding-left: 64px;
+        @media screen and (max-width: 800px){
+            width: 100%;
+            padding-right: 64px
+        }
+      }
+
+  .SVG{
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  width: 814px;
+  height: 782px;
+  transform: rotate(-139.356deg);
+  flex-shrink: 0;
+  fill: var(--primary-3);
+  top: 895px;
+  right: 338px;}
+
+  .SVG2{
+    object-fit: cover;
+    object-position: center;
+    bottom: 1069px;
+    left: 515px;
+    position: absolute;
+    width: 715px;
+    height: 714px;
+    transform: rotate(155.003deg);
+    flex-shrink: 0;
+    fill: var(--primary-3);
+  }
+
+  body{
+    margin: 0;
+  }

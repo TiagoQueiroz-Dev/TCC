@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "y5mGcQM3zivEwot9NjbaUTczKO2OK9OUzx1OTDvxhH4=",
+  "Hash": "4PmDUzCeUjMieHaqkTiDO1A3LnNieAieQLDztz/JAuc=",
   "Source": "TCC",
   "BasePath": "_content/TCC",
   "Mode": "Default",
@@ -202,6 +202,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\estoqueTrue.svg"
+    },
+    {
+      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\img\\forma1.svg",
+      "SourceId": "TCC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
+      "BasePath": "_content/TCC",
+      "RelativePath": "img/forma1.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\forma1.svg"
+    },
+    {
+      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\img\\forma2.svg",
+      "SourceId": "TCC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
+      "BasePath": "_content/TCC",
+      "RelativePath": "img/forma2.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\forma2.svg"
     },
     {
       "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\img\\home.svg",
