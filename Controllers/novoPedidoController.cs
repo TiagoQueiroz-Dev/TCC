@@ -71,6 +71,7 @@ public class novoPedidoController : Controller
             }
             return View("NovaNota", estoquePedidoNota);
         }else{
+            TempData["Erro"] = "Nenhum Produto Selecionado";
             return RedirectToAction("Index");
         }
 
@@ -91,10 +92,10 @@ public class novoPedidoController : Controller
         if (estoquePedidoNota.Pedidos != null)
         {
             estoquePedidoNota.NovaNota.ValorDesconto = estoquePedidoNota.NovaNota.ValorDesconto / 100 * estoquePedidoNota.NovaNota.ValorTotal;
-            Console.WriteLine(estoquePedidoNota.NovaNota.ValorDesconto);
 
             _notaRepository.AdicionarNota(estoquePedidoNota.NovaNota);
 
+            
             foreach (var item in estoquePedidoNota.Pedidos)
             {
                 //para pegar o id da nota gerada e incuir no pedido, foi criado este metodo de consulta de Id
@@ -102,7 +103,6 @@ public class novoPedidoController : Controller
 
                 _estoqueRepository.BaixaEstoque(item);
                 //cada item do pedido irá receber o mesmo idNota antes de ser adicionado ao banco
-                //_pedidoRepository.AdicionarPedido(item);
 
             }
             return RedirectToAction("Index", "Home");
