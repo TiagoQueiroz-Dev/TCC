@@ -26,6 +26,13 @@
                 <label for="confirmarSenha" class="form-label fs-5 Roboto">Confirmar senha:</label>
                 <input type="password" class="form-control fs-5" id="confirmarSenha" name="confirmarSenha">
             </div>
+            <div class="mb-3 d-flex flex-column">
+                <label for="tipoConta" class="form-label fs-5 Roboto">Tipo de conta:</label>
+                <select class="form-label fs-5 Roboto text-center" id="tipoConta" name="tipoConta">
+                    <option value="Administrador">Administrador</option>
+                    <option value="Funcionario">Funcionário</option>
+                </select>
+            </div>
             <div class="botoes d-flex justify-content-between">
                 <a asp-area="" asp-controller="Home" asp-action="Index" class="btn btn-danger">Cancelar</a>
                 <button type="submit" class="btn btn-success">Cadastrar</button>
