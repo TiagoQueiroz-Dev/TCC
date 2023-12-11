@@ -73,6 +73,9 @@ public class novoPedidoController : Controller
             {
                 estoquePedidoNota.Entrega = false;
             }
+            //calcular valores parciais 
+            
+
             return View("NovaNota", estoquePedidoNota);
         }else{
             TempData["Erro"] = "Nenhum Produto Selecionado";
@@ -96,7 +99,6 @@ public class novoPedidoController : Controller
 
         if (estoquePedidoNota.Pedidos != null && estoquePedidoNota.NovaNota.ValidarNota())
         {
-            estoquePedidoNota.NovaNota.ValorDesconto = estoquePedidoNota.NovaNota.ValorDesconto / 100 * estoquePedidoNota.NovaNota.ValorTotal;
             
             _notaRepository.AdicionarNota(estoquePedidoNota.NovaNota);
 

@@ -55,29 +55,30 @@ function atribuirTotal(s, size) {
 // });
 
 
-function SomarTotalDesc(i,j,k,l){
-    var inputSubTotal = document.getElementById(i).value || 0;
-    var inputDesc = document.getElementById(j).value || 0;
-    var inputPagPrevio = document.getElementById(l).value || 0;
+// function SomarTotalDesc(i,j,k,l){
+//     var inputSubTotal = document.getElementById(i).value || 0;
+//     var inputDesc = document.getElementById(j).value || 0;
+//     var inputPagPrevio = document.getElementById(l).value || 0;
 
-    var subTotal = parseFloat(inputSubTotal);
-    var desconto = parseFloat(inputDesc);
-    var previo = parseFloat(inputPagPrevio);
+//     var subTotal = parseFloat(inputSubTotal);
+//     var desconto = parseFloat(inputDesc);
+//     var previo = parseFloat(inputPagPrevio);
 
-    var total = subTotal-subTotal*(desconto/100);
-    if(total <0){
-        total = 0;
-    }
+//     var total = subTotal-subTotal*(desconto/100);
     
-    if(previo > total){
-        previo = total
-        document.getElementById(l).value = previo.toFixed(2).replace('.',',');
-    }else
+//     if(total <0){
+//         total = 0;
+//     }
+    
+//     if(previo > total){
+//         previo = total;
+//         document.getElementById(l).value = previo.toFixed(2).replace('.',',');
+//     }else
 
-    document.getElementById(k).value = total.toFixed(2).replace('.',',');
+//     document.getElementById(k).value = total.toFixed(2).replace('.',',');
     
 
-}
+// }
 
 function verificarFiltro(e){
     const item = document.getElementById(e).value;
@@ -160,6 +161,34 @@ function verificarNovosDados(){
     }else{
         return true;
     }
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    CalcularValorRestante();
+});
+
+function CalcularValorRestante(){
+    var valorRestante = document.getElementById("pagRestante").value
+    var valorPrevio = document.getElementById("pagPrevio").value || 0;
+    var valorTotal = (document.getElementById("valor_total").value).toString();
+    var valorEntrega = document.getElementById("taxaEntrega").value || 0;
+
+    
+    var total = valorTotal.replace(',', '.');
+
+    var entrega = parseFloat(valorEntrega) || 0;
+
+    var previo = valorPrevio.toString().replace(',','.');
+    previo = parseFloat(previo);
+
+    
+    var somaTotal = entrega + (total - previo); 
+    if(somaTotal <=0){
+        somaTotal = 0;
+    }
+
+    document.getElementById("pagRestante").value = somaTotal.toString().replace('.',',');
+    
 }
 
 function calcularPeriodo( data1 , data2 ){

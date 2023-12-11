@@ -14,11 +14,11 @@
         </div>
         <div class="mb-3">
           <label for="CNPJ_CPF" class="form-label">CNPJ / CPF:</label>
-          <input type="number" asp-for="@Model.NovaNota.CPF_CNPJ" class="form-control" id="CPF_CNPJ">
+          <input type="text" asp-for="@Model.NovaNota.CPF_CNPJ" class="form-control" id="CPF_CNPJ">
         </div>
         <div class="mb-3">
           <label for="Telefone" class="form-label">Telefone:</label>
-          <input type="number" asp-for="@Model.NovaNota.Telefone" class="form-control" id="Telefone">
+          <input type="text" asp-for="@Model.NovaNota.Telefone" class="form-control" id="Telefone">
         </div>
         <div class="d-flex w-100 gap-5 justify-content-center">
           <div class="mb-3">
@@ -29,7 +29,7 @@
           <div class="mb-3">
             <label for="Data_recolhimento" class="">Data de recolhimento:</label>
             <input type="date" asp-for="@Model.NovaNota.DataRecolhimento" class="form-control" id="Data_recolhimento"
-              min="@DateTime.Now.ToString("yyyy-MM-dd")">
+              value="@DateTime.Now.ToString("yyyy-MM-dd")">
 
           </div>
         </div>
@@ -53,18 +53,6 @@
             }
           }
           <div class="mb-3 d-flex justify-content-evenly">
-            <div>
-              <label for="valor_subTotal" class="form-label ">SubTotal:</label>
-              <input type="number" class="form-control mb-3" asp-for="@Model.SubTotalPedido" id="valor_subTotal"
-                readonly>
-
-            </div>
-            <div>
-              <label for="valor_deconto" class="form-label">Desconto:</label>
-              <input type="number" class="form-control" id="valor_deconto" min="0" max="100" placeholder="%"
-                asp-for="@Model.NovaNota.ValorDesconto"
-                oninput="SomarTotalDesc('valor_subTotal','valor_deconto','valor_total','pagPrevio')">
-            </div>
             <div>
               <label for="valor_total" class="form-label">Total:</label>
               <input type="text" class="form-control" id="valor_total" min="0" value="@Model.SubTotalPedido"
@@ -107,7 +95,7 @@
               {
                 <div class="form-check w-100">
                   <label class="form-label" for="entregaMenos20">Valor de Entrega:</label>
-                  <input type="number" class="form-control" asp-for="@Model.NovaNota.TaxaEntrega" step="0.01" min="0">
+                  <input type="number" class="form-control" asp-for="@Model.NovaNota.TaxaEntrega" id="taxaEntrega" step="0.01" min="0" oninput="CalcularValorRestante()">
                 </div>
               }
 
@@ -116,7 +104,7 @@
               {
                 <div class="form-check w-100">
                   <label class="form-label" for="entrega">Taxa de Entrega:</label>
-                  <input type="number" class="form-control" asp-for="@Model.NovaNota.TaxaEntrega" min="0" readonly>
+                  <input type="number" class="form-control" asp-for="@Model.NovaNota.TaxaEntrega" id="taxaEntrega" min="0" step="0.01" readonly>
                 </div>
               }
             </div>
@@ -124,11 +112,11 @@
               <div>
                 <label class="form-label" for="pagPrevio">Pagamento Prévio</label>
                 <input class="form-control" id="pagPrevio" type="text" min="0" max="@Model.NovaNota.ValorTotal"
-                  step="0.01" value="@Model.NovaNota.ValorPago" asp-for="@Model.NovaNota.ValorPago">
+                  step="0.01" value="@Model.NovaNota.ValorPago" asp-for="@Model.NovaNota.ValorPago" oninput="CalcularValorRestante()">
               </div>
               <div>
                 <label for="pagRestante" class="form-label">Pagamento Restante</label>
-                <input type="text" class="form-control" id="pagRestante" value="" readonly>
+                <input type="text" class="form-control" id="pagRestante" min="0" value="" readonly>
               </div>
             </div>
           </div>
