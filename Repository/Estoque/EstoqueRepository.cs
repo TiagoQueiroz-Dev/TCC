@@ -100,7 +100,7 @@ namespace TCC.Repository
 
         public List<EstoqueModel> PoucoEstoque()
         {
-            var estoque = _dataContexto.EstoqueGeral.Where(u => u.Disponiveis <= 5);
+            var estoque = _dataContexto.EstoqueGeral.Where(u => u.Disponiveis <= 5 && u.ProdutoAtivo == true);
             List<EstoqueModel> listaEstoque = new List<EstoqueModel>();
             listaEstoque = estoque.ToList();
 
