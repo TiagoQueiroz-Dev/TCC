@@ -16,6 +16,8 @@ namespace TCC.Repository.Usuario
 
         UsuarioModel NovoUsuario(string nome,string email,string senha,string tipoConta);
 
-        UsuarioModel AlterarDados(string nome,string email,string senha);
+        UsuarioModel AlterarDados(UsuarioModel user);
+
+        UsuarioModel UsuarioBusca(string email,string senha);
     }
 }

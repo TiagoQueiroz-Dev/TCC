@@ -19,7 +19,7 @@
     <link rel="icon" href="@Url.Content("~/img/andaime.svg")">
     <title>@titulo - @ViewData["Title"]</title>
 </head>
-<div class="LoginContainer">
+<div class="LoginContainer d-flex">
             <div class="Background ">
                 <img class="SVG" src="@Url.Content("~/img/forma1.svg")" width="32" alt="Home">
                 <img class="SVG2" src="@Url.Content("~/img/forma2.svg")" width="32" alt="Home">
@@ -33,8 +33,9 @@
                 </div>
             </div>
         </div>
-        <div class="RightInformation">
-            <form class="Form" asp-action="ValidarLogin" asp-controller="Login">
+        <div class="RightInformation d-flex">
+            <div class="w-100 d-flex justify-content-center">
+                <form class="Form" asp-action="ValidarLogin" asp-controller="Login">
                 <p class="LoginTitle">Login</p>
                 <label for="username" class="Label">E-mail:</label>
                 <input type="email" class="Input" id="emailLogin" asp-for="@Model.EmailUsuario">
@@ -42,6 +43,7 @@
                 <input type="password" class="Input" id="senhaLogin" asp-for="@Model.Senha">
                 <button class="BotaoLogin" type="submit">Login</button>
             </form>
+            </div>
             <div class="RightDetails"/>
         </div>
 </div>

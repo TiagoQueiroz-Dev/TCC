@@ -97,6 +97,15 @@ namespace TCC.Repository
 
             return produto;
         }
+        public EstoqueModel HabilitarProduto(int id)
+        {
+            var produto = BuscarProduto(id);
+            produto.ProdutoAtivo = true;
+            _dataContexto.EstoqueGeral.Update(produto);
+            _dataContexto.SaveChanges();
+
+            return produto;
+        }
 
         public List<EstoqueModel> PoucoEstoque()
         {

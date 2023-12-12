@@ -37,12 +37,14 @@ namespace TCC.Controllers
                 
                 var tipoConta = _usuarioRepository.TipoUsuario(usuario.EmailUsuario,usuario.Senha); 
                 var nome = _usuarioRepository.NomeUser(usuario.EmailUsuario,usuario.Senha);
+                
 
                 var claims = new List<Claim>
             {
                 new Claim(ClaimTypes.Email, usuario.EmailUsuario),
                 new Claim(ClaimTypes.Name, nome),
                 new Claim(ClaimTypes.Role, tipoConta),
+                new Claim("StringClaimType", usuario.Senha),
                 
             };
 

@@ -82,7 +82,6 @@ function atribuirTotal(s, size) {
 
 function verificarFiltro(e){
     const item = document.getElementById(e).value;
-    console.log(item)
     if(item.toLowerCase() === 'periodo'){
         document.getElementById('barraPesquisa').style.display = 'none';
         document.getElementById('barraPeriodo').style.display = 'flex';
@@ -173,8 +172,6 @@ function CalcularValorRestante(){
     var valorTotal = (document.getElementById("valor_total").value).toString();
     var valorEntrega = document.getElementById("taxaEntrega").value || 0;
     const qtdDias = calcularPeriodo('Data_recolhimento', 'Data_aluguel');
-
-    console.log(qtdDias);
     
     const calcularTotal = () =>{
         if(qtdDias === 0){
@@ -198,8 +195,8 @@ function CalcularValorRestante(){
     }
 
 
-    document.getElementById("valor_total_visible").value = calcularTotal().toString().replace('.',',');
-    document.getElementById("pagRestante").value = somaTotal.toString().replace('.',',');
+    document.getElementById("valor_total_visible").value = calcularTotal().toFixed(2).toString().replace('.',',');
+    document.getElementById("pagRestante").value = somaTotal.toFixed(2).toString().replace('.',',');
     
 }
 
@@ -218,3 +215,25 @@ function calcularPeriodo( data1 , data2 ){
     return dias;
     
     }
+
+    function validarNumeros(item) {
+        
+        const input = document.getElementById(item);
+        input.value = input.value.replace(/[^0-9]/g, '');
+        var mensagemErro = document.getElementById("mensagemErro");
+        if (input.value.match(/[^0-9]/g)) {
+          mensagemErro.textContent = "Apenas números são permitidos.";
+        } else {
+          mensagemErro.textContent = "";
+        }
+      }
+
+      function formatarCPF(item) {
+        const input = document.getElementById(item)
+
+        const cpf = input.value.replace(/\D/g, '');
+
+        cpf = cpf.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/, '$1.$2.$3-$4');
+        
+        input.value = cpf;
+      }

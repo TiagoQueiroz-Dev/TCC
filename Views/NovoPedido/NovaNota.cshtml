@@ -14,11 +14,11 @@
         </div>
         <div class="mb-3">
           <label for="CNPJ_CPF" class="form-label">CNPJ / CPF:</label>
-          <input type="text" asp-for="@Model.NovaNota.CPF_CNPJ" class="form-control" id="CPF_CNPJ">
+          <input type="text" asp-for="@Model.NovaNota.CPF_CNPJ" oninput="validarNumeros('CPF_CNPJ')" class="form-control" id="CPF_CNPJ">
         </div>
         <div class="mb-3">
           <label for="Telefone" class="form-label">Telefone:</label>
-          <input type="text" asp-for="@Model.NovaNota.Telefone" class="form-control" id="Telefone">
+          <input type="text" asp-for="@Model.NovaNota.Telefone" class="form-control" oninput="validarNumeros('Telefone')" id="Telefone">
         </div>
         <div class="d-flex w-100 gap-5 justify-content-center">
           <div class="mb-3">

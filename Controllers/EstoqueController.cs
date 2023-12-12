@@ -21,7 +21,7 @@ public class estoqueController : Controller
     public IActionResult Index()
     {
         ViewBag.Page = "Estoque";
-        var estoque = _estoqueRepository.ListarEstoque();
+        var estoque = _estoqueRepository.TodosProdutos();
         return View(estoque);
     }
 
@@ -97,6 +97,42 @@ public class estoqueController : Controller
         if (tipoConta == "Administrador")
         {
             _estoqueRepository.ExcluirProduto(id);
+            return RedirectToAction("Index");
+        }
+        else
+        {
+            TempData["Erro"] = "Usuário Não Autorizado";
+            return RedirectToAction("Index");
+        }
+
+    }
+    
+    public IActionResult DesabilitarProduto(int id)
+    {
+        var role = User.Claims.FirstOrDefault(u => u.Type == ClaimTypes.Role);
+        string tipoConta = role?.Value;
+
+        if (tipoConta == "Administrador")
+        {
+            _estoqueRepository.ExcluirProduto(id);
+            return RedirectToAction("Index");
+        }
+        else
+        {
+            TempData["Erro"] = "Usuário Não Autorizado";
+            return RedirectToAction("Index");
+        }
+
+    }
+
+    public IActionResult HabilitarProduto(int id)
+    {
+        var role = User.Claims.FirstOrDefault(u => u.Type == ClaimTypes.Role);
+        string tipoConta = role?.Value;
+
+        if (tipoConta == "Administrador")
+        {
+            _estoqueRepository.HabilitarProduto(id);
             return RedirectToAction("Index");
         }
         else
