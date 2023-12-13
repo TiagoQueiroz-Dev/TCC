@@ -575,7 +575,6 @@ height: 2018.237px;
     top: 10%;
     position: absolute;
     @media screen and (max-width: 800px) {
-      top: 15%;
       margin-left: 0;
     }
   }
