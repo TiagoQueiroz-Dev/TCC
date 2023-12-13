@@ -41,8 +41,7 @@ namespace TCC.Models
         {
             List<PedidoModel> pedidos = new List<PedidoModel>();
 
-
-            var lista = Produtos.GroupBy(p => p.IdProduto).Select(g => new { IdProduto = g.Key, Quantidade = g.Sum(p => p.Quantidade) }).OrderByDescending(item => item.Quantidade).ToList();
+            var lista = Produtos.GroupBy(p => p.IdProduto).Select(g => new { IdProduto = g.Key, Quantidade = g.Sum(p => p.Quantidade), }).OrderByDescending(item => item.Quantidade).ToList();
 
             foreach (var item in lista)
             {

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using TCC.Models;
@@ -12,6 +13,7 @@ using TCC.Repository.Pedido;
 
 namespace TCC.Controllers
 {
+    [Authorize]
     public class RelatorioController : Controller
     {
         public readonly INotaRepository _notaRepository;
@@ -27,16 +29,18 @@ namespace TCC.Controllers
         }
         public IActionResult Index()
         {
+            ViewBag.Page = "Relatorio";
             return View();
         }
 
         [HttpPost]
         public IActionResult GerarRelatorio(DateTime datanicial, DateTime dataFinal)
         {
+            ViewBag.Page = "Relatorio";
             RelatorioModel relatorio = new RelatorioModel();
             List<PedidoModel> listProduto = new List<PedidoModel>();
             List<PedidoModel> topProduto = new List<PedidoModel>();
-            relatorio.Estoque = _estoqueRepository.ListarEstoque();
+            relatorio.Estoque = _estoqueRepository.TodosProdutos();
             relatorio.Notas = _notaRepository.RelatorioData(datanicial, dataFinal);
             relatorio.Produtos = listProduto;
             relatorio.TopProdutos = topProduto;
@@ -65,6 +69,7 @@ namespace TCC.Controllers
 
         public IActionResult ResultRelatorio(RelatorioModel relatorio)
         {
+            ViewBag.Page = "Relatorio";
             return View();
         }
 

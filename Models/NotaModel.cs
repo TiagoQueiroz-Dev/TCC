@@ -14,10 +14,10 @@ namespace TCC.Models
         public int Id { get; set; }
         [MaxLength(255)]
         public string Nome { get; set; }
-        [Column(TypeName="BIGINT")]
-        public int CPF_CNPJ { get; set; }
-        [Column(TypeName="BIGINT")]
-        public int Telefone { get; set; }
+
+        public string CPF_CNPJ { get; set; }
+
+        public string Telefone { get; set; }
         [Column(TypeName = "DATE")]
         public DateTime DataEmissao { get; set; }
         [Column(TypeName = "DATE")]
@@ -29,22 +29,41 @@ namespace TCC.Models
         [MaxLength(50)]
         public string Rua { get; set; }
         [MaxLength(50)]
-        public string Complemento { get; set; }
-        
+        public string? Complemento { get; set; }
+
         public int Cep { get; set; }
-        
-        public int Numero { get; set; }
+
+        public int? Numero { get; set; }
         [Column(TypeName = "decimal(10,2)")]
-        
+
         public decimal ValorTotal { get; set; }
-        
+
         [Column(TypeName = "decimal(10,2)")]
-        public decimal ValorPago { get; set; }
-        [Column(TypeName = "decimal(10,2)")]
-        public decimal ValorDesconto { get; set; }
-        
+        public decimal? ValorPago { get; set; }
+
         [Column(TypeName = "decimal(10,2)")]
         public decimal? TaxaEntrega { get; set; }
         public bool StatusNota { get; set; }
+
+        public bool ValidarNota()
+        {
+            var notaValida = true;
+
+            if (this.Nome == null ||
+            this.CPF_CNPJ == null ||
+            this.Telefone == null ||
+            this.DataEmissao == null ||
+            this.DataRecolhimento == null ||
+            this.Cidade == null ||
+            this.Bairro == null ||
+            this.Rua == null ||
+            this.Cep == null ||
+            this.ValorTotal == null)
+            {
+                notaValida = false;
+            }
+
+            return notaValida;
+        }
     }
 }

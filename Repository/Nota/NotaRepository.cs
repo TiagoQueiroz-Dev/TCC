@@ -74,7 +74,7 @@ namespace TCC.Repository.Nota
             switch (opcBusca)
             {
                 case "CPF/CNPJ":
-                    var notasCPF = _bancoContex.Notas.Where(u => u.CPF_CNPJ == int.Parse(pesquisa));
+                    var notasCPF = _bancoContex.Notas.Where(u => u.CPF_CNPJ == pesquisa);
                     listaDeBusca = notasCPF.ToList();
                     break;
                 case "NNota":
@@ -86,7 +86,7 @@ namespace TCC.Repository.Nota
                     listaDeBusca = notasCliente.ToList();
                     break;
                 case "Tel":
-                    var notasTel = _bancoContex.Notas.Where(u => u.Telefone == int.Parse(pesquisa));
+                    var notasTel = _bancoContex.Notas.Where(u => u.Telefone == pesquisa);
                     listaDeBusca = notasTel.ToList();
                     break;
                 case "CEP":

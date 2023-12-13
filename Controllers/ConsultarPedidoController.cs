@@ -1,4 +1,5 @@
 using System.Diagnostics;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using TCC.Database;
 using TCC.Models;
@@ -8,6 +9,7 @@ using TCC.Repository.Pedido;
 
 namespace TCC.Controllers;
 
+[Authorize]
 public class consultarPedidoController : Controller
 {
     public readonly IPedidoRepository _pedidoRepository;
@@ -23,6 +25,7 @@ public class consultarPedidoController : Controller
 
     public IActionResult Index()
     {
+        ViewBag.Page = "Consulta";
         List<NotaModel> AllNotas = new List<NotaModel>();
         AllNotas = _notaRepository.TodasNotas();
 
@@ -30,8 +33,10 @@ public class consultarPedidoController : Controller
     }
 
     [HttpPost]
-    public IActionResult ConsultaNota(string busca, string opc, string dataFinal)
+    public IActionResult ConsultaNota(string busca, string opc, DateTime dataInicial, DateTime dataFinal)
     {
+        
+        ViewBag.Page = "Consulta";
 
         EstoquePedidoNotaModel estoquePedidoNota = new EstoquePedidoNotaModel();
         ListaConsultaNotasModel consulta = new ListaConsultaNotasModel();
@@ -50,7 +55,7 @@ public class consultarPedidoController : Controller
         }
         else if (opc == "Periodo")
         {
-            estoquePedidoNota.ListaNotas.NotasEncontradas = _notaRepository.RelatorioData(DateTime.Parse(busca), DateTime.Parse(dataFinal));
+            estoquePedidoNota.ListaNotas.NotasEncontradas = _notaRepository.RelatorioData(dataInicial, dataFinal);
             return View("ResultPesquisa", estoquePedidoNota);
         }
         //necessário notificar usuário sobre o erro de busca
@@ -59,15 +64,17 @@ public class consultarPedidoController : Controller
 
     public IActionResult ResultPesquisa(EstoquePedidoNotaModel estoquePedidoNota)
     {
+        ViewBag.Page = "Consulta";
         return View(estoquePedidoNota);
     }
 
     public IActionResult VisualizarNota(int id)
     {
+        ViewBag.Page = "Consulta";
         EstoquePedidoNotaModel pedidoNota = new EstoquePedidoNotaModel();
         pedidoNota.NovaNota = _notaRepository.BuscarNota(id);
         pedidoNota.Pedidos = _pedidoRepository.PedidosNota(id);
-        pedidoNota.Estoque = _estoqueRepository.ListarEstoque();
+        pedidoNota.Estoque = _estoqueRepository.TodosProdutos();
         return View(pedidoNota);
     }
 

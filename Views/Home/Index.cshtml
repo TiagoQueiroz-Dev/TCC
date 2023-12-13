@@ -6,7 +6,7 @@
     <div class="Chart">
         <div class="Card">
             <p class="Title">A Recolher</p>
-            <div class="d-flex flex-wrap PedidoLista justify-content-center">
+            <div class="d-flex flex-wrap PedidoLista justify-content-center overflow-auto">
                 @foreach(var item in @Model.Notas){
                 <div>
                     <div>
@@ -23,10 +23,15 @@
                     </div>
                 </div>}
             </div>
+            @if(@Model.Notas.Count < 1){
+                <div>
+                    <p class="Title fs-4">Nenhum item no momento</p>
+                </div>
+            }
         </div>
         <div class="Card">
             <p class="Title">Estoque baixo</p>
-            <div class="d-flex flex-wrap PedidoLista justify-content-center">
+            <div class="d-flex flex-wrap PedidoLista justify-content-center overflow-auto">
                     @foreach(var item in @Model.Estoque){
                     <div>
                     <div>
@@ -41,6 +46,10 @@
                     <div class="d-flex justify-content-center">
                         <a role="button" asp-action="Index" asp-controller="Estoque" class="btn btn-primary mt-3">Ver detalhes</a>
                     </div>
+                    }else{
+                        <div>
+                            <p class="Title fs-4">Nenhum item no momento</p>
+                        </div>
                     }
         </div>
     </div>

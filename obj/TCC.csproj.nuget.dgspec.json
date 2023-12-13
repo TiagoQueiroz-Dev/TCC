@@ -2,6 +2,7 @@
   "format": 1,
   "restore": {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\TCC.csproj": {}
   },
   "projects": {
@@ -15,19 +16,32 @@
         "outputPath": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\obj\\",
 =======
     "C:\\Users\\kevin\\Documents\\GitHub\\TCC\\TCC.csproj": {}
+=======
+    "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\TCC.csproj": {}
+>>>>>>> fcaa80465efc427b734632c35c1e5d0d00ab2994
   },
   "projects": {
-    "C:\\Users\\kevin\\Documents\\GitHub\\TCC\\TCC.csproj": {
+    "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\TCC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kevin\\Documents\\GitHub\\TCC\\TCC.csproj",
+        "projectUniqueName": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\TCC.csproj",
         "projectName": "TCC",
+<<<<<<< HEAD
         "projectPath": "C:\\Users\\kevin\\Documents\\GitHub\\TCC\\TCC.csproj",
         "packagesPath": "C:\\Users\\kevin\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\kevin\\Documents\\GitHub\\TCC\\obj\\",
 >>>>>>> 111b0dbfaa3f2994a56a8ad10cb13bd1144cbce6
+=======
+        "projectPath": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\TCC.csproj",
+        "packagesPath": "C:\\Users\\Condoriano\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\obj\\",
+>>>>>>> fcaa80465efc427b734632c35c1e5d0d00ab2994
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
+<<<<<<< HEAD
 <<<<<<< HEAD
           "C:\\Users\\Condoriano\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
@@ -35,16 +49,26 @@
 =======
           "C:\\Users\\kevin\\AppData\\Roaming\\NuGet\\NuGet.Config"
 >>>>>>> 111b0dbfaa3f2994a56a8ad10cb13bd1144cbce6
+=======
+          "C:\\Users\\Condoriano\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+>>>>>>> fcaa80465efc427b734632c35c1e5d0d00ab2994
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
 <<<<<<< HEAD
+<<<<<<< HEAD
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
 =======
 >>>>>>> 111b0dbfaa3f2994a56a8ad10cb13bd1144cbce6
+=======
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+>>>>>>> fcaa80465efc427b734632c35c1e5d0d00ab2994
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -63,6 +87,22 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
+            "Microsoft.AspNet.Identity.Core": {
+              "target": "Package",
+              "version": "[2.2.4, )"
+            },
+            "Microsoft.AspNet.Identity.EntityFramework": {
+              "target": "Package",
+              "version": "[2.2.4, )"
+            },
+            "Microsoft.AspNet.Identity.Owin": {
+              "target": "Package",
+              "version": "[2.2.4, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[7.0.11, )"
@@ -72,6 +112,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.11, )"
+            },
+            "Microsoft.Owin.Host.SystemWeb": {
+              "target": "Package",
+              "version": "[4.2.2, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
@@ -101,24 +145,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[7.0.14, 7.0.14]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[7.0.14, 7.0.14]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[7.0.14, 7.0.14]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[7.0.14, 7.0.14]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -128,10 +154,14 @@
             }
           },
 <<<<<<< HEAD
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
 =======
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
 >>>>>>> 111b0dbfaa3f2994a56a8ad10cb13bd1144cbce6
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+>>>>>>> fcaa80465efc427b734632c35c1e5d0d00ab2994
         }
       }
     }
