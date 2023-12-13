@@ -11381,23 +11381,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Suricato Furtivo\\.nuget\\packages\\": {},
+    "C:\\Users\\Condoriano\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\TCC.csproj",
+      "projectUniqueName": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\TCC.csproj",
       "projectName": "TCC",
-      "projectPath": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\TCC.csproj",
-      "packagesPath": "C:\\Users\\Suricato Furtivo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Suricato Furtivo\\Documents\\TCC\\obj\\",
+      "projectPath": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\TCC.csproj",
+      "packagesPath": "C:\\Users\\Condoriano\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Suricato Furtivo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Condoriano\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -11406,6 +11406,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -11470,7 +11471,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-rc.1.23463.5\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
