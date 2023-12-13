@@ -1,6 +1,6 @@
 namespace TCC.Models
 {
-    public class MetodosInicio
+    public class MetodosInicioModel
     {   
         public String status(string status){
         String bolinha = "";

@@ -4,10 +4,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
 using System.Diagnostics.CodeAnalysis;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace TCC.Models;
 
-public class Estoque
+public class EstoqueModel
 {
     
     public int Id { get; set; }
@@ -20,5 +21,6 @@ public class Estoque
     [NotNull]
     public int Disponiveis { get; set; }
     [NotNull]
-    public double ValorUnid { get; set; }
+    [Column(TypeName = "decimal(10,2)")] 
+    public decimal ValorUnid { get; set; }
 }
