@@ -63,6 +63,7 @@ namespace TCC.Controllers
             {
                 ModelState.AddModelError(string.Empty, "Tentativa de Login Invalida");
                 ViewBag.Erro = "Tentativa de Login Invalida";
+                TempData["Erro"] = "Tentativa de Login Inválida";
                 return View("Index", usuario);
             }
         }

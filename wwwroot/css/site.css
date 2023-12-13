@@ -1,3 +1,5 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
 :root{
   --border-radius: 12px;
   --primary-1: #FFF;
@@ -451,7 +453,7 @@ height: 2018.237px;
     align-items: center;
     gap: 16px;
     padding-left: 64px;
-        @media screen and (max-width: 800px){
+        @media screen and (max-width: 900px){
             width: 100%;
             padding-right: 64px
         }
@@ -566,4 +568,32 @@ height: 2018.237px;
       color: var(--primary-1);
       border-color: var(--success)!important;
     }
+  }
+
+  .LogoPosition{
+    margin-left: 48px;
+    top: 7%;
+    position: absolute;
+    @media screen and (max-width: 800px) {
+      top: 15%;
+      margin-left: 0;
+    }
+  }
+
+  .Stock{
+    font-family: 'Montserrat';
+    font-weight: 300;
+    border-bottom: 2px solid #fff;
+      &&#Subtitle{
+        font-weight: 300;
+        border: none;
+      }
+      @media screen and (max-width: 800px) {
+        display: none;
+      }
+  }
+  
+  .Erro{
+    font-weight: 600;
+    color: rgb(114, 34, 34);
   }
