@@ -572,7 +572,7 @@ height: 2018.237px;
 
   .LogoPosition{
     margin-left: 48px;
-    top: 7%;
+    top: 10%;
     position: absolute;
     @media screen and (max-width: 800px) {
       top: 15%;
@@ -589,6 +589,9 @@ height: 2018.237px;
         border: none;
       }
       @media screen and (max-width: 800px) {
+        display: none;
+      }
+      @media screen and (max-height: 890px) {
         display: none;
       }
   }
