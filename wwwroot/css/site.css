@@ -285,6 +285,11 @@ input{
     }
 }
 
+.custom-tooltip {
+  --bs-tooltip-bg: var(--highlight-2);
+  --bs-tooltip-color: var(--primary-1);
+}
+
 .LoginContainer{
 overflow: hidden;
 position: relative;
