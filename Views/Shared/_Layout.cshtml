@@ -27,23 +27,19 @@
                 <div class="d-sm-inline-flex d-flex h-100 justify-content-between ">
                     <ul class="navbar-nav flex-grow-1 d-flex align-items-center flex-column h-100">
                             <a asp-area="" asp-controller="Home" asp-action="Index" style="width: 100%;"
-                                data-bs-toggle="tooltip"
-                                data-bs-placement="right"
-                                data-bs-title="Início">
+                                title="Início">
                         @if(ViewBag.Page == "Home"){
                             <li class="nav-item MenuItem d-flex justify-content-center">
-                                <img src="@Url.Content("~/img/homeTrue.svg")" width="32" alt="Home">
+                                <img src="@Url.Content("~/img/inicioTrue.svg")" width="32" alt="Home">
                         </li>
                         }else{
                             <li class="nav-item User d-flex justify-content-center">
-                                <img src="@Url.Content("~/img/home.svg")" width="32" alt="Home">
+                                <img src="@Url.Content("~/img/inicio.svg")" width="32" alt="Home">
                         </li>
                         }
                             </a>
                             <a asp-area="" asp-controller="novoPedido" asp-action="Index"
-                                data-bs-toggle="tooltip"
-                                data-bs-placement="right"
-                                data-bs-title="Novo pedido">
+                                title="Novo pedido">
                         @if(ViewBag.Page == "NovoPedido"){
                             <li class="nav-item MenuItem d-flex justify-content-center">
                                 <img src="@Url.Content("~/img/novoPedidoTrue.svg")" width="32" alt="Novo pedido">
@@ -55,9 +51,7 @@
                         }
                             </a>
                             <a asp-area="" asp-controller="Relatorio" asp-action="Index"
-                                data-bs-toggle="tooltip"
-                                data-bs-placement="right"
-                                data-bs-title="Relatório">
+                                title="Relatório">
                         @if(ViewBag.Page == "Relatorio"){
                             <li class="nav-item MenuItem d-flex justify-content-center">
                                 <img src="@Url.Content("~/img/relatorioTrue.svg")" width="32" alt="Relatorio">
@@ -69,9 +63,7 @@
                         }
                             </a>
                             <a asp-area="" asp-controller="consultarPedido" asp-action="Index"
-                                data-bs-toggle="tooltip"
-                                data-bs-placement="right"
-                                data-bs-title="Consulta">
+                                title="Consulta">
                         @if(ViewBag.Page == "Consulta"){
                             <li class="nav-item MenuItem d-flex justify-content-center">
                                 <img src="@Url.Content("~/img/consultaTrue.svg")" width="32" alt="Consulta">
@@ -83,9 +75,7 @@
                         }
                             </a>
                             <a asp-area="" asp-controller="estoque" asp-action="Index"
-                                data-bs-toggle="tooltip"
-                                data-bs-placement="right"
-                                data-bs-title="Estoque">
+                                title="Estoque">
                         @if(ViewBag.Page == "Estoque"){
                             <li class="nav-item MenuItem d-flex justify-content-center">
                                 <img src="@Url.Content("~/img/estoqueTrue.svg")" width="32" alt="Estoque">
@@ -100,9 +90,7 @@
                         </li>
                         @if(ViewBag.TipoConta == "Administrador"){
                         <a asp-area="" asp-controller="Home" asp-action="CadastrarUsuario"
-                                data-bs-toggle="tooltip"
-                                data-bs-placement="right"
-                                data-bs-title="Cadastrar">
+                                title="Cadastrar">
                             @if(ViewBag.page == "Cadastro"){
                             <li class="nav-item d-flex justify-content-center MenuItem">
                             <img src="@Url.Content("~/img/cadastroTrue.svg")" alt="Cadastrar" width="32">
@@ -144,7 +132,7 @@
                             </div>
                     </a>
                         }else{
-                    <a asp-action="Usuario" asp-controller="Home"
+                    <a asp-action="Usuario" asp-controller="Home" title="Dados da conta"
                      class="User d-flex align-items-center Back Title fs-4 mb-0 desktop">
                             <div class="d-flex align-items-center">
                                 <img id="userIcon" src="@Url.Content("~/img/user.svg")">
@@ -217,7 +205,7 @@
             </li> *@
             <header class="TopHeader w-100 h-100 desktop">
             </header>
-                <a asp-action="Logout" asp-controller="Login">
+                <a asp-action="Logout" asp-controller="Login" title="Sair">
                     <div class="CardInfo Logout desktop">
                     <div class="DivWrap d-flex">
                         <div class="d-flex align-items-center gap-3">

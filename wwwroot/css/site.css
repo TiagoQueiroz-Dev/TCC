@@ -5,7 +5,7 @@
   --primary-1: #FFF;
   --primary-2: #E5E5E5;
   --primary-3: #DADADA;
-  --contrast-3: #343B3F;
+  --contrast-3: ;
   --contrast-4: #545c60;
   --highlight-1: #7075D0;
   --highlight-2: #5D62B5;
@@ -286,8 +286,8 @@ input{
 }
 
 .custom-tooltip {
-  --bs-tooltip-bg: var(--highlight-2);
-  --bs-tooltip-color: var(--primary-1);
+  --bs-tooltip-bg: var(--bd-violet-bg);
+  --bs-tooltip-color: var(--bs-white);
 }
 
 .LoginContainer{

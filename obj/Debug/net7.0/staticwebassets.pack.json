@@ -13,10 +13,6 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\img\\HomeTrue.svg",
-      "PackagePath": "staticwebassets\\img\\HomeTrue.svg"
-    },
-    {
       "Id": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\img\\Stock+.svg",
       "PackagePath": "staticwebassets\\img\\Stock+.svg"
     },
@@ -61,8 +57,12 @@
       "PackagePath": "staticwebassets\\img\\forma2.svg"
     },
     {
-      "Id": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\img\\home.svg",
-      "PackagePath": "staticwebassets\\img\\home.svg"
+      "Id": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\img\\inicio.svg",
+      "PackagePath": "staticwebassets\\img\\inicio.svg"
+    },
+    {
+      "Id": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\img\\inicioTrue.svg",
+      "PackagePath": "staticwebassets\\img\\inicioTrue.svg"
     },
     {
       "Id": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\img\\logout.svg",

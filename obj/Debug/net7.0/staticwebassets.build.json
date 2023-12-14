@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "TDqUcs1TGGQJ8rPXd2ldiTFBQbnov8tFFEjMxNTtdEw=",
+  "Hash": "1YTy3BJPfdqOcdI2mTdBZt0XI816fwyzuF6h3V6tGFg=",
   "Source": "TCC",
   "BasePath": "_content/TCC",
   "Mode": "Default",
@@ -255,12 +255,12 @@
       "OriginalItemSpec": "wwwroot\\img\\forma2.svg"
     },
     {
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\img\\home.svg",
+      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\img\\inicio.svg",
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
       "BasePath": "_content/TCC",
-      "RelativePath": "img/home.svg",
+      "RelativePath": "img/inicio.svg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -269,15 +269,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\home.svg"
+      "OriginalItemSpec": "wwwroot\\img\\inicio.svg"
     },
     {
-      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\img\\HomeTrue.svg",
+      "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\img\\inicioTrue.svg",
       "SourceId": "TCC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\",
       "BasePath": "_content/TCC",
-      "RelativePath": "img/HomeTrue.svg",
+      "RelativePath": "img/inicioTrue.svg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -286,7 +286,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\HomeTrue.svg"
+      "OriginalItemSpec": "wwwroot\\img\\inicioTrue.svg"
     },
     {
       "Identity": "C:\\Users\\Condoriano\\Desktop\\Front\\backImperio\\TCC\\wwwroot\\img\\logout.svg",
